@@ -45,6 +45,7 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
+          'sass-loader',
           {
             loader: 'postcss-loader',
             options: {
@@ -82,17 +83,14 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].[contenthash].css'
     }),
 
     // Landing page
     new HtmlWebpackPlugin({
-      hash: true,
-      scriptLoading: 'blocking',
       template: './src/index.html',
-      filename: './index.html',
-      chunks: ['index']
+      filename: './index.html'
     }),
 
     //Inspiration

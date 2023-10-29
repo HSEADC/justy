@@ -1,3 +1,5 @@
+@media all and (min-width: 429px) {
+}
 body.index {
   background-color: #29234c;
   display: flex;
@@ -410,6 +412,8 @@ body.index {
         }
 
         > button {
+          cursor: pointer;
+          border: none;
           margin-top: 2.734vw;
           display: flex;
           width: 37.891vw;
@@ -429,8 +433,11 @@ body.index {
         }
       }
     }
-
-    > img {
+    #mobile {
+      display: none;
+    }
+    #pc {
+      display: block;
       width: 43.438vw;
       height: 15.938vw;
       position: absolute;
