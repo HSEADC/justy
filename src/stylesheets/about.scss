@@ -497,6 +497,7 @@ body.about {
 
     .folder {
       transform: rotateX(0deg);
+      transition: 0.4s cubic-bezier(0.75, 0, 0.25, 1);
       transform-origin: bottom;
       width: 30.313vw;
       height: 20.156vw;
