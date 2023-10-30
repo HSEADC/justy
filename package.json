@@ -1,7 +1,8 @@
 {
-  "name": "static-site-boilerplate",
+  "name": "base",
   "version": "1.0.0",
-  "author": "Zakhar Day",
+  "description": "service of materials for first-year students",
+  "author": "Nikolai Supereka, Anastasia Murashkevich, Konstantin Udod",
   "license": "MIT",
   "repository": {
     "type": "git",
