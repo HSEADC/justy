@@ -1,0 +1,22 @@
+body.main {
+  h1 {
+    margin-top: 15px;
+    width: 512px;
+    color: #000;
+    font-family: SF_UI_Display_Medium;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  ul > li > a {
+    margin-top: 10px;
+    color: #000;
+    font-family: SF_UI_Display_Regular;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}

@@ -93,6 +93,11 @@ module.exports = {
       filename: './index.html'
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/main.html',
+      filename: './main.html'
+    }),
+
     //Inspiration
     new HtmlWebpackPlugin({
       template: './src/inspiration.html',
