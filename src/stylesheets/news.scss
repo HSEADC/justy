@@ -1,12 +1,21 @@
 body.news {
   padding-bottom: 8.828vw;
 
+  .verticle {
+    width: 100%;
+    position: relative;
+    > img {
+      position: absolute;
+    }
+  }
+
   .main-content {
     display: flex;
     gap: 4.297vw;
   }
 
   .header-article {
+    cursor: default;
     .mobile-article-image {
       display: none;
     }

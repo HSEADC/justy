@@ -7,6 +7,15 @@ var blade_1 = document.getElementsByClassName('first-fold');
 var blade_2 = document.getElementsByClassName('second-fold');
 var blade_3 = document.getElementsByClassName('third-fold');
 var blade_4 = document.getElementsByClassName('fourth-fold');
+var header = document.getElementsByClassName('header-article');
+var whalf = window.innerWidth / 2;
+header[0].addEventListener('mousemove', function (e) {
+  if (e.pageX < whalf) {
+    header[0].style.cursor = 'pointer';
+  } else {
+    header[0].style.cursor = 'alias';
+  }
+});
 
 var _loop = function _loop(i) {
   folder[i].addEventListener('mouseenter', function () {

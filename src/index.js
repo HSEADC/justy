@@ -6,6 +6,17 @@ const blade_2 = document.getElementsByClassName('second-fold')
 const blade_3 = document.getElementsByClassName('third-fold')
 const blade_4 = document.getElementsByClassName('fourth-fold')
 
+const header = document.getElementsByClassName('header-article')
+let whalf = window.innerWidth / 2
+
+header[0].addEventListener('mousemove', function (e) {
+  if (e.pageX < whalf) {
+    header[0].style.cursor = 'pointer'
+  } else {
+    header[0].style.cursor = 'alias'
+  }
+})
+
 for (let i = 0; i < folder.length; i++) {
   folder[i].addEventListener('mouseenter', function () {
     blade_4[i].style.transform = 'rotateX(-35deg)'
