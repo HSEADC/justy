@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-
+const CopyPlugin = require('copy-webpack-plugin')
 const webpack = require('webpack')
 const path = require('path')
 
@@ -82,6 +82,19 @@ module.exports = {
     ]
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'src/share/'),
+          to: path.resolve(__dirname, 'dev_build/share/')
+        },
+        {
+          from: path.resolve(__dirname, 'src/share/'),
+          to: path.resolve(__dirname, 'docs/share/')
+        }
+      ]
+    }),
+
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
       chunkFilename: '[id].[contenthash].css'
@@ -122,8 +135,8 @@ module.exports = {
 
     //Technologies
     new HtmlWebpackPlugin({
-      template: './src/technologies.html',
-      filename: './technologies.html'
+      template: './src/code.html',
+      filename: './code.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/technologies/mockups.html',
@@ -140,8 +153,8 @@ module.exports = {
 
     //News
     new HtmlWebpackPlugin({
-      template: './src/news.html',
-      filename: './news.html'
+      template: './src/design.html',
+      filename: './design.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/news/channels.html',

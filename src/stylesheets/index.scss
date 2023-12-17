@@ -1,531 +1,548 @@
-@media all and (min-width: 429px) {
-}
 body.index {
-  background-color: #29234c;
+  padding-bottom: 1.926vw;
+  background-color: #1e1e1e;
   display: flex;
-  padding: calc((100vh - 61.875vw) / 2) 0 calc((100vh - 61.875vw) / 2) 0;
-  overflow: hidden;
-  vertical-align: middle;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
 
-  .cont {
-    margin: 0 auto;
-    display: flex;
+  .first-round {
+    position: absolute;
+    top: -35.111vw;
+    width: 140.815vw;
+    height: 140.815vw;
+    flex-shrink: 0;
+    border-radius: 140.815vw;
+    background: radial-gradient(
+      58.48% 58.48% at 50% 50%,
+      var(--green-blue) 16.97%,
+      var(--lite-blue) 51.59%,
+      var(--dark-blue) 83.1%
+    );
+    filter: blur(6.402vw);
+    z-index: 1;
   }
 
-  .images {
+  .main-content {
     position: relative;
-    width: 45.234vw;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    margin-right: 0.781vw;
+    align-items: center;
 
-    #first {
-      position: absolute;
-      width: 45.234vw;
-      height: 61.875vw;
-      clip-path: polygon(
-        0vw 1.5625vw,
-        0vw 1.5625vw,
-        0.020450497656250004vw 1.30905447890625vw,
-        0.079657325vw 1.0686293vw,
-        0.17440348359375vw 0.84444146171875vw,
-        0.301471975vw 0.6397079625000001vw,
-        0.45764580078125vw 0.45764580078125vw,
-        0.6397079625000001vw 0.301471975vw,
-        0.84444146171875vw 0.17440348359375vw,
-        1.0686293vw 0.079657325vw,
-        1.30905447890625vw 0.020450497656250004vw,
-        1.5625vw 2.586806064048906e-19vw,
-        43.671875vw 0vw,
-        43.671875vw 0vw,
-        43.92532640625vw 0.020450497656250004vw,
-        44.165755000000004vw 0.079657325vw,
-        44.38994421875vw 0.17440348359375vw,
-        44.5946775vw 0.301471975vw,
-        44.77673828125vw 0.45764580078125vw,
-        44.93291000000001vw 0.6397079625000001vw,
-        45.059976093749995vw 0.84444146171875vw,
-        45.15472vw 1.0686293vw,
-        45.21392515625vw 1.30905447890625vw,
-        45.234375vw 1.5625vw,
-        45.234375vw 7.866562499999999vw,
-        45.234375vw 7.866562499999999vw,
-        45.21904906249999vw 8.085624453125vw,
-        45.174336249999996vw 8.296226875vw,
-        45.1021340625vw 8.496041484375vw,
-        45.004340000000006vw 8.682739999999999vw,
-        44.8828515625vw 8.853994140625vw,
-        44.739566249999996vw 9.007475625vw,
-        44.5763815625vw 9.140856171875vw,
-        44.395195vw 9.2518075vw,
-        44.1979040625vw 9.338001328125vw,
-        43.98640625vw 9.397109375vw,
-        1.8770624999999999vw 18.05171875vw,
-        1.8770624999999999vw 18.05171875vw,
-        1.5890035781249998vw 18.08396984375vw,
-        1.309698vw 18.063999375vw,
-        1.044225984375vw 17.99594828125vw,
-        0.7976677499999999vw 17.8839575vw,
-        0.575103515625vw 17.732167968749998vw,
-        0.38161349999999994vw 17.544720625vw,
-        0.222277921875vw 17.325756406249997vw,
-        0.10217699999999999vw 17.079416249999998vw,
-        0.026390953124999998vw 16.80984109375vw,
-        3.3573003383552346e-23vw 16.521171875vw,
-        0vw 1.5625vw
-      );
-    }
+    .top-content {
+      margin-top: 2.963vw;
+      width: 94.074vw;
+      display: flex;
+      justify-content: space-between;
 
-    #second {
-      width: 45.234vw;
-      height: 61.875vw;
-      clip-path: polygon(
-        0vw 20.4928125vw,
-        0vw 20.4928125vw,
-        0.015326496875vw 20.273750546875vw,
-        0.060040600000000006vw 20.063148124999998vw,
-        0.132244228125vw 19.863333515624998vw,
-        0.2300393vw 19.676635vw,
-        0.351527734375vw 19.505380859375002vw,
-        0.49481145vw 19.351899375vw,
-        0.657992365625vw 19.218518828125vw,
-        0.8391723999999999vw 19.107567500000002vw,
-        1.036453471875vw 19.021373671875vw,
-        1.2479375vw 18.962265625vw,
-        43.357343750000005vw 10.307656249999999vw,
-        43.357343750000005vw 10.307656249999999vw,
-        43.64540179687501vw 10.275405156249999vw,
-        43.924704999999996vw 10.295375625vw,
-        44.190173515625006vw 10.363426718749999vw,
-        44.4367275vw 10.475417499999999vw,
-        44.659287109375vw 10.62720703125vw,
-        44.85277250000001vw 10.814654375vw,
-        45.01210382812501vw 11.03361859375vw,
-        45.13220125vw 11.27995875vw,
-        45.207984921875vw 11.549533906250002vw,
-        45.234375vw 11.838203125vw,
-        45.234375vw 36.09375vw,
-        45.234375vw 36.09375vw,
-        45.21392515625vw 36.347201406249994vw,
-        45.15472vw 36.58763vw,
-        45.059976093749995vw 36.811819218749996vw,
-        44.93291000000001vw 37.0165525vw,
-        44.77673828125vw 37.19861328125vw,
-        44.5946775vw 37.354785vw,
-        44.38994421875vw 37.48185109375vw,
-        44.165755000000004vw 37.576595000000005vw,
-        43.92532640625vw 37.63580015625vw,
-        43.671875vw 37.65625vw,
-        1.5625vw 37.65625vw,
-        1.5625vw 37.65625vw,
-        1.30905447890625vw 37.63580015625vw,
-        1.0686293vw 37.576595000000005vw,
-        0.84444146171875vw 37.48185109375vw,
-        0.6397079625000001vw 37.354785vw,
-        0.45764580078125vw 37.19861328125vw,
-        0.301471975vw 37.0165525vw,
-        0.17440348359375vw 36.811819218749996vw,
-        0.079657325vw 36.58763vw,
-        0.020450497656250004vw 36.347201406249994vw,
-        2.5868060640489063e-21vw 36.09375vw,
-        0vw 20.4928125vw
-      );
+      > svg {
+        width: 6.222vw;
+        height: 1.636vw;
+      }
+
+      a {
+        color: #fff;
+        height: 1.333vw;
+        border-bottom: 0.074vw solid white;
+        text-align: right;
+        font-family: Suisse_Semibold;
+        font-size: 1.037vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+      }
     }
 
     .container {
+      margin-top: 7.407vw;
+      width: 54.148vw;
+      padding: 5.185vw 2.741vw 5.185vw 2.667vw;
       display: flex;
-      position: absolute;
-      width: 45.234vw;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 1.778vw;
+      background: #fff;
 
-      #third {
-        width: 45.234vw;
-        height: 61.875vw;
-        position: absolute;
-        clip-path: polygon(
-          0vw 40vw,
-          0vw 40vw,
-          0.0204504765625vw 39.746548593750006vw,
-          0.07965725vw 39.50612vw,
-          0.1744033359375vw 39.281930781250004vw,
-          0.30147175vw 39.0771975vw,
-          0.4576455078125001vw 38.89513671875vw,
-          0.639707625vw 38.738965vw,
-          0.8444411171875001vw 38.61189890625vw,
-          1.0686289999999998vw 38.517155vw,
-          1.3090542890625vw 38.45794984375vw,
-          1.5625vw 38.4375vw,
-          2.9137734375vw 38.4375vw,
-          2.9137734375vw 38.4375vw,
-          3.069301734375vw 38.4452453125vw,
-          3.2217748125vw 38.468131250000006vw,
-          3.370211671875vw 38.505632812500004vw,
-          3.5136313125vw 38.557225vw,
-          3.6510527343750003vw 38.6223828125vw,
-          3.7814949375vw 38.70058125vw,
-          3.903976921875vw 38.7912953125vw,
-          4.017517687500001vw 38.894vw,
-          4.121136234375vw 39.0081703125vw,
-          4.2138515624999995vw 39.13328125vw,
-          17.755546875vw 59.445781249999996vw,
-          17.755546875vw 59.445781249999996vw,
-          17.921041406249998vw 59.766120703125004vw,
-          18.00594375vw 60.09715vw,
-          18.015850781250002vw 60.428408984375004vw,
-          17.956359375vw 60.749437500000006vw,
-          17.83306640625vw 61.04977539062501vw,
-          17.65156875vw 61.3189625vw,
-          17.41746328125vw 61.546538671875005vw,
-          17.136346875vw 61.72204375vw,
-          16.813816406249998vw 61.835017578125004vw,
-          16.455468749999998vw 61.875vw,
-          1.5625vw 61.875vw,
-          1.5625vw 61.875vw,
-          1.3090542890625vw 61.85455015625vw,
-          1.0686289999999998vw 61.795345000000005vw,
-          0.8444411171875001vw 61.700601093749995vw,
-          0.639707625vw 61.573535vw,
-          0.4576455078125001vw 61.417363281250005vw,
-          0.30147175vw 61.2353025vw,
-          0.1744033359375vw 61.030569218749996vw,
-          0.07965725vw 60.806380000000004vw,
-          0.0204504765625vw 60.56595140625001vw,
-          2.5868031751539845e-21vw 60.3125vw,
-          0vw 40vw
-        );
+      .first-titles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.852vw;
+
+        > h1 {
+          color: #000;
+          text-align: center;
+          font-family: Suisse_Regular;
+          font-size: 4vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 115%;
+        }
+        > h3 {
+          color: #000;
+          width: 37.556vw;
+          text-align: center;
+          font-family: Suisse_Regular;
+          font-size: 1.259vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      > button {
+        cursor: pointer;
+        margin-top: 2.222vw;
+        height: 4.37vw;
+        padding: 1.481vw 4.741vw;
+        border-radius: 0.741vw;
+        background: #000;
+        color: white;
+        font-family: Suisse_Medium;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
       }
 
-      #fourth {
-        width: 45.234vw;
-        height: 61.875vw;
-        position: absolute;
-        clip-path: polygon(
-          6.150734375vw 40.866718750000004vw,
-          6.150734375vw 40.866718750000004vw,
-          5.985224648437501vw 40.546379296875vw,
-          5.9003134375vw 40.21535vw,
-          5.8904026953125vw 39.884091015625vw,
-          5.9498943749999995vw 39.5630625vw,
-          6.073190429687499vw 39.262724609375vw,
-          6.2546928125vw 38.993537499999995vw,
-          6.4888034765625004vw 38.765961328125vw,
-          6.7699243749999996vw 38.59045625vw,
-          7.0924574609375vw 38.477482421874996vw,
-          7.4508046875vw 38.4375vw,
-          43.671875vw 38.4375vw,
-          43.671875vw 38.4375vw,
-          43.92532640625vw 38.45794984375vw,
-          44.165755000000004vw 38.517155vw,
-          44.38994421875vw 38.61189890625vw,
-          44.5946775vw 38.738965vw,
-          44.77673828125vw 38.89513671875vw,
-          44.93291000000001vw 39.0771975vw,
-          45.059976093749995vw 39.281930781250004vw,
-          45.15472vw 39.50612vw,
-          45.21392515625vw 39.746548593750006vw,
-          45.234375vw 40vw,
-          45.234375vw 60.3125vw,
-          45.234375vw 60.3125vw,
-          45.21392515625vw 60.56595140625001vw,
-          45.15472vw 60.806380000000004vw,
-          45.059976093749995vw 61.030569218749996vw,
-          44.93291000000001vw 61.2353025vw,
-          44.77673828125vw 61.417363281250005vw,
-          44.5946775vw 61.573535vw,
-          44.38994421875vw 61.700601093749995vw,
-          44.165755000000004vw 61.795345000000005vw,
-          43.92532640625vw 61.85455015625vw,
-          43.671875vw 61.875vw,
-          20.9925vw 61.875vw,
-          20.9925vw 61.875vw,
-          20.83697296875vw 61.867254687499994vw,
-          20.684499375vw 61.84436875vw,
-          20.53606078125vw 61.80686718749999vw,
-          20.39263875vw 61.755275vw,
-          20.25521484375vw 61.69011718750001vw,
-          20.124770625vw 61.61191875000001vw,
-          20.00228765625vw 61.521204687499996vw,
-          19.888747499999997vw 61.418499999999995vw,
-          19.785131718749998vw 61.3043296875vw,
-          19.692421875vw 61.17921875000001vw,
-          6.150734375vw 40.866718750000004vw
-        );
+      .sections {
+        margin-top: 4vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.259vw;
+
+        .section {
+          padding: 2.889vw 2.148vw 2.963vw 1.926vw;
+          width: 50.074vw;
+          height: 9.556vw;
+          border-radius: 1.481vw;
+          background: #efefef;
+
+          > h2 {
+            color: var(--lite-blue);
+            font-family: Suisse_Regular;
+            font-size: 1.259vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0.889vw;
+          }
+
+          .underline {
+            height: 0.074vw;
+            width: 50.222vw;
+            background: linear-gradient(
+              271deg,
+              var(--dark-blue) 0.65%,
+              var(--lite-blue) 99.35%
+            );
+          }
+
+          .content {
+            margin-top: 2.222vw;
+            display: flex;
+            justify-content: space-between;
+
+            > h1 {
+              color: #010101;
+              font-family: Suisse_Medium;
+              font-size: 2.593vw;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+
+            > p {
+              width: 27.037vw;
+              color: rgba(30, 30, 30, 0.8);
+              font-family: Suisse_Regular;
+              font-size: 1.259vw;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130%;
+            }
+          }
+        }
       }
     }
 
-    .tags {
-      position: absolute;
-      bottom: 1.563vw;
-      left: 1.563vw;
-      .first-tags {
-        display: flex;
+    > h1 {
+      width: 60.593vw;
+      color: #fff;
+      text-align: center;
+      font-family: Suisse_Medium;
+      font-size: 4vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
 
-        #first-tag {
-          width: 9.063vw;
-          margin-right: 1.016vw;
-        }
+    #title1 {
+      margin-top: 11.852vw;
+    }
 
-        #second-tag {
-          width: 13.516vw;
+    #title2 {
+      margin-top: 8.889vw;
+    }
+
+    #title3 {
+      margin-top: 8.222vw;
+    }
+
+    .cards {
+      margin-top: 5.185vw;
+      height: 14.963vw;
+      width: 94.148vw;
+      position: relative;
+
+      .card {
+        position: absolute;
+        padding: 2.889vw 1.926vw 2.815vw 1.926vw;
+        width: 27.111vw;
+        height: 9.259vw;
+        border-radius: 1.481vw;
+        background: #efefef;
+
+        > h2 {
+          width: 27.037vw;
+          color: #1e1e1e;
+          font-family: Suisse_Medium;
+          font-size: 2.593vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 1.333vw;
         }
-      }
-      .tag {
-        display: flex;
-        height: 2.883vw;
-        padding: 0.826vw 1.797vw;
-        justify-content: center;
-        align-items: center;
-        gap: 0.688vw;
-        border-radius: 0.703vw;
-        background: #fff;
 
         > p {
-          color: #29234c;
-          font-family: SF-Pro-Rounded-Regular;
-          font-size: 2.891vw;
+          width: 27.037vw;
+          color: rgba(30, 30, 30, 0.8);
+          font-family: Suisse_Regular;
+          font-size: 1.259vw;
           font-style: normal;
           font-weight: 400;
           line-height: 130%;
         }
       }
-      #third-tag {
-        width: 19.844vw;
-        margin-top: 0.781vw;
+
+      #card1 {
+        left: 0;
+      }
+
+      #card2 {
+        left: 31.63vw;
+      }
+
+      #card3 {
+        left: 63.259vw;
+      }
+    }
+
+    .top-cards {
+      margin-top: 5.185vw;
+      display: flex;
+      gap: 0.741vw;
+
+      .top-card {
+        > img {
+          width: 30.889vw;
+          height: 16.815vw;
+          border-radius: 0.667vw;
+        }
+
+        .tag {
+          margin-top: 1.481vw;
+          display: flex;
+          gap: 0.593vw;
+
+          > img {
+            width: 1.333vw;
+            height: 1.333vw;
+          }
+          h2 {
+            color: #ff4b00;
+            font-family: Suisse_Semibold;
+            font-size: 1.037vw;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 130%;
+            text-transform: uppercase;
+          }
+        }
+
+        > h1 {
+          margin-top: 1.111vw;
+          width: 30vw;
+          color: #fff;
+          font-family: Suisse_Medium;
+          font-size: 2vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        > p {
+          margin-top: 1.111vw;
+          width: 30vw;
+          color: #959595;
+          font-family: Suisse_Regular;
+          font-size: 1.037vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+    }
+
+    > form {
+      margin-top: 5.185vw;
+      display: flex;
+      gap: 0.741vw;
+
+      > input {
+        width: 20.593vw;
+        padding: 1.481vw 1.185vw;
+        border-radius: 0.667vw;
+        background-color: transparent;
+        border: 0.074vw solid #373737;
+        outline: none;
+        color: white;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      ::-moz-placeholder {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      :-ms-input-placeholder {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      :-moz-placeholder {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      > button {
+        cursor: pointer;
+        width: 20.593vw;
+        padding: 1.481vw 1.185vw;
+        border-radius: 0.667vw;
+        background: #efefef;
+        color: #000;
+        font-family: Suisse_Medium;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    .agreement {
+      margin-top: 2.593vw;
+      display: flex;
+      align-items: flex-start;
+
+      > p {
+        width: 37.111vw;
+        color: #959595;
+        text-align: center;
+        font-family: Suisse_Regular;
+        font-size: 1.037vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+
+      > input {
+        width: 1.407vw;
+        height: 1.407vw;
+      }
+
+      > input[type='radio']:after {
+        width: 1.481vw;
+        height: 1.481vw;
+        border: 0.074vw solid #373737;
+        border-radius: 37.037vw;
+        background-color: #1e1e1e;
+        top: -0.148vw;
+        left: -0.074vw;
+        position: relative;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+      }
+
+      input[type='radio']:checked:after {
+        width: 1.481vw;
+        height: 1.481vw;
+        border-radius: 37.037vw;
+        top: -0.148vw;
+        left: -0.074vw;
+        position: relative;
+        background-color: #959595;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 0.074vw solid #373737;
+      }
+    }
+
+    .come {
+      height: 61.259vw;
+      width: 100vw;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .second-round {
+        margin-top: 17.704vw;
+        width: 32.667vw;
+        height: 32.667vw;
+        border-radius: 32.667vw;
+        background: radial-gradient(
+          58.48% 58.48% at 50% 50%,
+          var(--yellow) 16.97%,
+          var(--orange) 51.59%,
+          var(--red) 83.1%
+        );
+        filter: blur(2.407vw);
+      }
+
+      > h1 {
+        width: 71.926vw;
+        background: linear-gradient(
+          90deg,
+          #fff 12.03%,
+          #000 42.08%,
+          #262626 59.88%,
+          #fff 81.04%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        font-family: Suisse_Medium;
+        font-size: 12.303vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
       }
     }
   }
 
-  .form {
-    position: relative;
-    width: 43.438vw;
+  //footer
+  .footer {
+    margin-top: 2.963vw;
+    width: 100%;
+    height: 19.407vw;
+    padding: 3.333vw 0 0 0;
 
-    .form-main {
-      position: absolute;
-      width: 41.094vw;
-      height: 49.375vw;
-      background-color: #fff;
-      padding-left: 2.344vw;
-      clip-path: polygon(
-        0% 3.165%,
-        0% 3.165%,
-        0.047% 2.651%,
-        0.183% 2.164%,
-        0.402% 1.71%,
-        0.694% 1.296%,
-        1.054% 0.927%,
-        1.473% 0.611%,
-        1.944% 0.353%,
-        2.46% 0.161%,
-        3.014% 0.041%,
-        3.597% 0%,
-        96.403% 0%,
-        96.403% 0%,
-        96.986% 0.041%,
-        97.54% 0.161%,
-        98.056% 0.353%,
-        98.527% 0.611%,
-        98.946% 0.927%,
-        99.306% 1.296%,
-        99.599% 1.71%,
-        99.817% 2.164%,
-        99.953% 2.651%,
-        100% 3.165%,
-        100% 88.594%,
-        100% 88.594%,
-        99.959% 89.072%,
-        99.84% 89.53%,
-        99.648% 89.96%,
-        99.39% 90.357%,
-        99.071% 90.716%,
-        98.697% 91.032%,
-        98.273% 91.298%,
-        97.806% 91.509%,
-        97.301% 91.659%,
-        96.763% 91.743%,
-        3.958% 99.966%,
-        3.958% 99.966%,
-        3.332% 99.974%,
-        2.733% 99.89%,
-        2.169% 99.722%,
-        1.649% 99.478%,
-        1.184% 99.164%,
-        0.783% 98.789%,
-        0.454% 98.359%,
-        0.208% 97.882%,
-        0.054% 97.366%,
-        0% 96.817%,
-        0% 3.165%
-      );
+    .wrapper {
+      display: flex;
 
-      > p {
-        color: #29234c;
-        font-family: SF-Pro-Rounded-Semibold;
-        font-size: 1.953vw;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 130%;
-        margin-top: 2.891vw;
-      }
-
-      > h1 {
-        margin-top: 1.406vw;
-        width: 38.75vw;
-        color: #29234c;
-        font-family: SF_UI_Display_Medium;
-        font-size: 2.891vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
-      }
-
-      > form {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2.734vw;
-
-        label {
-          color: #29234c;
-          font-family: SF_UI_Display_Semibold;
-          font-size: 0.938vw;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 130%;
-          margin-top: 1.563vw;
+      .company {
+        margin-left: 2.963vw;
+        > img {
+          width: 10.148vw;
+          height: 2.667vw;
+          margin-bottom: 1.556vw;
         }
-
-        input {
-          width: 37.891vw;
-          height: 2.891vw;
-          border: none;
-          border-bottom: 0.078vw solid #29234c;
-          padding: 0;
-          outline: none;
-          color: #29234c;
-          font-family: SF_UI_Display_Semibold;
-          font-size: 1.25vw;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 130%;
-        }
-
-        label:nth-child(1) {
-          margin-top: 0;
-        }
-
-        > button {
-          cursor: pointer;
-          border: none;
-          margin-top: 2.734vw;
-          display: flex;
-          width: 37.891vw;
-          height: 4.844vw;
-          padding: 0.625vw 6.797vw;
-          justify-content: center;
-          align-items: center;
-          gap: 0.781vw;
-          border-radius: 0.938vw;
-          background: #29234c;
-          color: #fff;
-          font-family: SF_UI_Display_Medium;
-          font-size: 1.563vw;
+        > h2 {
+          margin-top: 1.556vw;
+          width: 19.481vw;
+          color: white;
+          font-family: Suisse_Medium;
+          font-size: 1.259vw;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
         }
       }
-    }
-    #mobile {
-      display: none;
-    }
-    #pc {
-      display: block;
-      width: 43.438vw;
-      height: 15.938vw;
-      position: absolute;
-      bottom: 0;
-      clip-path: polygon(
-        0vw 5.6317812499999995vw,
-        0vw 5.6317812499999995vw,
-        0.017812366406250002vw 5.3954603515625vw,
-        0.0695814vw 5.1697296875vw,
-        0.15280500234375vw 4.9573560546875vw,
-        0.264981075vw 4.76110625vw,
-        0.40360751953125007vw 4.5837470703125005vw,
-        0.5661822375000001vw 4.4280453125vw,
-        0.75020313046875vw 4.2967677734375vw,
-        0.9531681000000001vw 4.19268125vw,
-        1.1725750476562502vw 4.1185525390625vw,
-        1.405921875vw 4.0771484375vw,
-        41.7184375vw 0.016895234375vw,
-        41.7184375vw 0.016895234375vw,
-        41.99016921875vw 0.012932268515625001vw,
-        42.25056000000001vw 0.054201445vw,
-        42.49554390625vw 0.137026257734375vw,
-        42.721055vw 0.25773020062499996vw,
-        42.92302734375vw 0.412636767578125vw,
-        43.097395vw 0.5980694525vw,
-        43.24009203125vw 0.810351749296875vw,
-        43.3470525vw 1.045807151875vw,
-        43.41421046875vw 1.300759154140625vw,
-        43.4375vw 1.5715312500000003vw,
-        43.4375vw 14.21875vw,
-        43.4375vw 14.21875vw,
-        43.417050156250006vw 14.47220140625vw,
-        43.357845vw 14.712629999999999vw,
-        43.26310109375vw 14.93681921875vw,
-        43.136035vw 15.1415525vw,
-        42.97986328125vw 15.323613281249997vw,
-        42.797802499999996vw 15.479784999999998vw,
-        42.59306921875vw 15.606851093750002vw,
-        42.368880000000004vw 15.701595vw,
-        42.12845140625vw 15.760800156250001vw,
-        41.875vw 15.78125vw,
-        1.5625vw 15.78125vw,
-        1.5625vw 15.78125vw,
-        1.30905447890625vw 15.760800156250001vw,
-        1.0686293vw 15.701595vw,
-        0.84444146171875vw 15.606851093750002vw,
-        0.6397079625000001vw 15.479784999999998vw,
-        0.45764580078125vw 15.323613281249997vw,
-        0.301471975vw 15.1415525vw,
-        0.17440348359375vw 14.93681921875vw,
-        0.079657325vw 14.712629999999999vw,
-        0.020450497656250004vw 14.47220140625vw,
-        2.5868060640489063e-20vw 14.21875vw,
-        0vw 5.6317812499999995vw
-      );
-    }
-  }
 
-  ::-webkit-input-placeholder {
-    color: rgba(41, 35, 76, 0.5);
-    font-family: SF_UI_Display_Semibold;
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-  }
-  ::-moz-placeholder {
-    color: rgba(41, 35, 76, 0.5);
-    font-family: SF_UI_Display_Semibold;
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-  }
-  :-ms-input-placeholder {
-    color: rgba(41, 35, 76, 0.5);
-    font-family: SF_UI_Display_Semibold;
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-  }
-  :-moz-placeholder {
-    color: rgba(41, 35, 76, 0.5);
-    font-family: SF_UI_Display_Semibold;
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
+      .navigation,
+      .social-network,
+      .articles {
+        > h2 {
+          color: white;
+          font-family: Suisse_Medium;
+          font-size: 1.259vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 1.481vw;
+        }
+        > a {
+          color: #959595;
+          font-family: Suisse_Regular;
+          font-size: 1.259vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 0.667vw;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+
+      .navigation {
+        margin-left: 28.296vw;
+      }
+
+      .social-network {
+        > h2 {
+          text-transform: uppercase;
+        }
+        margin-left: 9.111vw;
+      }
+
+      .articles {
+        margin-left: 9.63vw;
+      }
+    }
+
+    .brand {
+      margin-left: 2.963vw;
+      margin-top: 3.704vw;
+      display: flex;
+      flex-direction: column;
+      gap: 0.519vw;
+      > h2 {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
   }
 }
