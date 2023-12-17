@@ -135,8 +135,8 @@ module.exports = {
 
     //Technologies
     new HtmlWebpackPlugin({
-      template: './src/technologies.html',
-      filename: './technologies.html'
+      template: './src/code.html',
+      filename: './code.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/technologies/mockups.html',
@@ -153,8 +153,8 @@ module.exports = {
 
     //News
     new HtmlWebpackPlugin({
-      template: './src/news.html',
-      filename: './news.html'
+      template: './src/design.html',
+      filename: './design.html'
     }),
     new HtmlWebpackPlugin({
       template: './src/news/channels.html',

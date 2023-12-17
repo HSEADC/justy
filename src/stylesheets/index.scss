@@ -1,475 +1,163 @@
 body.index {
-  background-color: #29234c;
+  padding-bottom: 1.926vw;
+  background-color: #1e1e1e;
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.563vw;
-  overflow: hidden;
-  vertical-align: middle;
+  align-items: center;
+  overflow-x: hidden;
 
-  .mobile-folders {
-    display: none;
+  .first-round {
+    position: absolute;
+    top: -35.111vw;
+    width: 140.815vw;
+    height: 140.815vw;
+    flex-shrink: 0;
+    border-radius: 140.815vw;
+    background: radial-gradient(
+      58.48% 58.48% at 50% 50%,
+      var(--green-blue) 16.97%,
+      var(--lite-blue) 51.59%,
+      var(--dark-blue) 83.1%
+    );
+    filter: blur(6.402vw);
+    z-index: 1;
   }
 
-  .folders {
+  .main-content {
     position: relative;
-    margin: 0 auto;
-    width: 96.875vw;
-    height: 23.359vw;
-    border-bottom-right-radius: 1.563vw;
-    border-bottom-left-radius: 1.563vw;
-    background: #a7c5f9;
-    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .folder-left-1 {
-      position: absolute;
-      left: 4.609vw;
-      top: 13.359vw;
-      width: 26.641vw;
-      height: 20.859vw;
-      clip-path: polygon(
-        20.162656249999998vw 20.735859374999997vw,
-        20.162656249999998vw 20.735859374999997vw,
-        20.772276484375vw 20.821218046875vw,
-        21.331599375vw 20.830681875vw,
-        21.840380703125vw 20.764457578125vw,
-        22.29837625vw 20.622751875vw,
-        22.705341796875vw 20.405771484375vw,
-        23.061033124999998vw 20.113723125vw,
-        23.365206015625002vw 19.746813515625vw,
-        23.61761625vw 19.305249375vw,
-        23.818019609375003vw 18.789237421875vw,
-        23.966171875vw 18.198984375vw,
-        26.491171874999996vw 5.2100546875000004vw,
-        26.491171874999996vw 5.2100546875000004vw,
-        26.572602109374998vw 4.632033203125vw,
-        26.583404375000004vw 4.10344375vw,
-        26.524838203125vw 3.624377734375vw,
-        26.398163124999996vw 3.1949265625vw,
-        26.204638671875003vw 2.815181640625vw,
-        25.945524375vw 2.4852343749999997vw,
-        25.622079765625vw 2.205176171875vw,
-        25.235564374999996vw 1.9750984374999998vw,
-        24.787237734374997vw 1.7950925781249998vw,
-        24.278359374999997vw 1.6652500000000001vw,
-        21.268906250000004vw 1.080234375vw,
-        21.268906250000004vw 1.080234375vw,
-        20.9664375vw 1.0273077890625vw,
-        20.690509375vw 0.992305125vw,
-        20.4363078125vw 0.9758224921875vw,
-        20.19901875vw 0.9784560000000001vw,
-        19.973828124999997vw 1.0008017578125vw,
-        19.755921875vw 1.043455875vw,
-        19.5404859375vw 1.1070144609375vw,
-        19.32270625vw 1.192073625vw,
-        19.09776875vw 1.2992294765625vw,
-        18.860859375vw 1.429078125vw,
-        18.135625vw 1.8327343749999998vw,
-        18.135625vw 1.8327343749999998vw,
-        17.948325vw 1.9348465078125vw,
-        17.769453125000002vw 2.02011425vw,
-        17.595934375vw 2.0888588359374998vw,
-        17.42469375vw 2.1414015vw,
-        17.25265625vw 2.1780634765625vw,
-        17.076746874999998vw 2.199166vw,
-        16.893890625vw 2.2050303046875vw,
-        16.7010125vw 2.195977625vw,
-        16.495037500000002vw 2.1723291953125vw,
-        16.272890625vw 2.13440625vw,
-        6.063828125000001vw 0.1498078125vw,
-        6.063828125000001vw 0.1498078125vw,
-        5.454217390625001vw 0.06444834296875vw,
-        4.8949000625000005vw 0.05498802500000001vw,
-        4.386121109375001vw 0.12121915078125vw,
-        3.9281255vw 0.2629340125vw,
-        3.521158203125vw 0.47992490234374996vw,
-        3.1654641875vw 0.7719841125vw,
-        2.8612884218750003vw 1.13890393515625vw,
-        2.6088758750000003vw 1.5804766625000002vw,
-        2.408471515625vw 2.09649458671875vw,
-        2.2603203124999998vw 2.68675vw,
-        0.14500312499999998vw 13.56828125vw,
-        0.14500312499999998vw 13.56828125vw,
-        0.0611596625vw 14.168948828125vw,
-        0.051590050000000005vw 14.720850000000002vw,
-        0.114845840625vw 15.223293359375vw,
-        0.2494785875vw 15.675587499999999vw,
-        0.45403984375vw 16.077041015625vw,
-        0.7270811625vw 16.426962500000002vw,
-        1.067154096875vw 16.724660546875vw,
-        1.4728102vw 16.96944375vw,
-        1.942601025vw 17.160620703125vw,
-        2.475078125vw 17.2975vw,
-        20.162656249999998vw 20.735859374999997vw
-      );
-      background-color: #29234c;
-      z-index: 4;
-    }
-    .folder-left-2 {
-      position: absolute;
-      left: -3.594vw;
-      top: 7.734vw;
-      width: 25.859vw;
-      height: 20.859vw;
-      clip-path: polygon(
-        18.559921875vw 20.655312499999997vw,
-        18.559921875vw 20.655312499999997vw,
-        19.12920359375vw 20.779830546875vw,
-        19.65647875vw 20.829081875000004vw,
-        20.14150171875vw 20.803245078125002vw,
-        20.584026875vw 20.70249875vw,
-        20.983808593750002vw 20.527021484375002vw,
-        21.34060125vw 20.276991875vw,
-        21.654159218750003vw 19.952588515625vw,
-        21.924236875vw 19.553990000000002vw,
-        22.15058859375vw 19.081374921875vw,
-        22.332968750000003vw 18.534921875000002vw,
-        25.65234375vw 6.456656250000001vw,
-        25.65234375vw 6.456656250000001vw,
-        25.770869453125vw 5.9169321015625vw,
-        25.81917125vw 5.4187761875vw,
-        25.798429921874998vw 4.9623656484375vw,
-        25.70982625vw 4.547877625000001vw,
-        25.554541015625vw 4.1754892578125vw,
-        25.333755000000004vw 3.8453776874999996vw,
-        25.048648984375vw 3.5577200546875vw,
-        24.70040375vw 3.3126935000000004vw,
-        24.290200078125vw 3.1104751640625vw,
-        23.81921875vw 2.9512421875vw,
-        21.02078125vw 2.18215625vw,
-        21.02078125vw 2.18215625vw,
-        20.73908796875vw 2.11039915625vw,
-        20.48115375vw 2.05747325vw,
-        20.242392343749998vw 2.02359425vw,
-        20.0182175vw 2.0089778750000002vw,
-        19.80404296875vw 2.01383984375vw,
-        19.5952825vw 2.038395875vw,
-        19.38734984375vw 2.0828616875vw,
-        19.17565875vw 2.147453vw,
-        18.955622968750003vw 2.23238553125vw,
-        18.72265625vw 2.337875vw,
-        18.0090625vw 2.6666250000000002vw,
-        18.0090625vw 2.6666250000000002vw,
-        17.8248975vw 2.7495075vw,
-        17.649905vw 2.8170984375000003vw,
-        17.4811590625vw 2.869479375vw,
-        17.31573375vw 2.9067318749999997vw,
-        17.150703125vw 2.9289375vw,
-        16.98314125vw 2.9361778125vw,
-        16.810122187500003vw 2.928534375vw,
-        16.62872vw 2.90608875vw,
-        16.43600875vw 2.8689225vw,
-        16.229062499999998vw 2.8171171875vw,
-        6.7357578125vw 0.20808593749999998vw,
-        6.7357578125vw 0.20808593749999998vw,
-        6.166497265625vw 0.0835802265625vw,
-        5.6392390625vw 0.034340249999999996vw,
-        5.154229296875vw 0.0601876015625vw,
-        4.7117140625vw 0.16094387500000001vw,
-        4.311939453125vw 0.3364306640625vw,
-        3.9551515624999998vw 0.5864695625vw,
-        3.6415964843749995vw 0.9108821640625vw,
-        3.3715203124999995vw 1.3094900624999999vw,
-        3.1451691406249997vw 1.7821148515625vw,
-        2.9627890624999997vw 2.3285781250000004vw,
-        0.18190703125vw 12.447187500000002vw,
-        0.18190703125vw 12.447187500000002vw,
-        0.05947629140624999vw 13.0081153125vw,
-        0.0106674875vw 13.528363125vw,
-        0.034163164843749996vw 14.007174375vw,
-        0.12864586875vw 14.443792499999999vw,
-        0.29279814453125vw 14.8374609375vw,
-        0.5253025375vw 15.187423124999999vw,
-        0.8248415929687499vw 15.4929225vw,
-        1.1900978562500002vw 15.753202500000002vw,
-        1.61975387265625vw 15.9675065625vw,
-        2.1124921875vw 16.135078125vw,
-        18.559921875vw 20.655312499999997vw
-      );
-      background-color: #36335d;
-      z-index: 3;
-    }
-
-    .folder-left-3 {
-      position: absolute;
-      left: -7.109vw;
-      top: 1.953vw;
-      width: 23.516vw;
-      height: 19.375vw;
-      clip-path: polygon(
-        16.20328125vw 19.129296874999998vw,
-        16.20328125vw 19.129296874999998vw,
-        16.704282890625vw 19.269920390625vw,
-        17.17176vw 19.341263125vw,
-        17.605483359375vw 19.343470859375vw,
-        18.00522375vw 19.276689375vw,
-        18.370751953125vw 19.141064453125vw,
-        18.70183875vw 18.936741875000003vw,
-        18.998254921875vw 18.663867421875vw,
-        19.25977125vw 18.322586875vw,
-        19.486158515625vw 17.913046015625vw,
-        19.6771875vw 17.435390625vw,
-        23.265234375000002vw 6.8407421875vw,
-        23.265234375000002vw 6.8407421875vw,
-        23.39897875vw 6.3657613125vw,
-        23.467955vw 5.9241820625vw,
-        23.4732075vw 5.51622371875vw,
-        23.415780625vw 5.1421055625vw,
-        23.296718749999997vw 4.802046875vw,
-        23.117066249999997vw 4.4962669375vw,
-        22.877867499999997vw 4.224985031249999vw,
-        22.580166875000003vw 3.9884204374999994vw,
-        22.225008750000004vw 3.7867924375vw,
-        21.8134375vw 3.6203203125vw,
-        19.35875vw 2.7890156249999998vw,
-        19.35875vw 2.7890156249999998vw,
-        19.111372890625vw 2.7103823359375vw,
-        18.884195625vw 2.649773375vw,
-        18.673118046874997vw 2.6071422890625002vw,
-        18.47404vw 2.5824426249999997vw,
-        18.282861328125vw 2.5756279296875vw,
-        18.095481875vw 2.58665175vw,
-        17.907801484375003vw 2.6154676328125vw,
-        17.715719999999997vw 2.662029125vw,
-        17.515137265625vw 2.7262897734375002vw,
-        17.301953125vw 2.808203125vw,
-        16.648671875vw 3.0641171875vw,
-        16.648671875vw 3.0641171875vw,
-        16.48017078125vw 3.1284180546875vw,
-        16.320644374999997vw 3.1795644375000003vw,
-        16.167479843749998vw 3.2174766953125005vw,
-        16.018064375vw 3.2420751875000002vw,
-        15.86978515625vw 3.2532802734375vw,
-        15.720029375vw 3.2510123125vw,
-        15.566184218750001vw 3.2351916640625vw,
-        15.405636875vw 3.2057386875vw,
-        15.235774531249998vw 3.1625737421875vw,
-        15.053984375vw 3.1056171875vw,
-        6.726789062500001vw 0.28551015625vw,
-        6.726789062500001vw 0.28551015625vw,
-        6.2257903828125vw 0.14488120078125vw,
-        5.758317125vw 0.0735363875vw,
-        5.3245979921875vw 0.07132949921875001vw,
-        4.9248616875vw 0.13811431875vw,
-        4.5593369140624995vw 0.27374462890624995vw,
-        4.228252375vw 0.4780742125vw,
-        3.9318367734375vw 0.75095685234375vw,
-        3.6703188125vw 1.09224633125vw,
-        3.4439271953125004vw 1.5017964320312498vw,
-        3.2528906250000005vw 1.9794609375vw,
-        0.24703828125000002vw 10.85515625vw,
-        0.24703828125000002vw 10.85515625vw,
-        0.10869246796875vw 11.34883703125vw,
-        0.0380965875vw 11.810086875vw,
-        0.03411555703125vw 12.23816234375vw,
-        0.09561429375vw 12.63232vw,
-        0.22145771484375vw 12.99181640625vw,
-        0.4105107375vw 13.315908125vw,
-        0.66163827890625vw 13.603851718749999vw,
-        0.9737052562499999vw 13.85490375vw,
-        1.3455765867187501vw 14.068320781250002vw,
-        1.7761171875000001vw 14.243359375vw,
-        16.20328125vw 19.129296874999998vw
-      );
-      background-color: #42436f;
-      z-index: 2;
-    }
-
-    .folder-left-4 {
-      position: absolute;
-      left: -7.969vw;
-      top: -4.219vw;
-      width: 19.688vw;
-      height: 16.563vw;
-      clip-path: polygon(
-        12.895624999999999vw 16.268984375000002vw,
-        12.895624999999999vw 16.268984375000002vw,
-        13.29755265625vw 16.413958203125002vw,
-        13.676143125000001vw 16.5002vw,
-        14.031201406249998vw 16.527815234375vw,
-        14.3625325vw 16.496909374999998vw,
-        14.66994140625vw 16.407587890625vw,
-        14.953233125vw 16.259956250000002vw,
-        15.21221265625vw 16.054119921875003vw,
-        15.446684999999999vw 15.790184374999999vw,
-        15.656455156249999vw 15.468255078124999vw,
-        15.841328125vw 15.088437500000001vw,
-        19.410078125000002vw 6.625421875000001vw,
-        19.410078125000002vw 6.625421875000001vw,
-        19.54787140625vw 6.2443939609375vw,
-        19.63064vw 5.8868666874999995vw,
-        19.65922484375vw 5.5530817890624995vw,
-        19.634466875vw 5.243281vw,
-        19.557207031249998vw 4.957706054687501vw,
-        19.42828625vw 4.6965986875vw,
-        19.24854546875vw 4.4602006328125vw,
-        19.018825624999998vw 4.248753625vw,
-        18.739967656250002vw 4.062499398437501vw,
-        18.4128125vw 3.9016796874999997vw,
-        16.451953125000003vw 3.0748359375vw,
-        16.451953125000003vw 3.0748359375vw,
-        16.254040859375003vw 2.9957192578125005vw,
-        16.07159875vw 2.9325656249999996vw,
-        15.901271953125vw 2.8850930859375vw,
-        15.739705625vw 2.8530196875000002vw,
-        15.583544921875001vw 2.8360634765624995vw,
-        15.429435vw 2.8339425vw,
-        15.274021015625vw 2.8463748046874997vw,
-        15.113948125000002vw 2.8730784375000002vw,
-        14.945861484375001vw 2.9137714453125003vw,
-        14.76640625vw 2.9681718750000003vw,
-        14.216171875vw 3.1388828125000003vw,
-        14.216171875vw 3.1388828125000003vw,
-        14.074349531250002vw 3.1815160937499996vw,
-        13.940661874999998vw 3.2139109375vw,
-        13.812973281250002vw 3.2358465625vw,
-        13.689148125000001vw 3.2471021875vw,
-        13.56705078125vw 3.2474570312499997vw,
-        13.444545624999998vw 3.2366903125vw,
-        13.31949703125vw 3.2145812499999997vw,
-        13.189769375vw 3.1809090625vw,
-        13.05322703125vw 3.13545296875vw,
-        12.907734374999999vw 3.0779921874999996vw,
-        6.2559453125vw 0.2730125vw,
-        6.2559453125vw 0.2730125vw,
-        5.8540178203125vw 0.12803595625000003vw,
-        5.4754238125vw 0.0417944625vw,
-        5.120359273437501vw 0.014181865625vw,
-        4.789020187499999vw 0.0450920125vw,
-        4.4816025390625vw 0.13441875vw,
-        4.1983023125vw 0.282055925vw,
-        3.9393154921874998vw 0.487897384375vw,
-        3.7048380625000004vw 0.7518369749999999vw,
-        3.4950660078125vw 1.07376854375vw,
-        3.3101953125vw 1.4535859374999998vw,
-        0.32046640625vw 8.543515625000001vw,
-        0.32046640625vw 8.543515625000001vw,
-        0.17779500234374998vw 8.93958578125vw,
-        0.0925372375vw 9.313126875vw,
-        0.06380770390625vw 9.66346296875vw,
-        0.09072099375vw 9.989918124999999vw,
-        0.17239169921875vw 10.291816406250001vw,
-        0.30793441250000003vw 10.568481875vw,
-        0.49646372578125vw 10.819238593749999vw,
-        0.7370942312500001vw 11.043410625000002vw,
-        1.02894052109375vw 11.24032203125vw,
-        1.3711171875000001vw 11.409296874999999vw,
-        12.895624999999999vw 16.268984375000002vw
-      );
-      background-color: #4f5480;
-      z-index: 1;
-    }
-
-    .right-folders {
-      transform: rotateY(180deg);
-    }
-  }
-
-  .wrapper {
-    margin: 0 auto;
-
-    .place {
-      margin-top: 2.734vw;
-      width: 55.781vw;
-      color: #fff;
-      font-family: SF_UI_Display_Semibold;
-      font-size: 1.953vw;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 124%;
-    }
-
-    .place-about {
-      margin-top: 1.563vw;
-      width: 55.781vw;
-      color: #fff;
-      font-family: SF_UI_Display_Regular;
-      font-size: 1.406vw;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%;
-    }
-
-    .vision {
-      margin-top: 8.125vw;
+    .top-content {
+      margin-top: 2.963vw;
+      width: 94.074vw;
       display: flex;
-      gap: 9.141vw;
-      > h1 {
-        width: 44.609vw;
+      justify-content: space-between;
+
+      > svg {
+        width: 6.222vw;
+        height: 1.636vw;
+      }
+
+      a {
         color: #fff;
-        font-family: SF_UI_Display_Medium;
-        font-size: 3.906vw;
+        height: 1.333vw;
+        border-bottom: 0.074vw solid white;
+        text-align: right;
+        font-family: Suisse_Semibold;
+        font-size: 1.037vw;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+
+    .container {
+      margin-top: 7.407vw;
+      width: 54.148vw;
+      padding: 5.185vw 2.741vw 5.185vw 2.667vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 1.778vw;
+      background: #fff;
+
+      .first-titles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.852vw;
+
+        > h1 {
+          color: #000;
+          text-align: center;
+          font-family: Suisse_Regular;
+          font-size: 4vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 115%;
+        }
+        > h3 {
+          color: #000;
+          width: 37.556vw;
+          text-align: center;
+          font-family: Suisse_Regular;
+          font-size: 1.259vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      > button {
+        cursor: pointer;
+        margin-top: 2.222vw;
+        height: 4.37vw;
+        padding: 1.481vw 4.741vw;
+        border-radius: 0.741vw;
+        background: #000;
+        color: white;
+        font-family: Suisse_Medium;
+        font-size: 1.259vw;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
       }
 
-      > div {
-        margin-top: 3.75vw;
+      .sections {
+        margin-top: 4vw;
         display: flex;
         flex-direction: column;
-        gap: 2.344vw;
-        > p {
-          width: 31.25vw;
-          color: #fff;
-          font-family: SF_UI_Display_Regular;
-          font-size: 1.406vw;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 130%;
-        }
-      }
-    }
+        gap: 1.259vw;
 
-    .block {
-      margin-top: 7.813vw;
+        .section {
+          padding: 2.889vw 2.148vw 2.963vw 1.926vw;
+          width: 50.074vw;
+          height: 9.556vw;
+          border-radius: 1.481vw;
+          background: #efefef;
 
-      > h2 {
-        color: #fff;
-        font-family: SF_UI_Display_Semibold;
-        font-size: 1.953vw;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 124%;
-      }
+          > h2 {
+            color: var(--lite-blue);
+            font-family: Suisse_Regular;
+            font-size: 1.259vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0.889vw;
+          }
 
-      > div {
-        margin-top: 1.563vw;
-        margin-bottom: 8.125vw;
-        width: 89.375vw;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 1.563vw;
-        grid-row-gap: 1.563vw;
+          .underline {
+            height: 0.074vw;
+            width: 50.222vw;
+            background: linear-gradient(
+              271deg,
+              var(--dark-blue) 0.65%,
+              var(--lite-blue) 99.35%
+            );
+          }
 
-        > a {
-          > div {
-            display: inline-flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.781vw;
-            border-radius: 1.016vw;
-            background: rgba(255, 255, 255, 0.5);
-            width: 25.781vw;
-            height: 6.953vw;
-            border-radius: 1.016vw;
-            padding: 1.563vw 1.406vw 3.047vw 1.563vw;
+          .content {
+            margin-top: 2.222vw;
+            display: flex;
+            justify-content: space-between;
 
-            > h2 {
-              width: 23.047vw;
-              color: #fff;
-              font-family: SF_UI_Display_Semibold;
-              font-size: 1.719vw;
+            > h1 {
+              color: #010101;
+              font-family: Suisse_Medium;
+              font-size: 2.593vw;
               font-style: normal;
-              font-weight: 600;
-              line-height: 124%;
+              font-weight: 500;
+              line-height: normal;
             }
 
             > p {
-              width: 25.781vw;
-              color: #fff;
-              font-family: SF_UI_Display_Regular;
-              font-size: 1.563vw;
+              width: 27.037vw;
+              color: rgba(30, 30, 30, 0.8);
+              font-family: Suisse_Regular;
+              font-size: 1.259vw;
               font-style: normal;
               font-weight: 400;
               line-height: 130%;
@@ -478,527 +166,383 @@ body.index {
         }
       }
     }
-  }
 
-  .cont {
-    margin: 0 auto;
-    display: flex;
-  }
-
-  .images {
-    position: relative;
-    width: 45.234vw;
-    display: flex;
-    flex-direction: column;
-    margin-right: 0.781vw;
-
-    #first {
-      position: absolute;
-      width: 45.234vw;
-      height: 61.875vw;
-      clip-path: polygon(
-        0vw 1.5625vw,
-        0vw 1.5625vw,
-        0.020450497656250004vw 1.30905447890625vw,
-        0.079657325vw 1.0686293vw,
-        0.17440348359375vw 0.84444146171875vw,
-        0.301471975vw 0.6397079625000001vw,
-        0.45764580078125vw 0.45764580078125vw,
-        0.6397079625000001vw 0.301471975vw,
-        0.84444146171875vw 0.17440348359375vw,
-        1.0686293vw 0.079657325vw,
-        1.30905447890625vw 0.020450497656250004vw,
-        1.5625vw 2.586806064048906e-19vw,
-        43.671875vw 0vw,
-        43.671875vw 0vw,
-        43.92532640625vw 0.020450497656250004vw,
-        44.165755000000004vw 0.079657325vw,
-        44.38994421875vw 0.17440348359375vw,
-        44.5946775vw 0.301471975vw,
-        44.77673828125vw 0.45764580078125vw,
-        44.93291000000001vw 0.6397079625000001vw,
-        45.059976093749995vw 0.84444146171875vw,
-        45.15472vw 1.0686293vw,
-        45.21392515625vw 1.30905447890625vw,
-        45.234375vw 1.5625vw,
-        45.234375vw 7.866562499999999vw,
-        45.234375vw 7.866562499999999vw,
-        45.21904906249999vw 8.085624453125vw,
-        45.174336249999996vw 8.296226875vw,
-        45.1021340625vw 8.496041484375vw,
-        45.004340000000006vw 8.682739999999999vw,
-        44.8828515625vw 8.853994140625vw,
-        44.739566249999996vw 9.007475625vw,
-        44.5763815625vw 9.140856171875vw,
-        44.395195vw 9.2518075vw,
-        44.1979040625vw 9.338001328125vw,
-        43.98640625vw 9.397109375vw,
-        1.8770624999999999vw 18.05171875vw,
-        1.8770624999999999vw 18.05171875vw,
-        1.5890035781249998vw 18.08396984375vw,
-        1.309698vw 18.063999375vw,
-        1.044225984375vw 17.99594828125vw,
-        0.7976677499999999vw 17.8839575vw,
-        0.575103515625vw 17.732167968749998vw,
-        0.38161349999999994vw 17.544720625vw,
-        0.222277921875vw 17.325756406249997vw,
-        0.10217699999999999vw 17.079416249999998vw,
-        0.026390953124999998vw 16.80984109375vw,
-        3.3573003383552346e-23vw 16.521171875vw,
-        0vw 1.5625vw
-      );
+    > h1 {
+      width: 60.593vw;
+      color: #fff;
+      text-align: center;
+      font-family: Suisse_Medium;
+      font-size: 4vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
     }
 
-    #second {
-      width: 45.234vw;
-      height: 61.875vw;
-      clip-path: polygon(
-        0vw 20.4928125vw,
-        0vw 20.4928125vw,
-        0.015326496875vw 20.273750546875vw,
-        0.060040600000000006vw 20.063148124999998vw,
-        0.132244228125vw 19.863333515624998vw,
-        0.2300393vw 19.676635vw,
-        0.351527734375vw 19.505380859375002vw,
-        0.49481145vw 19.351899375vw,
-        0.657992365625vw 19.218518828125vw,
-        0.8391723999999999vw 19.107567500000002vw,
-        1.036453471875vw 19.021373671875vw,
-        1.2479375vw 18.962265625vw,
-        43.357343750000005vw 10.307656249999999vw,
-        43.357343750000005vw 10.307656249999999vw,
-        43.64540179687501vw 10.275405156249999vw,
-        43.924704999999996vw 10.295375625vw,
-        44.190173515625006vw 10.363426718749999vw,
-        44.4367275vw 10.475417499999999vw,
-        44.659287109375vw 10.62720703125vw,
-        44.85277250000001vw 10.814654375vw,
-        45.01210382812501vw 11.03361859375vw,
-        45.13220125vw 11.27995875vw,
-        45.207984921875vw 11.549533906250002vw,
-        45.234375vw 11.838203125vw,
-        45.234375vw 36.09375vw,
-        45.234375vw 36.09375vw,
-        45.21392515625vw 36.347201406249994vw,
-        45.15472vw 36.58763vw,
-        45.059976093749995vw 36.811819218749996vw,
-        44.93291000000001vw 37.0165525vw,
-        44.77673828125vw 37.19861328125vw,
-        44.5946775vw 37.354785vw,
-        44.38994421875vw 37.48185109375vw,
-        44.165755000000004vw 37.576595000000005vw,
-        43.92532640625vw 37.63580015625vw,
-        43.671875vw 37.65625vw,
-        1.5625vw 37.65625vw,
-        1.5625vw 37.65625vw,
-        1.30905447890625vw 37.63580015625vw,
-        1.0686293vw 37.576595000000005vw,
-        0.84444146171875vw 37.48185109375vw,
-        0.6397079625000001vw 37.354785vw,
-        0.45764580078125vw 37.19861328125vw,
-        0.301471975vw 37.0165525vw,
-        0.17440348359375vw 36.811819218749996vw,
-        0.079657325vw 36.58763vw,
-        0.020450497656250004vw 36.347201406249994vw,
-        2.5868060640489063e-21vw 36.09375vw,
-        0vw 20.4928125vw
-      );
+    #title1 {
+      margin-top: 11.852vw;
     }
 
-    .container {
-      display: flex;
-      position: absolute;
-      width: 45.234vw;
+    #title2 {
+      margin-top: 8.889vw;
+    }
 
-      #third {
-        width: 45.234vw;
-        height: 61.875vw;
+    #title3 {
+      margin-top: 8.222vw;
+    }
+
+    .cards {
+      margin-top: 5.185vw;
+      height: 14.963vw;
+      width: 94.148vw;
+      position: relative;
+
+      .card {
         position: absolute;
-        clip-path: polygon(
-          0vw 40vw,
-          0vw 40vw,
-          0.0204504765625vw 39.746548593750006vw,
-          0.07965725vw 39.50612vw,
-          0.1744033359375vw 39.281930781250004vw,
-          0.30147175vw 39.0771975vw,
-          0.4576455078125001vw 38.89513671875vw,
-          0.639707625vw 38.738965vw,
-          0.8444411171875001vw 38.61189890625vw,
-          1.0686289999999998vw 38.517155vw,
-          1.3090542890625vw 38.45794984375vw,
-          1.5625vw 38.4375vw,
-          2.9137734375vw 38.4375vw,
-          2.9137734375vw 38.4375vw,
-          3.069301734375vw 38.4452453125vw,
-          3.2217748125vw 38.468131250000006vw,
-          3.370211671875vw 38.505632812500004vw,
-          3.5136313125vw 38.557225vw,
-          3.6510527343750003vw 38.6223828125vw,
-          3.7814949375vw 38.70058125vw,
-          3.903976921875vw 38.7912953125vw,
-          4.017517687500001vw 38.894vw,
-          4.121136234375vw 39.0081703125vw,
-          4.2138515624999995vw 39.13328125vw,
-          17.755546875vw 59.445781249999996vw,
-          17.755546875vw 59.445781249999996vw,
-          17.921041406249998vw 59.766120703125004vw,
-          18.00594375vw 60.09715vw,
-          18.015850781250002vw 60.428408984375004vw,
-          17.956359375vw 60.749437500000006vw,
-          17.83306640625vw 61.04977539062501vw,
-          17.65156875vw 61.3189625vw,
-          17.41746328125vw 61.546538671875005vw,
-          17.136346875vw 61.72204375vw,
-          16.813816406249998vw 61.835017578125004vw,
-          16.455468749999998vw 61.875vw,
-          1.5625vw 61.875vw,
-          1.5625vw 61.875vw,
-          1.3090542890625vw 61.85455015625vw,
-          1.0686289999999998vw 61.795345000000005vw,
-          0.8444411171875001vw 61.700601093749995vw,
-          0.639707625vw 61.573535vw,
-          0.4576455078125001vw 61.417363281250005vw,
-          0.30147175vw 61.2353025vw,
-          0.1744033359375vw 61.030569218749996vw,
-          0.07965725vw 60.806380000000004vw,
-          0.0204504765625vw 60.56595140625001vw,
-          2.5868031751539845e-21vw 60.3125vw,
-          0vw 40vw
-        );
-      }
+        padding: 2.889vw 1.926vw 2.815vw 1.926vw;
+        width: 27.111vw;
+        height: 9.259vw;
+        border-radius: 1.481vw;
+        background: #efefef;
 
-      #fourth {
-        width: 45.234vw;
-        height: 61.875vw;
-        position: absolute;
-        clip-path: polygon(
-          6.150734375vw 40.866718750000004vw,
-          6.150734375vw 40.866718750000004vw,
-          5.985224648437501vw 40.546379296875vw,
-          5.9003134375vw 40.21535vw,
-          5.8904026953125vw 39.884091015625vw,
-          5.9498943749999995vw 39.5630625vw,
-          6.073190429687499vw 39.262724609375vw,
-          6.2546928125vw 38.993537499999995vw,
-          6.4888034765625004vw 38.765961328125vw,
-          6.7699243749999996vw 38.59045625vw,
-          7.0924574609375vw 38.477482421874996vw,
-          7.4508046875vw 38.4375vw,
-          43.671875vw 38.4375vw,
-          43.671875vw 38.4375vw,
-          43.92532640625vw 38.45794984375vw,
-          44.165755000000004vw 38.517155vw,
-          44.38994421875vw 38.61189890625vw,
-          44.5946775vw 38.738965vw,
-          44.77673828125vw 38.89513671875vw,
-          44.93291000000001vw 39.0771975vw,
-          45.059976093749995vw 39.281930781250004vw,
-          45.15472vw 39.50612vw,
-          45.21392515625vw 39.746548593750006vw,
-          45.234375vw 40vw,
-          45.234375vw 60.3125vw,
-          45.234375vw 60.3125vw,
-          45.21392515625vw 60.56595140625001vw,
-          45.15472vw 60.806380000000004vw,
-          45.059976093749995vw 61.030569218749996vw,
-          44.93291000000001vw 61.2353025vw,
-          44.77673828125vw 61.417363281250005vw,
-          44.5946775vw 61.573535vw,
-          44.38994421875vw 61.700601093749995vw,
-          44.165755000000004vw 61.795345000000005vw,
-          43.92532640625vw 61.85455015625vw,
-          43.671875vw 61.875vw,
-          20.9925vw 61.875vw,
-          20.9925vw 61.875vw,
-          20.83697296875vw 61.867254687499994vw,
-          20.684499375vw 61.84436875vw,
-          20.53606078125vw 61.80686718749999vw,
-          20.39263875vw 61.755275vw,
-          20.25521484375vw 61.69011718750001vw,
-          20.124770625vw 61.61191875000001vw,
-          20.00228765625vw 61.521204687499996vw,
-          19.888747499999997vw 61.418499999999995vw,
-          19.785131718749998vw 61.3043296875vw,
-          19.692421875vw 61.17921875000001vw,
-          6.150734375vw 40.866718750000004vw
-        );
-      }
-    }
-
-    .tags {
-      position: absolute;
-      bottom: 1.563vw;
-      left: 1.563vw;
-      .first-tags {
-        display: flex;
-
-        #first-tag {
-          width: 9.063vw;
-          margin-right: 1.016vw;
+        > h2 {
+          width: 27.037vw;
+          color: #1e1e1e;
+          font-family: Suisse_Medium;
+          font-size: 2.593vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 1.333vw;
         }
-
-        #second-tag {
-          width: 13.516vw;
-        }
-      }
-      .tag {
-        display: flex;
-        height: 2.883vw;
-        padding: 0.826vw 1.797vw;
-        justify-content: center;
-        align-items: center;
-        gap: 0.688vw;
-        border-radius: 0.703vw;
-        background: #fff;
 
         > p {
-          color: #29234c;
-          font-family: SF-Pro-Rounded-Regular;
-          font-size: 2.891vw;
+          width: 27.037vw;
+          color: rgba(30, 30, 30, 0.8);
+          font-family: Suisse_Regular;
+          font-size: 1.259vw;
           font-style: normal;
           font-weight: 400;
           line-height: 130%;
         }
       }
-      #third-tag {
-        width: 19.844vw;
-        margin-top: 0.781vw;
+
+      #card1 {
+        left: 0;
+      }
+
+      #card2 {
+        left: 31.63vw;
+      }
+
+      #card3 {
+        left: 63.259vw;
       }
     }
-  }
 
-  .form {
-    position: relative;
-    width: 43.438vw;
+    .top-cards {
+      margin-top: 5.185vw;
+      display: flex;
+      gap: 0.741vw;
 
-    .form-main {
-      position: absolute;
-      width: 41.094vw;
-      height: 49.375vw;
-      background-color: #fff;
-      padding-left: 2.344vw;
-      clip-path: polygon(
-        0% 3.165%,
-        0% 3.165%,
-        0.047% 2.651%,
-        0.183% 2.164%,
-        0.402% 1.71%,
-        0.694% 1.296%,
-        1.054% 0.927%,
-        1.473% 0.611%,
-        1.944% 0.353%,
-        2.46% 0.161%,
-        3.014% 0.041%,
-        3.597% 0%,
-        96.403% 0%,
-        96.403% 0%,
-        96.986% 0.041%,
-        97.54% 0.161%,
-        98.056% 0.353%,
-        98.527% 0.611%,
-        98.946% 0.927%,
-        99.306% 1.296%,
-        99.599% 1.71%,
-        99.817% 2.164%,
-        99.953% 2.651%,
-        100% 3.165%,
-        100% 88.594%,
-        100% 88.594%,
-        99.959% 89.072%,
-        99.84% 89.53%,
-        99.648% 89.96%,
-        99.39% 90.357%,
-        99.071% 90.716%,
-        98.697% 91.032%,
-        98.273% 91.298%,
-        97.806% 91.509%,
-        97.301% 91.659%,
-        96.763% 91.743%,
-        3.958% 99.966%,
-        3.958% 99.966%,
-        3.332% 99.974%,
-        2.733% 99.89%,
-        2.169% 99.722%,
-        1.649% 99.478%,
-        1.184% 99.164%,
-        0.783% 98.789%,
-        0.454% 98.359%,
-        0.208% 97.882%,
-        0.054% 97.366%,
-        0% 96.817%,
-        0% 3.165%
-      );
+      .top-card {
+        > img {
+          width: 30.889vw;
+          height: 16.815vw;
+          border-radius: 0.667vw;
+        }
 
-      > p {
-        color: #29234c;
-        font-family: SF-Pro-Rounded-Semibold;
-        font-size: 1.953vw;
+        .tag {
+          margin-top: 1.481vw;
+          display: flex;
+          gap: 0.593vw;
+
+          > img {
+            width: 1.333vw;
+            height: 1.333vw;
+          }
+          h2 {
+            color: #ff4b00;
+            font-family: Suisse_Semibold;
+            font-size: 1.037vw;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 130%;
+            text-transform: uppercase;
+          }
+        }
+
+        > h1 {
+          margin-top: 1.111vw;
+          width: 30vw;
+          color: #fff;
+          font-family: Suisse_Medium;
+          font-size: 2vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+
+        > p {
+          margin-top: 1.111vw;
+          width: 30vw;
+          color: #959595;
+          font-family: Suisse_Regular;
+          font-size: 1.037vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+        }
+      }
+    }
+
+    > form {
+      margin-top: 5.185vw;
+      display: flex;
+      gap: 0.741vw;
+
+      > input {
+        width: 20.593vw;
+        padding: 1.481vw 1.185vw;
+        border-radius: 0.667vw;
+        background-color: transparent;
+        border: 0.074vw solid #373737;
+        outline: none;
+        color: white;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      ::-webkit-input-placeholder {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      ::-moz-placeholder {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      :-ms-input-placeholder {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      :-moz-placeholder {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      > button {
+        cursor: pointer;
+        width: 20.593vw;
+        padding: 1.481vw 1.185vw;
+        border-radius: 0.667vw;
+        background: #efefef;
+        color: #000;
+        font-family: Suisse_Medium;
+        font-size: 1.259vw;
         font-style: normal;
         font-weight: 500;
-        line-height: 130%;
-        margin-top: 2.891vw;
+        line-height: normal;
+      }
+    }
+
+    .agreement {
+      margin-top: 2.593vw;
+      display: flex;
+      align-items: flex-start;
+
+      > p {
+        width: 37.111vw;
+        color: #959595;
+        text-align: center;
+        font-family: Suisse_Regular;
+        font-size: 1.037vw;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+
+      > input {
+        width: 1.407vw;
+        height: 1.407vw;
+      }
+
+      > input[type='radio']:after {
+        width: 1.481vw;
+        height: 1.481vw;
+        border: 0.074vw solid #373737;
+        border-radius: 37.037vw;
+        background-color: #1e1e1e;
+        top: -0.148vw;
+        left: -0.074vw;
+        position: relative;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+      }
+
+      input[type='radio']:checked:after {
+        width: 1.481vw;
+        height: 1.481vw;
+        border-radius: 37.037vw;
+        top: -0.148vw;
+        left: -0.074vw;
+        position: relative;
+        background-color: #959595;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 0.074vw solid #373737;
+      }
+    }
+
+    .come {
+      height: 61.259vw;
+      width: 100vw;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .second-round {
+        margin-top: 17.704vw;
+        width: 32.667vw;
+        height: 32.667vw;
+        border-radius: 32.667vw;
+        background: radial-gradient(
+          58.48% 58.48% at 50% 50%,
+          var(--yellow) 16.97%,
+          var(--orange) 51.59%,
+          var(--red) 83.1%
+        );
+        filter: blur(2.407vw);
       }
 
       > h1 {
-        margin-top: 1.406vw;
-        width: 38.75vw;
-        color: #29234c;
-        font-family: SF_UI_Display_Medium;
-        font-size: 2.891vw;
+        width: 71.926vw;
+        background: linear-gradient(
+          90deg,
+          #fff 12.03%,
+          #000 42.08%,
+          #262626 59.88%,
+          #fff 81.04%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        font-family: Suisse_Medium;
+        font-size: 12.303vw;
         font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
+        font-weight: 500;
+        line-height: normal;
       }
+    }
+  }
 
-      > form {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2.734vw;
+  //footer
+  .footer {
+    margin-top: 2.963vw;
+    width: 100%;
+    height: 19.407vw;
+    padding: 3.333vw 0 0 0;
 
-        label {
-          color: #29234c;
-          font-family: SF_UI_Display_Semibold;
-          font-size: 0.938vw;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 130%;
-          margin-top: 1.563vw;
+    .wrapper {
+      display: flex;
+
+      .company {
+        margin-left: 2.963vw;
+        > img {
+          width: 10.148vw;
+          height: 2.667vw;
+          margin-bottom: 1.556vw;
         }
-
-        input {
-          width: 37.891vw;
-          height: 2.891vw;
-          border: none;
-          border-bottom: 0.078vw solid #29234c;
-          padding: 0;
-          outline: none;
-          color: #29234c;
-          font-family: SF_UI_Display_Semibold;
-          font-size: 1.25vw;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 130%;
-        }
-
-        label:nth-child(1) {
-          margin-top: 0;
-        }
-
-        > button {
-          cursor: pointer;
-          border: none;
-          margin-top: 2.734vw;
-          display: flex;
-          width: 37.891vw;
-          height: 4.844vw;
-          padding: 0.625vw 6.797vw;
-          justify-content: center;
-          align-items: center;
-          gap: 0.781vw;
-          border-radius: 0.938vw;
-          background: #29234c;
-          color: #fff;
-          font-family: SF_UI_Display_Medium;
-          font-size: 1.563vw;
+        > h2 {
+          margin-top: 1.556vw;
+          width: 19.481vw;
+          color: white;
+          font-family: Suisse_Medium;
+          font-size: 1.259vw;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
         }
       }
-    }
-    #mobile {
-      display: none;
-    }
-    #pc {
-      display: block;
-      width: 43.438vw;
-      height: 15.938vw;
-      position: absolute;
-      bottom: 0;
-      clip-path: polygon(
-        0vw 5.6317812499999995vw,
-        0vw 5.6317812499999995vw,
-        0.017812366406250002vw 5.3954603515625vw,
-        0.0695814vw 5.1697296875vw,
-        0.15280500234375vw 4.9573560546875vw,
-        0.264981075vw 4.76110625vw,
-        0.40360751953125007vw 4.5837470703125005vw,
-        0.5661822375000001vw 4.4280453125vw,
-        0.75020313046875vw 4.2967677734375vw,
-        0.9531681000000001vw 4.19268125vw,
-        1.1725750476562502vw 4.1185525390625vw,
-        1.405921875vw 4.0771484375vw,
-        41.7184375vw 0.016895234375vw,
-        41.7184375vw 0.016895234375vw,
-        41.99016921875vw 0.012932268515625001vw,
-        42.25056000000001vw 0.054201445vw,
-        42.49554390625vw 0.137026257734375vw,
-        42.721055vw 0.25773020062499996vw,
-        42.92302734375vw 0.412636767578125vw,
-        43.097395vw 0.5980694525vw,
-        43.24009203125vw 0.810351749296875vw,
-        43.3470525vw 1.045807151875vw,
-        43.41421046875vw 1.300759154140625vw,
-        43.4375vw 1.5715312500000003vw,
-        43.4375vw 14.21875vw,
-        43.4375vw 14.21875vw,
-        43.417050156250006vw 14.47220140625vw,
-        43.357845vw 14.712629999999999vw,
-        43.26310109375vw 14.93681921875vw,
-        43.136035vw 15.1415525vw,
-        42.97986328125vw 15.323613281249997vw,
-        42.797802499999996vw 15.479784999999998vw,
-        42.59306921875vw 15.606851093750002vw,
-        42.368880000000004vw 15.701595vw,
-        42.12845140625vw 15.760800156250001vw,
-        41.875vw 15.78125vw,
-        1.5625vw 15.78125vw,
-        1.5625vw 15.78125vw,
-        1.30905447890625vw 15.760800156250001vw,
-        1.0686293vw 15.701595vw,
-        0.84444146171875vw 15.606851093750002vw,
-        0.6397079625000001vw 15.479784999999998vw,
-        0.45764580078125vw 15.323613281249997vw,
-        0.301471975vw 15.1415525vw,
-        0.17440348359375vw 14.93681921875vw,
-        0.079657325vw 14.712629999999999vw,
-        0.020450497656250004vw 14.47220140625vw,
-        2.5868060640489063e-20vw 14.21875vw,
-        0vw 5.6317812499999995vw
-      );
-    }
-  }
 
-  ::-webkit-input-placeholder {
-    color: rgba(41, 35, 76, 0.5);
-    font-family: SF_UI_Display_Semibold;
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-  }
-  ::-moz-placeholder {
-    color: rgba(41, 35, 76, 0.5);
-    font-family: SF_UI_Display_Semibold;
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-  }
-  :-ms-input-placeholder {
-    color: rgba(41, 35, 76, 0.5);
-    font-family: SF_UI_Display_Semibold;
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-  }
-  :-moz-placeholder {
-    color: rgba(41, 35, 76, 0.5);
-    font-family: SF_UI_Display_Semibold;
-    font-size: 1.25vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
+      .navigation,
+      .social-network,
+      .articles {
+        > h2 {
+          color: white;
+          font-family: Suisse_Medium;
+          font-size: 1.259vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 1.481vw;
+        }
+        > a {
+          color: #959595;
+          font-family: Suisse_Regular;
+          font-size: 1.259vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 0.667vw;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+
+      .navigation {
+        margin-left: 28.296vw;
+      }
+
+      .social-network {
+        > h2 {
+          text-transform: uppercase;
+        }
+        margin-left: 9.111vw;
+      }
+
+      .articles {
+        margin-left: 9.63vw;
+      }
+    }
+
+    .brand {
+      margin-left: 2.963vw;
+      margin-top: 3.704vw;
+      display: flex;
+      flex-direction: column;
+      gap: 0.519vw;
+      > h2 {
+        color: #959595;
+        font-family: Suisse_Regular;
+        font-size: 1.259vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
   }
 }

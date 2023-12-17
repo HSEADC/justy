@@ -1,11 +1,43 @@
 body.news {
   padding-bottom: 8.828vw;
 
+  //TODO:
+  .left {
+    // cursor: url('pictures/left-arr.webp'), default !important;
+  }
+  .right {
+    // cursor: url('pictures/right-arr.webp'), default !important;
+  }
   .verticle {
-    width: 100%;
+    width: 627px;
+    height: 470px;
     position: relative;
+    overflow: hidden;
+    cursor: default;
     > img {
+      height: 100%;
       position: absolute;
+      left: 0%;
+      opacity: 1;
+      transition: all 0.7s;
+    }
+    #img1 {
+      z-index: 6;
+    }
+    #img2 {
+      z-index: 5;
+    }
+    #img3 {
+      z-index: 4;
+    }
+    #img4 {
+      z-index: 3;
+    }
+    #img5 {
+      z-index: 2;
+    }
+    #img6 {
+      z-index: 1;
     }
   }
 

@@ -6,16 +6,45 @@ const blade_2 = document.getElementsByClassName('second-fold')
 const blade_3 = document.getElementsByClassName('third-fold')
 const blade_4 = document.getElementsByClassName('fourth-fold')
 
-const header = document.getElementsByClassName('header-article')
-let whalf = window.innerWidth / 2
+const header = document.getElementsByClassName('verticle')
+const slides = Array.from(header[0].querySelectorAll('img'))
+const slideCount = slides.length
+let whalf = 627 / 2
+let slideIndex = 0
 
 header[0].addEventListener('mousemove', function (e) {
-  if (e.pageX < whalf) {
-    header[0].style.cursor = 'pointer'
+  if (e.pageX - 109 < whalf) {
+    header[0].removeEventListener('click', showNextSlide)
+    header[0].classList.remove('right')
+    header[0].classList.add('left')
+    header[0].addEventListener('click', showPreviousSlide)
   } else {
-    header[0].style.cursor = 'alias'
+    header[0].removeEventListener('click', showPreviousSlide)
+    header[0].classList.remove('left')
+    header[0].classList.add('right')
+    header[0].addEventListener('click', showNextSlide)
   }
 })
+
+function showPreviousSlide() {
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount
+  updateSlider()
+}
+function showNextSlide() {
+  slideIndex = (slideIndex + 1) % slideCount
+  updateSlider()
+}
+function updateSlider() {
+  slides.forEach((slide, index) => {
+    if (index === slideIndex) {
+      slide.style.opacity = '1'
+    } else {
+      slide.style.opacity = '0'
+    }
+  })
+}
+
+updateSlider()
 
 for (let i = 0; i < folder.length; i++) {
   folder[i].addEventListener('mouseenter', function () {
