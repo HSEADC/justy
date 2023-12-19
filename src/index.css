@@ -8,6 +8,7 @@
 @import 'stylesheets/news.scss';
 @import 'stylesheets/news_responsive.scss';
 @import 'stylesheets/main.scss';
+@import 'stylesheets/design/design-thinker/part-1.scss';
 
 a {
   text-decoration: none;
