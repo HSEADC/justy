@@ -169,6 +169,10 @@ module.exports = {
       template: './src/design/design-thinker/part-1.html',
       filename: './design/design-thinker/part-1.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/design/design-method.html',
+      filename: './design/design-method.html'
+    }),
 
     //Contacts
     new HtmlWebpackPlugin({
