@@ -111,7 +111,7 @@ body.about {
           font-size: 1.259vw;
           font-style: normal;
           font-weight: 400;
-          line-height: normal;
+          line-height: 130%;
         }
       }
 
@@ -278,7 +278,7 @@ body.about {
           font-size: 1.259vw;
           font-style: normal;
           font-weight: 500;
-          line-height: normal;
+          line-height: 130%;
         }
       }
 
@@ -302,6 +302,11 @@ body.about {
           font-weight: 400;
           line-height: normal;
           margin-bottom: 0.667vw;
+          transition: color 0.3s ease-out;
+
+          &:hover {
+            color: black;
+          }
         }
         display: flex;
         flex-direction: column;
@@ -328,6 +333,22 @@ body.about {
       display: flex;
       flex-direction: column;
       gap: 0.519vw;
+      > a {
+        > h2 {
+          color: #9a9a9a;
+          font-family: Suisse_Regular;
+          font-size: 1.259vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          transition: color 0.3s ease-out;
+
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+
       > h2 {
         color: #9a9a9a;
         font-family: Suisse_Regular;

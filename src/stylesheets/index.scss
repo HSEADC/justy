@@ -1,4 +1,5 @@
 body.index {
+  width: 100%;
   padding-bottom: 1.926vw;
   background-color: #1e1e1e;
   display: flex;
@@ -31,14 +32,20 @@ body.index {
     align-items: center;
 
     .top-content {
+      position: fixed;
+      z-index: 4;
       margin-top: 2.963vw;
       width: 94.074vw;
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      mix-blend-mode: difference;
 
       > svg {
+        color: white;
         width: 6.222vw;
         height: 1.636vw;
+        mix-blend-mode: difference;
       }
 
       a {
@@ -52,6 +59,7 @@ body.index {
         font-weight: 600;
         line-height: normal;
         text-transform: uppercase;
+        mix-blend-mode: difference;
       }
     }
 
@@ -88,10 +96,11 @@ body.index {
           font-size: 1.259vw;
           font-style: normal;
           font-weight: 400;
-          line-height: normal;
+          line-height: 130%;
         }
       }
       > button {
+        border: none;
         cursor: pointer;
         margin-top: 2.222vw;
         height: 4.37vw;
@@ -244,53 +253,55 @@ body.index {
       display: flex;
       gap: 0.741vw;
 
-      .top-card {
-        > img {
-          width: 30.889vw;
-          height: 16.815vw;
-          border-radius: 0.667vw;
-        }
-
-        .tag {
-          margin-top: 1.481vw;
-          display: flex;
-          gap: 0.593vw;
-
+      > a {
+        .top-card {
           > img {
-            width: 1.333vw;
-            height: 1.333vw;
+            width: 30.889vw;
+            height: 16.815vw;
+            border-radius: 0.667vw;
           }
-          h2 {
-            color: #ff4b00;
-            font-family: Suisse_Semibold;
+
+          .tag {
+            margin-top: 1.481vw;
+            display: flex;
+            gap: 0.593vw;
+
+            > img {
+              width: 1.333vw;
+              height: 1.333vw;
+            }
+            h2 {
+              color: #ff4b00;
+              font-family: Suisse_Semibold;
+              font-size: 1.037vw;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 130%;
+              text-transform: uppercase;
+            }
+          }
+
+          > h1 {
+            margin-top: 1.111vw;
+            width: 30vw;
+            color: #fff;
+            font-family: Suisse_Medium;
+            font-size: 2vw;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          > p {
+            margin-top: 1.111vw;
+            width: 30vw;
+            color: #959595;
+            font-family: Suisse_Regular;
             font-size: 1.037vw;
             font-style: normal;
-            font-weight: 600;
-            line-height: 130%;
-            text-transform: uppercase;
+            font-weight: 400;
+            line-height: 150%;
           }
-        }
-
-        > h1 {
-          margin-top: 1.111vw;
-          width: 30vw;
-          color: #fff;
-          font-family: Suisse_Medium;
-          font-size: 2vw;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-        }
-
-        > p {
-          margin-top: 1.111vw;
-          width: 30vw;
-          color: #959595;
-          font-family: Suisse_Regular;
-          font-size: 1.037vw;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%;
         }
       }
     }
@@ -351,6 +362,7 @@ body.index {
       > button {
         cursor: pointer;
         width: 20.593vw;
+        border: none;
         padding: 1.481vw 1.185vw;
         border-radius: 0.667vw;
         background: #efefef;
@@ -380,30 +392,32 @@ body.index {
       }
 
       > input {
-        width: 1.407vw;
-        height: 1.407vw;
+        width: 1vw;
+        height: 1vw;
+        border: 0.074vw solid #373737;
+        border-radius: 37.037vw;
       }
 
-      > input[type='radio']:after {
+      > input[type='checkbox']:after {
         width: 1.481vw;
         height: 1.481vw;
         border: 0.074vw solid #373737;
         border-radius: 37.037vw;
         background-color: #1e1e1e;
-        top: -0.148vw;
-        left: -0.074vw;
+        top: -0.296vw;
+        left: -0.27vw;
         position: relative;
         content: '';
         display: inline-block;
         visibility: visible;
       }
 
-      input[type='radio']:checked:after {
+      input[type='checkbox']:checked:after {
         width: 1.481vw;
         height: 1.481vw;
         border-radius: 37.037vw;
-        top: -0.148vw;
-        left: -0.074vw;
+        top: -0.296vw;
+        left: -0.344vw;
         position: relative;
         background-color: #959595;
         content: '';
@@ -421,7 +435,7 @@ body.index {
       justify-content: center;
 
       .second-round {
-        margin-top: 17.704vw;
+        margin-top: 64.704vw;
         width: 32.667vw;
         height: 32.667vw;
         border-radius: 32.667vw;
@@ -434,27 +448,22 @@ body.index {
         filter: blur(2.407vw);
       }
 
-      > h1 {
-        width: 71.926vw;
-        background: linear-gradient(
-          90deg,
-          #fff 12.03%,
-          #000 42.08%,
-          #262626 59.88%,
-          #fff 81.04%
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        left: 50%;
-        top: 55%;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        font-family: Suisse_Medium;
-        font-size: 12.303vw;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+      > a {
+        > h1 {
+          width: 71.926vw;
+          mix-blend-mode: difference;
+          color: white;
+          background-blend-mode: screen;
+          left: 50%;
+          top: 55%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          font-family: Suisse_Medium;
+          font-size: 12.303vw;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
       }
     }
   }
@@ -484,7 +493,7 @@ body.index {
           font-size: 1.259vw;
           font-style: normal;
           font-weight: 500;
-          line-height: normal;
+          line-height: 130%;
         }
       }
 
@@ -508,6 +517,11 @@ body.index {
           font-weight: 400;
           line-height: normal;
           margin-bottom: 0.667vw;
+          transition: color 0.3s ease-out;
+
+          &:hover {
+            color: white;
+          }
         }
         display: flex;
         flex-direction: column;
@@ -535,6 +549,22 @@ body.index {
       display: flex;
       flex-direction: column;
       gap: 0.519vw;
+      > a {
+        > h2 {
+          color: #959595;
+          font-family: Suisse_Regular;
+          font-size: 1.259vw;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          transition: color 0.3s ease-out;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+
       > h2 {
         color: #959595;
         font-family: Suisse_Regular;
@@ -544,5 +574,18 @@ body.index {
         line-height: normal;
       }
     }
+  }
+}
+
+.animate-on-view {
+  animation: movetop 1s ease-out forwards;
+}
+
+@keyframes movetop {
+  0% {
+    margin-top: 64.704vw;
+  }
+  100% {
+    margin-top: 17.704vw;
   }
 }

@@ -73,6 +73,15 @@ module.exports = {
         }
       },
       {
+        test: /\.(glb|gltf)$/i,
+        loader: 'file-loader',
+        options: {
+          publicPath: './',
+          name: '[name].[ext]',
+          esModule: false
+        }
+      },
+      {
         test: /\.(ttf|otf|woff|woff2)$/i,
         loader: 'file-loader',
         options: {
@@ -151,42 +160,18 @@ module.exports = {
       filename: './technologies/programs.html'
     }),
 
-    //News
+    //Design
     new HtmlWebpackPlugin({
       template: './src/design.html',
       filename: './design.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/news/channels.html',
-      filename: './news/channels.html'
+      template: './src/design/design-thinker/part-1.html',
+      filename: './design/design-thinker/part-1.html'
     }),
     new HtmlWebpackPlugin({
-      template: './src/news/books.html',
-      filename: './news/books.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/news/films.html',
-      filename: './news/films.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/news/code.html',
-      filename: './news/code.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/news/recommendations.html',
-      filename: './news/recommendations.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/news/typography.html',
-      filename: './news/typography.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/news/our-articles.html',
-      filename: './news/our-articles.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/news/hse-help.html',
-      filename: './news/hse-help.html'
+      template: './src/design/design-method.html',
+      filename: './design/design-method.html'
     }),
 
     //Contacts
