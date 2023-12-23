@@ -10,6 +10,14 @@
 @import 'stylesheets/main.scss';
 @import 'stylesheets/design/design-thinker/part-1.scss';
 @import 'stylesheets/design/design-method.scss';
+@import 'stylesheets/design/design-thinking-world.scss';
+@import 'stylesheets/inspiration/know-cocoa.scss';
+@import 'stylesheets/inspiration/book-hard-design.scss';
+@import 'stylesheets/code/code-scss-functions.scss';
+
+html {
+  scroll-behavior: smooth;
+}
 
 a {
   text-decoration: none;

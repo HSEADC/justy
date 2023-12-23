@@ -1,10 +1,10 @@
-body.design-method {
+body.know-cocoa {
   padding: 0 2.963vw 1.926vw 2.963vw;
   .tag-2 {
     margin-left: 1.259vw;
   }
   #tag2-text {
-    color: var(--dark-blue);
+    color: #df024d;
   }
   //header
   .header {
@@ -77,8 +77,8 @@ body.design-method {
 
     .wrapper2 {
       display: flex;
-      gap: 1.63vw;
-      margin-left: 16.667vw;
+      gap: 9.556vw;
+      margin-left: 8.741vw;
       .content {
         margin-top: 5.704vw;
         width: 60.741vw;
@@ -102,22 +102,22 @@ body.design-method {
           gap: 0.593vw;
           width: 46.667vw;
 
-          #tag-blue {
-            margin-left: 1.259vw;
-          }
-
           > img {
             width: 1.333vw;
             height: 1.333vw;
           }
           h2 {
-            color: #ff4b00;
+            color: var(--dark-blue);
             font-family: Suisse_Semibold;
             font-size: 1.037vw;
             font-style: normal;
             font-weight: 600;
             line-height: 130%;
             text-transform: uppercase;
+          }
+
+          #tag2 {
+            margin-left: 1.259vw;
           }
         }
 
@@ -156,7 +156,7 @@ body.design-method {
           padding: 1.185vw 1.481vw;
           flex-direction: column;
           border-radius: 0.37vw;
-          background: #ffe9e0;
+          background: #e7fbff;
 
           > h2 {
             color: #000;
@@ -194,7 +194,7 @@ body.design-method {
               align-items: center;
               gap: 0.741vw;
               border-radius: 0.222vw;
-              background: #dcf9ff;
+              background: #f8c7d8;
 
               > h3 {
                 color: #000;
@@ -224,7 +224,7 @@ body.design-method {
 
           > p {
             width: 46.667vw;
-            margin-top: 2.519vw;
+            margin-top: 1.852vw;
             color: #000;
             font-family: Suisse_Regular;
             font-size: 1.259vw;
@@ -278,17 +278,7 @@ body.design-method {
 
         #last-img {
           height: 36vw;
-          width: 60.741vw;
           margin-top: 2.222vw;
-          border-radius: 0.667vw;
-          overflow: hidden;
-          position: relative;
-
-          > img {
-            width: 60.741vw;
-            transition: all 0.4s ease-out;
-            position: absolute;
-          }
         }
 
         .desc {
@@ -299,7 +289,7 @@ body.design-method {
           font-style: normal;
           font-weight: 500;
           line-height: 130%;
-          background: linear-gradient(90deg, #ffa200 13.59%, #ff4b00 76.07%);
+          background: linear-gradient(90deg, #42beff 13.59%, #006eff 76.07%);
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -316,9 +306,9 @@ body.design-method {
         }
 
         .share {
-          margin-top: 5.037vw;
+          margin-top: 5.185vw;
           width: 100%;
-          margin-left: -3.111vw;
+          margin-left: 13.926vw;
 
           > h2 {
             color: #000;
@@ -418,7 +408,6 @@ body.design-method {
 
   .menu {
     margin-top: 6.889vw;
-    margin-bottom: 12.741vw;
     position: sticky;
     height: 8.222vw;
     top: 5.926vw;
@@ -434,22 +423,19 @@ body.design-method {
       margin-bottom: 1.852vw;
     }
 
-    > a {
-      > p {
-        margin-top: 0.741vw;
-        width: 13.778vw;
-        color: #636366;
-        font-family: Suisse_Regular;
-        font-size: 0.889vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
-      }
+    > p {
+      margin-top: 0.741vw;
+      width: 13.778vw;
+      color: #636366;
+      font-family: Suisse_Regular;
+      font-size: 0.889vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
     }
 
     .now {
-      font-family: Suisse_Semibold;
-      background: linear-gradient(91deg, #ffa200 18.34%, #ff4b00 65.28%);
+      background: linear-gradient(91deg, #42beff 18.34%, #006eff 65.28%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -559,14 +545,5 @@ body.design-method {
         line-height: normal;
       }
     }
-  }
-  .text {
-    margin-top: 1.852vw !important ;
-  }
-  .right {
-    cursor: url('pictures/right-line.svg'), pointer;
-  }
-  .left {
-    cursor: url('pictures/left-line.svg'), pointer;
   }
 }

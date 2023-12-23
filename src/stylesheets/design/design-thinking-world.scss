@@ -1,5 +1,6 @@
-body.design-method {
+body.design-thinking-world {
   padding: 0 2.963vw 1.926vw 2.963vw;
+
   .tag-2 {
     margin-left: 1.259vw;
   }
@@ -77,17 +78,13 @@ body.design-method {
 
     .wrapper2 {
       display: flex;
-      gap: 1.63vw;
-      margin-left: 16.667vw;
+      gap: 8.667vw;
+      margin-left: 23.704vw;
       .content {
         margin-top: 5.704vw;
-        width: 60.741vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 46.667vw;
 
         > h1 {
-          width: 46.667vw;
           color: #000;
           font-family: Suisse_medium;
           font-size: 2.593vw;
@@ -100,11 +97,6 @@ body.design-method {
           margin-top: 1.63vw;
           display: flex;
           gap: 0.593vw;
-          width: 46.667vw;
-
-          #tag-blue {
-            margin-left: 1.259vw;
-          }
 
           > img {
             width: 1.333vw;
@@ -184,7 +176,6 @@ body.design-method {
           display: flex;
           align-items: flex-start;
           gap: 0.741vw;
-          width: 46.667vw;
 
           > a {
             .source {
@@ -194,7 +185,7 @@ body.design-method {
               align-items: center;
               gap: 0.741vw;
               border-radius: 0.222vw;
-              background: #dcf9ff;
+              background: rgba(255, 204, 0, 0.2);
 
               > h3 {
                 color: #000;
@@ -210,10 +201,9 @@ body.design-method {
 
         .text-block {
           margin-top: 3.704vw;
-          margin-bottom: 2.222vw;
+          margin-bottom: 3.704vw;
 
           > h2 {
-            width: 46.667vw;
             color: #000;
             font-family: Suisse_Medium;
             font-size: 1.556vw;
@@ -222,8 +212,25 @@ body.design-method {
             line-height: 150%;
           }
 
+          .h2 {
+            font-family: Suisse_Medium;
+            font-size: 1.852vw;
+            font-weight: 500;
+            margin-top: 3.704vw;
+            line-height: 128%;
+          }
+
+          > h3 {
+            margin-top: 2.519vw;
+            color: #000;
+            font-family: Suisse_Semibold;
+            font-size: 1.259vw;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+          }
+
           > p {
-            width: 46.667vw;
             margin-top: 2.519vw;
             color: #000;
             font-family: Suisse_Regular;
@@ -232,9 +239,18 @@ body.design-method {
             font-weight: 400;
             line-height: 153%;
 
+            > a {
+              color: #ff4b00;
+              border-bottom: 0.074vw solid #ff4b00;
+            }
+
             > span {
               font-family: Suisse_Semibold;
             }
+          }
+
+          .p-first {
+            margin-top: 1.111vw;
           }
 
           > blockquote {
@@ -270,41 +286,6 @@ body.design-method {
           }
         }
 
-        > img {
-          width: 60.741vw;
-          height: 30.296vw;
-          border-radius: 0.667vw;
-        }
-
-        #last-img {
-          height: 36vw;
-          width: 60.741vw;
-          margin-top: 2.222vw;
-          border-radius: 0.667vw;
-          overflow: hidden;
-          position: relative;
-
-          > img {
-            width: 60.741vw;
-            transition: all 0.4s ease-out;
-            position: absolute;
-          }
-        }
-
-        .desc {
-          margin-top: 1.111vw;
-          width: 46.667vw;
-          font-family: Suisse_Medium;
-          font-size: 1.037vw;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 130%;
-          background: linear-gradient(90deg, #ffa200 13.59%, #ff4b00 76.07%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
         > a {
           color: #000;
           font-family: Suisse_Regular;
@@ -316,9 +297,7 @@ body.design-method {
         }
 
         .share {
-          margin-top: 5.037vw;
-          width: 100%;
-          margin-left: -3.111vw;
+          margin-top: 5.185vw;
 
           > h2 {
             color: #000;
@@ -347,8 +326,7 @@ body.design-method {
 
     > h2 {
       margin-top: 4.889vw;
-      width: calc(100% - 15.111vw);
-      margin-left: 15.111vw;
+      margin-left: 23.704vw;
       color: #000;
       font-family: Suisse_Medium;
       font-size: 1.556vw;
@@ -420,7 +398,7 @@ body.design-method {
     margin-top: 6.889vw;
     margin-bottom: 12.741vw;
     position: sticky;
-    height: 8.222vw;
+    height: 27.333vw;
     top: 5.926vw;
 
     > h2 {
@@ -434,17 +412,15 @@ body.design-method {
       margin-bottom: 1.852vw;
     }
 
-    > a {
-      > p {
-        margin-top: 0.741vw;
-        width: 13.778vw;
-        color: #636366;
-        font-family: Suisse_Regular;
-        font-size: 0.889vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
-      }
+    > p {
+      margin-top: 0.741vw;
+      width: 13.778vw;
+      color: #636366;
+      font-family: Suisse_Regular;
+      font-size: 0.889vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
     }
 
     .now {
@@ -559,14 +535,5 @@ body.design-method {
         line-height: normal;
       }
     }
-  }
-  .text {
-    margin-top: 1.852vw !important ;
-  }
-  .right {
-    cursor: url('pictures/right-line.svg'), pointer;
-  }
-  .left {
-    cursor: url('pictures/left-line.svg'), pointer;
   }
 }

@@ -1,10 +1,12 @@
-body.design-method {
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+body.code-scss-functions {
   padding: 0 2.963vw 1.926vw 2.963vw;
   .tag-2 {
     margin-left: 1.259vw;
   }
   #tag2-text {
-    color: var(--dark-blue);
+    color: #df024d;
   }
   //header
   .header {
@@ -77,11 +79,11 @@ body.design-method {
 
     .wrapper2 {
       display: flex;
-      gap: 1.63vw;
-      margin-left: 16.667vw;
+      gap: 8.667vw;
+      margin-left: 23.704vw;
       .content {
         margin-top: 5.704vw;
-        width: 60.741vw;
+        width: 46.667vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -102,22 +104,22 @@ body.design-method {
           gap: 0.593vw;
           width: 46.667vw;
 
-          #tag-blue {
-            margin-left: 1.259vw;
-          }
-
           > img {
             width: 1.333vw;
             height: 1.333vw;
           }
           h2 {
-            color: #ff4b00;
+            color: #03ceac;
             font-family: Suisse_Semibold;
             font-size: 1.037vw;
             font-style: normal;
             font-weight: 600;
             line-height: 130%;
             text-transform: uppercase;
+          }
+
+          #tag2 {
+            margin-left: 1.259vw;
           }
         }
 
@@ -156,7 +158,7 @@ body.design-method {
           padding: 1.185vw 1.481vw;
           flex-direction: column;
           border-radius: 0.37vw;
-          background: #ffe9e0;
+          background: #d9f8f3;
 
           > h2 {
             color: #000;
@@ -186,31 +188,28 @@ body.design-method {
           gap: 0.741vw;
           width: 46.667vw;
 
-          > a {
-            .source {
-              display: flex;
-              padding: 0.407vw 0.741vw;
-              justify-content: center;
-              align-items: center;
-              gap: 0.741vw;
-              border-radius: 0.222vw;
-              background: #dcf9ff;
+          .source {
+            display: flex;
+            padding: 0.407vw 0.741vw;
+            justify-content: center;
+            align-items: center;
+            gap: 0.741vw;
+            border-radius: 0.222vw;
+            background: #cce2ff;
 
-              > h3 {
-                color: #000;
-                font-family: Suisse_Regular;
-                font-size: 1.259vw;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 130%;
-              }
+            > h3 {
+              color: #000;
+              font-family: Suisse_Regular;
+              font-size: 1.259vw;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130%;
             }
           }
         }
 
         .text-block {
           margin-top: 3.704vw;
-          margin-bottom: 2.222vw;
 
           > h2 {
             width: 46.667vw;
@@ -222,9 +221,53 @@ body.design-method {
             line-height: 150%;
           }
 
+          .h2 {
+            margin-top: 3.704vw;
+            font-size: 1.852vw;
+            line-height: 130%;
+          }
+
+          .p1 {
+            margin-top: 1.111vw;
+          }
+
+          .p2 {
+            margin-top: 2.222vw;
+          }
+
+          #help {
+            margin-top: 5.185vw;
+          }
+
+          .sources {
+            margin-top: 1.481vw;
+            display: flex;
+            flex-direction: column;
+            gap: 1.481vw;
+
+            .source {
+              display: flex;
+              padding: 0.407vw 0.741vw;
+              justify-content: center;
+              align-items: center;
+              gap: 0.741vw;
+              border-radius: 0.222vw;
+              background: #cce2ff;
+
+              > h3 {
+                color: #000;
+                font-family: Suisse_Regular;
+                font-size: 1.259vw;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+              }
+            }
+          }
+
           > p {
             width: 46.667vw;
-            margin-top: 2.519vw;
+            margin-top: 1.852vw;
             color: #000;
             font-family: Suisse_Regular;
             font-size: 1.259vw;
@@ -270,55 +313,9 @@ body.design-method {
           }
         }
 
-        > img {
-          width: 60.741vw;
-          height: 30.296vw;
-          border-radius: 0.667vw;
-        }
-
-        #last-img {
-          height: 36vw;
-          width: 60.741vw;
-          margin-top: 2.222vw;
-          border-radius: 0.667vw;
-          overflow: hidden;
-          position: relative;
-
-          > img {
-            width: 60.741vw;
-            transition: all 0.4s ease-out;
-            position: absolute;
-          }
-        }
-
-        .desc {
-          margin-top: 1.111vw;
-          width: 46.667vw;
-          font-family: Suisse_Medium;
-          font-size: 1.037vw;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 130%;
-          background: linear-gradient(90deg, #ffa200 13.59%, #ff4b00 76.07%);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
-        > a {
-          color: #000;
-          font-family: Suisse_Regular;
-          font-size: 1.259vw;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          border-bottom: 0.074vw black solid;
-        }
-
         .share {
-          margin-top: 5.037vw;
+          margin-top: 5.185vw;
           width: 100%;
-          margin-left: -3.111vw;
 
           > h2 {
             color: #000;
@@ -418,9 +415,8 @@ body.design-method {
 
   .menu {
     margin-top: 6.889vw;
-    margin-bottom: 12.741vw;
     position: sticky;
-    height: 8.222vw;
+    height: 11.333vw;
     top: 5.926vw;
 
     > h2 {
@@ -434,22 +430,19 @@ body.design-method {
       margin-bottom: 1.852vw;
     }
 
-    > a {
-      > p {
-        margin-top: 0.741vw;
-        width: 13.778vw;
-        color: #636366;
-        font-family: Suisse_Regular;
-        font-size: 0.889vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
-      }
+    > p {
+      margin-top: 0.741vw;
+      width: 13.778vw;
+      color: #636366;
+      font-family: Suisse_Regular;
+      font-size: 0.889vw;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
     }
 
     .now {
-      font-family: Suisse_Semibold;
-      background: linear-gradient(91deg, #ffa200 18.34%, #ff4b00 65.28%);
+      background: linear-gradient(91deg, #01ee8f 18.34%, #03ceac 65.28%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -560,13 +553,56 @@ body.design-method {
       }
     }
   }
-  .text {
-    margin-top: 1.852vw !important ;
+
+  code,
+  pre {
+    margin-top: 1.111vw;
+    color: #f900fe;
+    border-radius: 1.111vw;
+    background: #f5f5f5;
+    font-family: 'PT Mono', monospace;
+    font-size: 1.037vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
   }
-  .right {
-    cursor: url('pictures/right-line.svg'), pointer;
+
+  pre {
+    padding: 1.481vw;
   }
-  .left {
-    cursor: url('pictures/left-line.svg'), pointer;
+
+  .green {
+    color: #00a68a;
+  }
+
+  .gray {
+    color: #5c6370;
+  }
+
+  .gray2 {
+    color: #000;
+  }
+
+  .blue {
+    color: #006eff;
+  }
+
+  .orange {
+    color: #ff4b00;
   }
 }

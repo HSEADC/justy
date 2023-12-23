@@ -9,6 +9,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
+    navbar: './src/javascript/navbar.js',
     page: './src/page.jsx'
   },
   output: {
@@ -76,9 +77,7 @@ module.exports = {
         test: /\.(glb|gltf)$/i,
         loader: 'file-loader',
         options: {
-          publicPath: './',
-          name: '[name].[ext]',
-          esModule: false
+          name: 'models/[name].[ext]'
         }
       },
       {
@@ -100,7 +99,8 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/share/'),
           to: path.resolve(__dirname, 'docs/share/')
-        }
+        },
+        { from: 'src/models', to: 'models' }
       ]
     }),
 
@@ -112,68 +112,75 @@ module.exports = {
     // Landing page
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/main.html',
-      filename: './main.html'
+      filename: './main.html',
+      chunks: ['index']
     }),
 
     //Inspiration
     new HtmlWebpackPlugin({
       template: './src/inspiration.html',
-      filename: './inspiration.html'
+      filename: './inspiration.html',
+      chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/inspiration/studios.html',
-      filename: './inspiration/studios.html'
+      template: './src/inspiration/know-cocoa.html',
+      filename: './inspiration/know-cocoa.html',
+      chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/inspiration/media.html',
-      filename: './inspiration/media.html'
+      template: './src/inspiration/book-hard-design.html',
+      filename: './inspiration/book-hard-design.html',
+      chunks: ['index']
     }),
 
     //About
     new HtmlWebpackPlugin({
       template: './src/about.html',
-      filename: './about.html'
+      filename: './about.html',
+      chunks: ['index']
     }),
 
-    //Technologies
+    //Code
     new HtmlWebpackPlugin({
       template: './src/code.html',
-      filename: './code.html'
+      filename: './code.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
-      template: './src/technologies/mockups.html',
-      filename: './technologies/mockups.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/technologies/neural-networks.html',
-      filename: './technologies/neural-networks.html'
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/technologies/programs.html',
-      filename: './technologies/programs.html'
+      template: './src/code/code-scss-functions.html',
+      filename: './code/code-scss-functions.html',
+      chunks: ['index']
     }),
 
     //Design
     new HtmlWebpackPlugin({
       template: './src/design.html',
-      filename: './design.html'
+      filename: './design.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/design/design-thinker/part-1.html',
-      filename: './design/design-thinker/part-1.html'
+      filename: './design/design-thinker/part-1.html',
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/design/design-method.html',
-      filename: './design/design-method.html'
+      filename: './design/design-method.html',
+      chunks: ['navbar', 'index']
     }),
-
+    new HtmlWebpackPlugin({
+      template: './src/design/design-thinking-world.html',
+      filename: './design/design-thinking-world.html',
+      chunks: ['index']
+    }),
     //Contacts
     new HtmlWebpackPlugin({
       template: './src/contacts.html',
