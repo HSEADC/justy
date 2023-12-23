@@ -125,7 +125,6 @@ var __webpack_exports__ = {};
 //   circle.style.marginTop = `${newValue}vw`
 // }
 
-
 function handleIntersect(entries, observer) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
