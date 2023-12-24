@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'SuisseIntl-Regular';
   src: url('fonts/SuisseIntl-Regular.otf');
+  src: url('fonts/SuisseIntl-Regular.ttf');
+  src: url('fonts/SuisseIntl-Regular.svg') format('svg');
   src: url('fonts/SuisseIntl-Regular.woff') format('woff');
   src: url('fonts/SuisseIntl-Regular.woff2') format('woff2');
   src: local('SuisseIntl-Regular');
@@ -8,7 +10,9 @@
 
 @font-face {
   font-family: 'SuisseIntl-Medium';
+  src: url('fonts/SuisseIntl-Medium.ttf');
   src: url('fonts/SuisseIntl-Medium.otf');
+  src: url('fonts/SuisseIntl-Medium.svg') format('svg');
   src: url('fonts/SuisseIntl-Medium.woff') format('woff');
   src: url('fonts/SuisseIntl-Medium.woff2') format('woff2');
   src: local('SuisseIntl-Medium');
@@ -16,8 +20,10 @@
 
 @font-face {
   font-family: 'SuisseIntl-Semibold';
+  src: url('fonts/SuisseIntl-SemiBold.otf');
   src: url('fonts/SuisseIntl-SemiBold.ttf');
   src: url('fonts/SuisseIntl-SemiBold.woff') format('woff');
   src: url('fonts/SuisseIntl-SemiBold.woff2') format('woff2');
+  src: url('fonts/SuisseIntl-SemiBold.svg') format('svg');
   src: local('SuisseIntl-SemiBold');
 }
