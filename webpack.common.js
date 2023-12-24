@@ -10,6 +10,10 @@ module.exports = {
   entry: {
     index: './src/index.js',
     navbar: './src/javascript/navbar.js',
+    navbar4: './src/javascript/navbar4.js',
+    navbar8: './src/javascript/navbar8.js',
+    slider1: './src/javascript/slider1.js',
+    slider2: './src/javascript/slider2.js',
     page: './src/page.jsx'
   },
   output: {
@@ -81,7 +85,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(ttf|otf|woff|woff2|svg)$/i,
+        test: /\.(ttf|otf|woff|woff2)$/i,
         loader: 'file-loader',
         options: {
           name: 'fonts/[name].[ext]'
@@ -132,13 +136,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/inspiration/know-cocoa.html',
       filename: './inspiration/know-cocoa.html',
-      chunks: ['index']
+      chunks: ['index', 'navbar', 'slider2']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/inspiration/book-hard-design.html',
       filename: './inspiration/book-hard-design.html',
-      chunks: ['index']
+      chunks: ['index', 'navbar', 'slider2']
     }),
 
     //About
@@ -157,7 +161,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/code/code-scss-functions.html',
       filename: './code/code-scss-functions.html',
-      chunks: ['index']
+      chunks: ['index', 'navbar4']
     }),
 
     //Design
@@ -169,17 +173,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/design/design-thinker/part-1.html',
       filename: './design/design-thinker/part-1.html',
-      chunks: ['index']
+      chunks: ['index', 'navbar4']
     }),
     new HtmlWebpackPlugin({
       template: './src/design/design-method.html',
       filename: './design/design-method.html',
-      chunks: ['navbar', 'index']
+      chunks: ['navbar', 'index', 'slider1']
     }),
     new HtmlWebpackPlugin({
       template: './src/design/design-thinking-world.html',
       filename: './design/design-thinking-world.html',
-      chunks: ['index']
+      chunks: ['index', 'navbar8']
     }),
     //Contacts
     new HtmlWebpackPlugin({

@@ -23,6 +23,10 @@ body.code-scss-functions {
       }
     }
 
+    .menu-mobile {
+      display: none;
+    }
+
     .links {
       display: flex;
       gap: 2.222vw;
@@ -32,7 +36,6 @@ body.code-scss-functions {
         font-family: SuisseIntl-Semibold;
         font-size: 1.037vw;
         font-style: normal;
-        font-weight: 600;
         line-height: normal;
         text-transform: uppercase;
       }
@@ -49,7 +52,6 @@ body.code-scss-functions {
       font-family: SuisseIntl-Semibold;
       font-size: 1.037vw;
       font-style: normal;
-      font-weight: 600;
       line-height: normal;
       text-transform: uppercase;
       border-bottom: 0.074vw solid #000;
@@ -77,6 +79,13 @@ body.code-scss-functions {
       );
     }
 
+    #mobile-img2 {
+      display: none;
+    }
+    #mobile-img1 {
+      display: none;
+    }
+
     .wrapper2 {
       display: flex;
       gap: 8.667vw;
@@ -94,7 +103,6 @@ body.code-scss-functions {
           font-family: SuisseIntl-Medium;
           font-size: 2.593vw;
           font-style: normal;
-          font-weight: 500;
           line-height: 130%;
         }
 
@@ -113,7 +121,6 @@ body.code-scss-functions {
             font-family: SuisseIntl-Semibold;
             font-size: 1.037vw;
             font-style: normal;
-            font-weight: 600;
             line-height: 130%;
             text-transform: uppercase;
           }
@@ -165,7 +172,6 @@ body.code-scss-functions {
             font-family: SuisseIntl-Semibold;
             font-size: 1.259vw;
             font-style: normal;
-            font-weight: 600;
             line-height: 130%;
           }
 
@@ -197,6 +203,11 @@ body.code-scss-functions {
             border-radius: 0.222vw;
             background: #cce2ff;
 
+            > img {
+              width: 1.556vw;
+              height: 1.556vw;
+            }
+
             > h3 {
               color: #000;
               font-family: SuisseIntl-Regular;
@@ -217,7 +228,6 @@ body.code-scss-functions {
             font-family: SuisseIntl-Medium;
             font-size: 1.556vw;
             font-style: normal;
-            font-weight: 500;
             line-height: 150%;
           }
 
@@ -253,6 +263,11 @@ body.code-scss-functions {
               gap: 0.741vw;
               border-radius: 0.222vw;
               background: #cce2ff;
+
+              > img {
+                width: 1.556vw;
+                height: 1.556vw;
+              }
 
               > h3 {
                 color: #000;
@@ -298,7 +313,6 @@ body.code-scss-functions {
               font-family: SuisseIntl-Medium;
               font-size: 1.259vw;
               font-style: normal;
-              font-weight: 500;
               line-height: 130%;
             }
 
@@ -322,7 +336,6 @@ body.code-scss-functions {
             font-family: SuisseIntl-Medium;
             font-size: 1.556vw;
             font-style: normal;
-            font-weight: 500;
             line-height: 130%;
           }
 
@@ -350,7 +363,6 @@ body.code-scss-functions {
       font-family: SuisseIntl-Medium;
       font-size: 1.556vw;
       font-style: normal;
-      font-weight: 500;
       line-height: 130%;
     }
 
@@ -381,7 +393,6 @@ body.code-scss-functions {
               font-family: SuisseIntl-Semibold;
               font-size: 1.037vw;
               font-style: normal;
-              font-weight: 600;
               line-height: 130%;
               text-transform: uppercase;
             }
@@ -394,7 +405,6 @@ body.code-scss-functions {
             font-family: SuisseIntl-Medium;
             font-size: 2vw;
             font-style: normal;
-            font-weight: 500;
             line-height: 116%;
           }
 
@@ -424,24 +434,26 @@ body.code-scss-functions {
       font-family: SuisseIntl-Semibold;
       font-size: 1.037vw;
       font-style: normal;
-      font-weight: 600;
       line-height: 130%;
       text-transform: uppercase;
       margin-bottom: 1.852vw;
     }
 
-    > p {
-      margin-top: 0.741vw;
-      width: 13.778vw;
-      color: #636366;
-      font-family: SuisseIntl-Regular;
-      font-size: 0.889vw;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%;
+    > a {
+      > p {
+        margin-top: 0.741vw;
+        width: 13.778vw;
+        color: #636366;
+        font-family: SuisseIntl-Regular;
+        font-size: 0.889vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+      }
     }
 
     .now {
+      font-family: SuisseIntl-Semibold;
       background: linear-gradient(91deg, #01ee8f 18.34%, #03ceac 65.28%);
       background-clip: text;
       -webkit-background-clip: text;
@@ -471,7 +483,6 @@ body.code-scss-functions {
           font-family: SuisseIntl-Medium;
           font-size: 1.259vw;
           font-style: normal;
-          font-weight: 500;
           line-height: 130%;
         }
       }
@@ -484,7 +495,6 @@ body.code-scss-functions {
           font-family: SuisseIntl-Medium;
           font-size: 1.259vw;
           font-style: normal;
-          font-weight: 500;
           line-height: normal;
           margin-bottom: 1.481vw;
         }
@@ -556,7 +566,6 @@ body.code-scss-functions {
 
   code,
   pre {
-    margin-top: 1.111vw;
     color: #f900fe;
     border-radius: 1.111vw;
     background: #f5f5f5;
@@ -583,6 +592,7 @@ body.code-scss-functions {
   }
 
   pre {
+    margin-top: 1.111vw;
     padding: 1.481vw;
   }
 
@@ -604,5 +614,408 @@ body.code-scss-functions {
 
   .orange {
     color: #ff4b00;
+  }
+}
+
+@media all and (max-width: 561px) {
+  body.code-scss-functions {
+    padding: 0 4.651vw 5.814vw 4.651vw;
+    .header {
+      height: 26.512vw;
+      align-items: normal;
+      .links {
+        display: none;
+      }
+
+      .menu-mobile {
+        width: 8.372vw;
+        height: 6.047vw;
+        display: flex;
+        margin-top: 15.581vw;
+        flex-wrap: wrap;
+        align-content: space-around;
+
+        > div {
+          background-color: #000;
+          height: 0.465vw;
+          width: 100%;
+        }
+      }
+
+      > a {
+        height: 6.174vw;
+        margin-top: 15.581vw;
+        > img {
+          width: 23.488vw;
+          height: 6.174vw;
+        }
+      }
+
+      #subscribe {
+        display: none;
+      }
+    }
+
+    .main-content {
+      > img {
+        display: none;
+      }
+
+      #mobile-img2 {
+        display: block;
+        width: 90.698vw;
+        height: 246зч;
+        border-radius: 2.093vw;
+      }
+      #mobile-img1 {
+        display: block;
+        width: 90.698vw;
+        height: 84.419vw;
+        border-radius: 2.093vw;
+      }
+      #desc-img1 {
+        display: none;
+      }
+
+      .wrapper2 {
+        gap: 0;
+        margin-left: 0;
+        .content {
+          margin-top: 6.977vw;
+          width: 90.698vw;
+
+          > h1 {
+            width: 90.698vw;
+            font-size: 8.14vw;
+          }
+
+          .tag {
+            margin-top: 5.116vw;
+            gap: 1.86vw;
+            width: 90.698vw;
+
+            #tag-blue {
+              margin-left: 3.953vw;
+            }
+
+            #tag2 {
+              margin-left: 3.953vw;
+            }
+
+            > img {
+              width: 4.186vw;
+              height: 4.186vw;
+            }
+            h2 {
+              font-size: 3.256vw;
+            }
+          }
+
+          > h3 {
+            margin-top: 1.407vw;
+            color: #000;
+            font-family: SuisseIntl-Regular;
+            font-size: 1.259vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+          }
+
+          .creator {
+            margin-top: 5.581vw;
+            width: 81.395vw;
+            padding: 3.721vw 4.651vw;
+            border-radius: 1.163vw;
+
+            > h2 {
+              font-size: 3.953vw;
+            }
+
+            > p {
+              margin-top: 2.326vw;
+              width: 82.558vw;
+              font-size: 3.256vw;
+            }
+          }
+
+          .sources {
+            margin-top: 3.488vw;
+            gap: 2.326vw;
+            width: 90.698vw;
+
+            .source {
+              padding: 1.163vw 2.326vw;
+              gap: 2.326vw;
+              border-radius: 0.698vw;
+
+              > img {
+                width: 4.884vw;
+                height: 4.884vw;
+              }
+
+              > h3 {
+                font-size: 3.953vw;
+              }
+            }
+          }
+
+          .text-block {
+            margin-top: 11.628vw;
+            margin-bottom: 6.977vw;
+
+            > h2 {
+              width: 90.698vw;
+              font-size: 4.884vw;
+            }
+
+            .h2 {
+              font-size: 5.814vw;
+              margin-top: 11.628vw;
+            }
+
+            > p {
+              width: 90.698vw;
+              margin-top: 5.581vw;
+              font-size: 3.953vw;
+            }
+
+            > h3 {
+              margin-top: 7.907vw;
+              font-size: 3.953vw;
+            }
+
+            .p1 {
+              margin-top: 3.488vw;
+            }
+
+            .p2 {
+              margin-top: 6.977vw;
+            }
+
+            #help {
+              margin-top: 11.628vw;
+            }
+
+            .sources {
+              margin-top: 4.651vw;
+              gap: 4.651vw;
+
+              .source {
+                padding: 1.163vw 2.326vw;
+                gap: 2.326vw;
+                border-radius: 0.698vw;
+
+                > img {
+                  width: 4.884vw;
+                  height: 4.884vw;
+                }
+
+                > h3 {
+                  font-size: 3.953vw;
+                }
+              }
+            }
+
+            .p-first {
+              margin-top: 3.488vw;
+            }
+          }
+
+          .mobile-img2 {
+            display: block;
+          }
+
+          > img {
+            width: 90.698vw;
+            height: 95.116vw;
+            border-radius: 2.093vw;
+          }
+
+          .desc-img2 {
+            display: none;
+          }
+
+          #last-img {
+            display: none;
+          }
+
+          .mobile-img3 {
+            display: block;
+            margin-top: 6.977vw;
+            height: 113.023vw;
+          }
+
+          .desc {
+            margin-top: 2.326vw;
+            width: 90.698vw;
+            font-size: 3.256vw;
+          }
+
+          > a {
+            font-size: 1.259vw;
+            border-bottom: 0.074vw black solid;
+          }
+
+          .share {
+            margin-top: 11.628vw;
+
+            > h2 {
+              font-size: 4.884vw;
+            }
+
+            .social-network {
+              margin-top: 4.651vw;
+              gap: 2.326vw;
+
+              > a {
+                > img {
+                  width: 12.791vw;
+                  height: 12.791vw;
+                }
+              }
+            }
+          }
+        }
+      }
+      > h2 {
+        margin-top: 11.628vw;
+        width: 90.698vw;
+        margin-left: 0;
+        font-size: 4.884vw;
+      }
+
+      .top-cards {
+        margin-top: 6.977vw;
+        display: flex;
+        flex-direction: column;
+        gap: 11.628vw;
+
+        > a {
+          .top-card {
+            > img {
+              width: 90.698vw;
+              height: 57.209vw;
+              border-radius: 2.093vw;
+            }
+
+            .tag {
+              margin-top: 4.651vw;
+              gap: 1.86vw;
+
+              > img {
+                width: 4.186vw;
+                height: 4.186vw;
+              }
+              h2 {
+                font-size: 3.256vw;
+              }
+            }
+
+            > h1 {
+              margin-top: 3.488vw;
+              width: 90.698vw;
+              font-size: 6.279vw;
+            }
+
+            > p {
+              margin-top: 3.488vw;
+              width: 90.698vw;
+              font-size: 3.953vw;
+            }
+          }
+        }
+      }
+    }
+    //footer
+    .footer {
+      margin-top: 10.698vw;
+      width: 100%;
+      height: 181.395vw;
+      padding: 8.605vw 0 0 0;
+
+      .wrapper {
+        flex-direction: column;
+
+        .company {
+          > img {
+            width: 31.86vw;
+            height: 8.372vw;
+            margin-bottom: 4.884vw;
+          }
+          > h2 {
+            width: 61.163vw;
+            font-size: 3.953vw;
+          }
+        }
+
+        .navigation,
+        .social-network,
+        .articles {
+          > h2 {
+            font-size: 4.884vw;
+            margin-bottom: 4.651vw;
+          }
+          > a {
+            font-size: 4.884vw;
+            margin-bottom: 3.488vw;
+          }
+        }
+
+        .navigation {
+          margin-top: 12.093vw;
+          margin-left: 0;
+        }
+
+        .social-network {
+          margin-top: 5.814vw;
+          margin-left: 0;
+        }
+
+        .articles {
+          margin-top: 5.814vw;
+          margin-left: 0;
+        }
+      }
+
+      .brand {
+        margin-top: 8.14vw;
+        gap: 1.628vw;
+        > a {
+          > h2 {
+            font-size: 3.953vw;
+          }
+        }
+
+        > h2 {
+          font-size: 3.953vw;
+        }
+      }
+    }
+
+    code,
+    pre {
+      border-radius: 2.558vw;
+      font-size: 3.953vw;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    pre {
+      width: 81.163vw;
+    }
+
+    code {
+      display: block;
+      width: 81.163vw;
+    }
+
+    pre {
+      margin-top: 3.488vw;
+      padding: 4.651vw;
+    }
+  }
+
+  .menu {
+    display: none;
   }
 }

@@ -18,15 +18,25 @@
         <a href="contacts.html">контакты</a>
       </div>
       <a href="/" id="subscribe">предложить статью</a>
+      <div class="menu-mobile">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
     <div class="main-content">
       <img
         src="../pictures/book-hard-design-img1.webp"
         alt="Главная картинка статьи"
       />
+      <img
+        src="../pictures/book-hard-design-imh-title.webp"
+        alt="Главная картинка статьи"
+        id="mobile-img2"
+      />
       <div class="wrapper2">
         <div class="content">
-          <h1>
+          <h1 id="first-item">
             Книга &laquo;Сложный дизайнер&raquo; <br />
             Жени Арутюнова
           </h1>
@@ -41,12 +51,17 @@
             <h2 id="tag2-text">айдентика</h2>
           </div>
           <div class="creator">
-            <h2>Pentagram</h2>
+            <h2>Евгений Арутюнов</h2>
             <p>
-              Pentagram&nbsp;&mdash; крупнейшая в&nbsp;мире независимая
-              консалтинговая компания по&nbsp;дизайну. Фирма принадлежит
-              и&nbsp;управляется 24&nbsp;партнерами, каждый из&nbsp;которых
-              является лидером в&nbsp;своей индивидуальной сфере.
+              Арт-директор, дизайнер, менеджер проектов. Работает
+              в&nbsp;нескольких прекрасных командах: создает глобальный бренд
+              &laquo;Додо пиццы&raquo;, развивает сообщество дизайнеров,
+              редакторов и&nbsp;разработчиков &laquo;Парк&raquo;
+              в&nbsp;дизайн-бюро &laquo;Интуиция&raquo;, управляет дизайном
+              в&nbsp;редакторском бюро &laquo;Гладлакс&raquo;. Выступает
+              с&nbsp;лекциями о&nbsp;дизайне и&nbsp;организации творческой
+              работы. Ведет канал для дизайнеров &laquo;Это красиво, а&nbsp;это
+              нет&raquo;.
             </p>
           </div>
           <div class="sources">
@@ -73,7 +88,7 @@
               но&nbsp;не&nbsp;в&nbsp;привычном для всех смысле&nbsp;&mdash;
               в&nbsp;ней нет основ композиции, правил и&nbsp;упражнений.
             </h2>
-            <p class="p2">
+            <p class="p2" id="second-item">
               Эта книга для бунтарей: тех, кто действует
               не&nbsp;по&nbsp;шаблону, задает неудобные вопросы
               и&nbsp;договаривается по-своему там, где принято соглашаться.
@@ -83,6 +98,11 @@
             <img
               src="../pictures/book-hard-design-img2.webp"
               alt="Картинка книги «Сложный дизайнер». Обложка"
+            />
+            <img
+              src="../pictures/book-hard-design-img-mobile1.webp"
+              alt="Картинка книги «Сложный дизайнер». Обложка"
+              id="for-mobile1"
             />
             <h3>&laquo;Сложный дизайнер&raquo;. Обложка</h3>
             <p class="p1">
@@ -110,6 +130,12 @@
             <img
               src="../pictures/book-hard-design-img3.webp"
               alt="Картинка книги «Сложный дизайнер». Внутренние страницы"
+              class="img2"
+            />
+            <img
+              src="../pictures/book-hard-design-img-mobile2.webp"
+              alt="Картинка книги «Сложный дизайнер». Внутренние страницы"
+              id="for-mobile1"
               class="img2"
             />
             <h3>&laquo;Сложный дизайнер&raquo;. Внутренние страницы</h3>
@@ -155,9 +181,32 @@
               А&nbsp;на&nbsp;поверхности&nbsp;&mdash; вдохновение, ресурсы
               и&nbsp;инструменты, чтобы делать.
             </p>
+            <div class="img2" id="last-img">
+              <img
+                src="../pictures/book-hard-design-img3.webp"
+                alt="Картинка книги «Сложный дизайнер». Внутренние страницы"
+              />
+              <img
+                src="../pictures/book-hard-design-img4.webp"
+                alt="Картинка книги «Сложный дизайнер». Внутренние страницы"
+              />
+              <img
+                src="../pictures/book-hard-design-img5.webp"
+                alt="Картинка книги «Сложный дизайнер». Внутренние страницы"
+              />
+              <img
+                src="../pictures/book-hard-design-img6.webp"
+                alt="Картинка книги «Сложный дизайнер». Внутренние страницы"
+              />
+              <img
+                src="../pictures/book-hard-design-img7.webp"
+                alt="Картинка книги «Сложный дизайнер». Внутренние страницы"
+              />
+            </div>
             <img
-              src="../pictures/book-hard-design-img3.webp"
+              src="../pictures/book-hard-design-img-mobile2.webp"
               alt="Картинка книги «Сложный дизайнер». Внутренние страницы"
+              id="for-mobile1"
               class="img2"
             />
             <h3>
@@ -177,9 +226,15 @@
         </div>
         <div class="menu">
           <h2>содержание</h2>
-          <p class="now">О книге</p>
-          <p>Для кого книга</p>
-          <p>Страницы книги</p>
+          <a href="#first-item">
+            <p class="now" id="first">О книге</p>
+          </a>
+          <a href="#second-item">
+            <p id="second">Для кого книга</p>
+          </a>
+          <a href="#last-img">
+            <p id="third">Страницы книги</p>
+          </a>
         </div>
       </div>
     </div>

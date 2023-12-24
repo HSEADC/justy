@@ -19,15 +19,25 @@
         <a href="contacts.html">контакты</a>
       </div>
       <a href="/" id="subscribe">предложить статью</a>
+      <div class="menu-mobile">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
     <div class="main-content">
       <img
         src="../pictures/code-scss-functions-img1.webp"
         alt="Главная картинка статьи"
       />
+      <img
+        src="../pictures/code-scss-functions-img-title.webp"
+        alt="Главная картинка статьи"
+        id="mobile-img1"
+      />
       <div class="wrapper2">
         <div class="content">
-          <h1>Миксины и Функции в SCSS</h1>
+          <h1 id="first-item">Миксины и&nbsp;Функции в&nbsp;SCSS</h1>
           <div class="tag">
             <img
               src="../pictures/greenSphere.svg"
@@ -193,7 +203,7 @@
     }
   }
 }</span></code></pre>
-            <h2 class="h2">Функции</h2>
+            <h2 class="h2" id="second-item">Функции</h2>
             <p class="p1">
               Разберем также работу функций, так как часто они взаимодействуют
               вместе с&nbsp;миксинами. Если вы&nbsp;когда-нибудь писали код
@@ -211,7 +221,9 @@
               условные операторы if&nbsp;и&nbsp;else. Не&nbsp;так
               уж&nbsp;и&nbsp;сложно!
             </p>
-            <h2 class="h2">Совместное использование миксинов и&nbsp;функций</h2>
+            <h2 class="h2" id="third-item">
+              Совместное использование миксинов и&nbsp;функций
+            </h2>
             <p class="p1">
               Объединим наши знания и&nbsp;рассмотрим, как применять функции
               и&nbsp;миксины вместе.
@@ -261,7 +273,7 @@
     <span class="green">line-height</span>: $lh;
   }
 }</span></code></pre>
-            <h2 class="h2">Заключение</h2>
+            <h2 class="h2" id="fourth-item">Заключение</h2>
             <p class="p1">
               На&nbsp;этом обучение препроцессорам заканчивается.
               Мы&nbsp;разобрали весь основной функционал scss. Теперь настала
@@ -301,10 +313,18 @@
         </div>
         <div class="menu">
           <h2>содержание</h2>
-          <p class="now">Миксины</p>
-          <p>Функции</p>
-          <p>Совместное использование миксинов и&nbsp;функций</p>
-          <p>Заключение</p>
+          <a href="#first-item">
+            <p class="now" id="first">Миксины</p>
+          </a>
+          <a href="#second-item">
+            <p id="second">Функции</p>
+          </a>
+          <a href="#third-item">
+            <p id="third">Совместное использование миксинов и&nbsp;функций</p>
+          </a>
+          <a href="#fourth-item">
+            <p id="fourth">Заключение</p>
+          </a>
         </div>
       </div>
     </div>

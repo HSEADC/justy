@@ -77,6 +77,9 @@ body.design-method {
       );
     }
 
+    #mobile-img2 {
+      display: none;
+    }
     #mobile-img1 {
       display: none;
     }
@@ -199,6 +202,11 @@ body.design-method {
               gap: 0.741vw;
               border-radius: 0.222vw;
               background: #dcf9ff;
+
+              > img {
+                width: 1.556vw;
+                height: 1.556vw;
+              }
 
               > h3 {
                 color: #000;
@@ -637,6 +645,12 @@ body.design-method {
         display: none;
       }
 
+      #mobile-img2 {
+        display: block;
+        width: 90.698vw;
+        height: 84.419vw;
+        border-radius: 2.093vw;
+      }
       #mobile-img1 {
         display: block;
         width: 90.698vw;
@@ -714,6 +728,11 @@ body.design-method {
                 padding: 1.163vw 2.326vw;
                 gap: 2.326vw;
                 border-radius: 0.698vw;
+
+                > img {
+                  width: 4.884vw;
+                  height: 4.884vw;
+                }
 
                 > h3 {
                   font-size: 3.953vw;

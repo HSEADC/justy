@@ -18,15 +18,25 @@
         <a href="contacts.html">контакты</a>
       </div>
       <a href="/" id="subscribe">предложить статью</a>
+      <div class="menu-mobile">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
     <div class="main-content">
       <img
         src="../pictures/know-cocoa-img1.webp"
         alt="Главная картинка статьи"
       />
+      <img
+        src="../pictures/know-cocoa-img-title.webp"
+        alt="Главная картинка статьи"
+        id="mobile-img2"
+      />
       <div class="wrapper2">
         <div class="content">
-          <h1>Айдентика Know Cocoa от&nbsp;Pentagram</h1>
+          <h1 id="first-item">Айдентика Know Cocoa от&nbsp;Pentagram</h1>
           <div class="tag">
             <img src="../pictures/tag2.svg" alt="Картинка тега вдохновение" />
             <h2>вдохновение</h2>
@@ -71,7 +81,7 @@
               Печатное издание, демонстрирующее ассортимент высококачественных
               какао-продуктов deZaan.
             </h2>
-            <p>
+            <p class="p1">
               Компания Ofi обратилась к&nbsp;Pentagram с&nbsp;просьбой создать
               справочник по&nbsp;какао, чтобы продемонстрировать выбор
               какао-порошка deZaan, подчеркнув преимущества и&nbsp;особенности
@@ -103,13 +113,43 @@
           </div>
           <img
             src="../pictures/know-cocoa-img2.webp"
-            alt="Картинка Design Methods — брошюра о дизайн-методах в среде"
+            alt="Know Cocoa. Обложка"
+            class="desc-img2"
+            id="second-item"
+          />
+          <img
+            src="../pictures/know-cocoa-img-mobile2.webp"
+            alt="Know Cocoa. Обложка"
+            class="mobile-img2"
+            id="second-item"
           />
           <p class="desc">Know Cocoa. Обложка</p>
+          <div id="last-img">
+            <img
+              src="../pictures/know-cocoa-img3.webp"
+              alt="Design Methods — брошюра о дизайн-методах. Галерея из 25 страниц"
+            />
+            <img
+              src="../pictures/know-cocoa-img4.webp"
+              alt="Design Methods — брошюра о дизайн-методах. Галерея из 25 страниц"
+            />
+            <img
+              src="../pictures/know-cocoa-img5.webp"
+              alt="Design Methods — брошюра о дизайн-методах. Галерея из 25 страниц"
+            />
+            <img
+              src="../pictures/know-cocoa-img6.webp"
+              alt="Design Methods — брошюра о дизайн-методах. Галерея из 25 страниц"
+            />
+            <img
+              src="../pictures/know-cocoa-img7.webp"
+              alt="Design Methods — брошюра о дизайн-методах. Галерея из 25 страниц"
+            />
+          </div>
           <img
-            src="../pictures/know-cocoa-img3.webp"
+            src="../pictures/know-cocoa-img-mobile3.webp"
             alt="Design Methods — брошюра о дизайн-методах. Галерея из 25 страниц"
-            id="last-img"
+            class="mobile-img3"
           />
           <p class="desc">
             Know Cocoa, внутренние странницы. Нажмите, чтобы пролистать галерею
@@ -126,9 +166,15 @@
         </div>
         <div class="menu">
           <h2>содержание</h2>
-          <p class="now">О брошюре</p>
-          <p>Брошюра</p>
-          <p>Страницы брошюры</p>
+          <a href="#first-item">
+            <p class="now" id="first">О брошюре</p>
+          </a>
+          <a href="#second-item">
+            <p id="second">Брошюра</p>
+          </a>
+          <a href="#last-img">
+            <p id="third">Страницы брошюры</p>
+          </a>
         </div>
       </div>
     </div>

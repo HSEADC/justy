@@ -21,6 +21,10 @@ body.design-thinker-part-1 {
       }
     }
 
+    .menu-mobile {
+      display: none;
+    }
+
     .links {
       display: flex;
       gap: 2.222vw;
@@ -74,6 +78,10 @@ body.design-thinker-part-1 {
     }
 
     #mobile-img1 {
+      display: none;
+    }
+
+    #mobile-img2 {
       display: none;
     }
 
@@ -184,6 +192,11 @@ body.design-thinker-part-1 {
               gap: 0.741vw;
               border-radius: 0.222vw;
               background: rgba(255, 204, 0, 0.2);
+
+              > img {
+                width: 1.556vw;
+                height: 1.556vw;
+              }
 
               > h3 {
                 color: #000;
@@ -376,15 +389,17 @@ body.design-thinker-part-1 {
       margin-bottom: 1.852vw;
     }
 
-    > p {
-      margin-top: 0.741vw;
-      width: 13.778vw;
-      color: #636366;
-      font-family: SuisseIntl-Regular;
-      font-size: 0.889vw;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%;
+    > a {
+      > p {
+        margin-top: 0.741vw;
+        width: 13.778vw;
+        color: #636366;
+        font-family: SuisseIntl-Regular;
+        font-size: 0.889vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+      }
     }
 
     .now {
@@ -547,7 +562,13 @@ body.design-thinker-part-1 {
       #mobile-img1 {
         display: block;
         width: 90.698vw;
-        height: 363px;
+        height: 84.419vw;
+        border-radius: 2.093vw;
+      }
+      #mobile-img2 {
+        display: block;
+        width: 90.698vw;
+        height: 57.209vw;
         border-radius: 2.093vw;
       }
       #desc-img1 {
@@ -595,18 +616,18 @@ body.design-thinker-part-1 {
           }
 
           > h3 {
-            margin-top: 19px;
-            font-size: 17px;
+            margin-top: 4.419vw;
+            font-size: 3.953vw;
           }
 
           .theme-parts {
-            margin-top: 12px;
-            gap: 4px;
+            margin-top: 2.791vw;
+            gap: 0.93vw;
 
             .theme-part {
-              width: 36px;
-              height: 4px;
-              border-radius: 20px;
+              width: 8.372vw;
+              height: 0.93vw;
+              border-radius: 4.651vw;
             }
           }
 
@@ -638,6 +659,11 @@ body.design-thinker-part-1 {
                 gap: 2.326vw;
                 border-radius: 0.698vw;
 
+                > img {
+                  width: 4.884vw;
+                  height: 4.884vw;
+                }
+
                 > h3 {
                   font-size: 3.953vw;
                 }
@@ -647,7 +673,7 @@ body.design-thinker-part-1 {
 
           .text-block {
             margin-top: 11.628vw;
-            margin-bottom: 50px;
+            margin-bottom: 11.628vw;
 
             > h2 {
               width: 90.698vw;
@@ -665,20 +691,20 @@ body.design-thinker-part-1 {
             }
 
             > blockquote {
-              margin-top: 30px;
-              margin-bottom: 30px;
-              width: 340px;
-              padding: 20px 0 20px 50px;
-              gap: 10px;
-              border-radius: 5px;
+              margin-top: 6.977vw;
+              margin-bottom: 6.977vw;
+              width: 79.07vw;
+              padding: 4.651vw 0 4.651vw 11.628vw;
+              gap: 2.326vw;
+              border-radius: 1.163vw;
 
               > h2 {
-                width: 319px;
-                font-size: 17px;
+                width: 74.186vw;
+                font-size: 3.953vw;
               }
 
               > p {
-                font-size: 14px;
+                font-size: 3.256vw;
               }
             }
           }
@@ -714,8 +740,8 @@ body.design-thinker-part-1 {
           }
 
           > a {
-            font-size: 17px;
-            border-bottom: 1px black solid;
+            font-size: 3.953vw;
+            border-bottom: 0.233vw black solid;
           }
 
           .share {
