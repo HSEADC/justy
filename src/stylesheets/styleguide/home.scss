@@ -1,0 +1,271 @@
+body.home {
+  .header {
+    padding: 0 2.963vw;
+    background: var(--dark-green);
+    width: calc(100% - 5.926vw);
+    height: 54.074vw;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+    .header-left {
+      width: 25.926vw;
+      height: 100%;
+      border-right: 0.074vw solid #000;
+
+      > a {
+        margin-top: 2.444vw;
+        > img {
+          margin-top: 2.444vw;
+          width: 6.222vw;
+          height: 1.636vw;
+        }
+      }
+
+      .menu {
+        margin-top: 5.55vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.778vw;
+
+        > a {
+          > h2 {
+            color: #fff;
+            font-family: 'SuisseIntl-Regular';
+            font-size: 1.556vw;
+            font-style: normal;
+            line-height: 115%;
+          }
+
+          #now {
+            color: #81e7d6;
+          }
+        }
+      }
+
+      .round {
+        width: 34.519vw;
+        height: 34.519vw;
+        position: absolute;
+        left: -11.852vw;
+        bottom: -11.037vw;
+        border-radius: 34.519vw;
+        background: radial-gradient(
+          58.48% 58.48% at 50% 50%,
+          #f900fe 16.97%,
+          #f4017e 51.59%,
+          #df024d 83.1%
+        );
+
+        filter: blur(1.486vw);
+      }
+    }
+
+    .header-right {
+      margin-left: 8.667vw;
+      margin-top: 7.407vw;
+
+      > h1 {
+        color: #fff;
+        font-family: 'SuisseIntl-Medium';
+        font-size: 7.407vw;
+        font-style: normal;
+        line-height: 115%;
+      }
+
+      > h3 {
+        margin-top: 0.741vw;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: 'SuisseIntl-Regular';
+        font-size: 1.259vw;
+        font-style: normal;
+        line-height: 130%;
+      }
+
+      .paragraphMenu {
+        margin-top: 6vw;
+        margin-left: 23.556vw;
+        display: inline-flex;
+        flex-direction: column;
+
+        > h3 {
+          color: rgba(255, 255, 255, 0.8);
+          font-family: 'SuisseIntl-Regular';
+          font-size: 1.259vw;
+          font-style: normal;
+          line-height: 150%;
+        }
+
+        > a {
+          > h2 {
+            color: rgba(255, 255, 255, 0.5);
+            font-family: 'SuisseIntl-Medium';
+            font-size: 1.556vw;
+            font-style: normal;
+            line-height: 115%;
+            margin-top: 1.111vw;
+          }
+
+          #about {
+            margin-top: 2.963vw;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content {
+    width: calc(100% - 37.556vw);
+    padding: 10.519vw 2.963vw 4.444vw 34.593vw;
+
+    > h1 {
+      color: #000;
+      font-family: 'SuisseIntl-Medium';
+      font-size: 2.593vw;
+      font-style: normal;
+      line-height: 115%;
+    }
+
+    > p {
+      margin-top: 1.852vw;
+      width: 31.556vw;
+      color: #000;
+      font-family: 'SuisseIntl-Regular';
+      font-size: 1.259vw;
+      font-style: normal;
+      line-height: 150%;
+    }
+
+    > a {
+      > h3 {
+        margin-top: 2.222vw;
+        width: 10.148vw;
+        color: #000;
+        font-family: 'SuisseIntl-Semibold';
+        font-size: 1.037vw;
+        font-style: normal;
+        line-height: normal;
+        border-bottom: 0.074vw solid #000;
+        text-transform: uppercase;
+      }
+    }
+    .underline {
+      margin-top: 2.963vw;
+      background-color: #000;
+      width: 62.444vw;
+      height: 0.074vw;
+    }
+
+    .h1 {
+      margin-top: 10.519vw;
+    }
+
+    > img {
+      margin-top: 2.222vw;
+      margin-bottom: 1.852vw;
+      width: 32.37vw;
+      height: 24.649vw;
+    }
+
+    .p1 {
+      margin-top: 3.704vw;
+    }
+
+    .p2 {
+      margin-top: 2.222vw;
+    }
+
+    #img1 {
+      width: 62.444vw;
+      height: 30.296vw;
+      border-radius: 0.667vw;
+      margin-bottom: 1.111vw;
+    }
+
+    > h2 {
+      margin-left: 7.926vw;
+      width: 46.593vw;
+      color: rgba(0, 0, 0, 0.5);
+      font-family: 'SuisseIntl-Medium';
+      font-size: 1.037vw;
+      font-style: normal;
+      line-height: 130%;
+    }
+
+    #under2 {
+      margin-top: 3.111vw;
+    }
+
+    .last-img {
+      margin-top: 7.407vw;
+      width: 62.37vw;
+      height: 30.296vw;
+      border-radius: 0.667vw;
+      background: #f4017e;
+      position: relative;
+      overflow: hidden;
+
+      .circle2 {
+        top: -4.148vw;
+        left: 12.963vw;
+        position: absolute;
+        width: 36.519vw;
+        height: 36.519vw;
+        border-radius: 36.519vw;
+        background: radial-gradient(
+          58.48% 58.48% at 50% 50%,
+          #00fe0d 16.97%,
+          #01ee8f 44.27%,
+          #03ceac 79.69%
+        );
+        filter: blur(1.572vw);
+      }
+
+      > h2 {
+        z-index: 2;
+        position: relative;
+        margin-top: 11.778vw;
+        margin-left: 6.074vw;
+        width: 50.222vw;
+        font-family: 'SuisseIntl-Medium';
+        font-size: 3.562vw;
+        font-style: normal;
+        line-height: 130%;
+        background: linear-gradient(
+          90deg,
+          #000 1.7%,
+          #fff 22.96%,
+          #fff 80.61%,
+          #000 97.57%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    .next {
+      margin-left: 54.593vw;
+      margin-top: 5.203vw;
+
+      > a {
+        display: flex;
+        gap: 0.741vw;
+        align-items: center;
+        > h2 {
+          color: #000;
+          font-family: 'SuisseIntl-Regular';
+          font-size: 2.222vw;
+          font-style: normal;
+          line-height: 115%;
+        }
+
+        > img {
+          width: 1.778vw;
+          height: 1.778vw;
+        }
+      }
+    }
+  }
+}

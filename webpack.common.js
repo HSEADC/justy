@@ -14,6 +14,7 @@ module.exports = {
     navbar8: './src/javascript/navbar8.js',
     slider1: './src/javascript/slider1.js',
     slider2: './src/javascript/slider2.js',
+    main: './src/javascript/main.js',
     page: './src/page.jsx'
   },
   output: {
@@ -113,11 +114,24 @@ module.exports = {
       chunkFilename: '[id].[contenthash].css'
     }),
 
+    // Style guide
+    new HtmlWebpackPlugin({
+      template: './src/styleguide/home.html',
+      filename: './styleguide/home.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/styleguide/logo.html',
+      filename: './styleguide/logo.html',
+      chunks: ['index']
+    }),
+
     // Landing page
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index']
+      chunks: ['index', 'main']
     }),
 
     new HtmlWebpackPlugin({

@@ -124,23 +124,5 @@ var __webpack_exports__ = {};
 //   let newValue = Number(strMar) - deltaVW
 //   circle.style.marginTop = `${newValue}vw`
 // }
-
-function handleIntersect(entries, observer) {
-  entries.forEach(function (entry) {
-    if (entry.isIntersecting) {
-      target2.classList.add('animate-on-view');
-    }
-  });
-}
-
-var options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.7
-};
-var observer = new IntersectionObserver(handleIntersect, options);
-var target = document.querySelector('.anim-tag');
-var target2 = document.querySelector('.second-round');
-observer.observe(target);
 /******/ })()
 ;

@@ -142,24 +142,3 @@ import './index.css'
 //   let newValue = Number(strMar) - deltaVW
 //   circle.style.marginTop = `${newValue}vw`
 // }
-
-function handleIntersect(entries, observer) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      target2.classList.add('animate-on-view')
-    }
-  })
-}
-
-let options = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.7
-}
-
-let observer = new IntersectionObserver(handleIntersect, options)
-
-let target = document.querySelector('.anim-tag')
-let target2 = document.querySelector('.second-round')
-
-observer.observe(target)
