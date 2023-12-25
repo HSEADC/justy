@@ -1,29 +1,26 @@
 @font-face {
   font-family: 'SuisseIntl-Regular';
-  src: url('fonts/SuisseIntl-Regular.otf');
-  src: url('fonts/SuisseIntl-Regular.ttf');
-  src: url('fonts/SuisseIntl-Regular.svg') format('svg');
-  src: url('fonts/SuisseIntl-Regular.woff') format('woff');
-  src: url('fonts/SuisseIntl-Regular.woff2') format('woff2');
-  src: local('SuisseIntl-Regular');
+  src: local('SuisseIntl-Regular'), local('Suisse Intl Regular'),
+    url('fonts/SuisseIntl-Regular.otf'), url('fonts/SuisseIntl-Regular.ttf'),
+    url('fonts/SuisseIntl-Regular.svg') format('svg'),
+    url('fonts/SuisseIntl-Regular.woff') format('woff'),
+    url('fonts/SuisseIntl-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'SuisseIntl-Medium';
-  src: url('fonts/SuisseIntl-Medium.ttf');
-  src: url('fonts/SuisseIntl-Medium.otf');
-  src: url('fonts/SuisseIntl-Medium.svg') format('svg');
-  src: url('fonts/SuisseIntl-Medium.woff') format('woff');
-  src: url('fonts/SuisseIntl-Medium.woff2') format('woff2');
-  src: local('SuisseIntl-Medium');
+  src: local('SuisseIntl-Medium'), local('Suisse Intl Medium'),
+    url('fonts/SuisseIntl-Medium.otf'), url('fonts/SuisseIntl-Medium.ttf'),
+    url('fonts/SuisseIntl-Medium.svg') format('svg'),
+    url('fonts/SuisseIntl-Medium.woff') format('woff'),
+    url('fonts/SuisseIntl-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'SuisseIntl-Semibold';
-  src: url('fonts/SuisseIntl-SemiBold.otf');
-  src: url('fonts/SuisseIntl-SemiBold.ttf');
-  src: url('fonts/SuisseIntl-SemiBold.woff') format('woff');
-  src: url('fonts/SuisseIntl-SemiBold.woff2') format('woff2');
-  src: url('fonts/SuisseIntl-SemiBold.svg') format('svg');
-  src: local('SuisseIntl-SemiBold');
+  src: local('SuisseIntl-Semibold'), local('Suisse Intl Semibold'),
+    url('fonts/SuisseIntl-Semibold.otf'), url('fonts/SuisseIntl-Semibold.ttf'),
+    url('fonts/SuisseIntl-Semibold.svg') format('svg'),
+    url('fonts/SuisseIntl-Semibold.woff') format('woff'),
+    url('fonts/SuisseIntl-Semibold.woff2') format('woff2');
 }
