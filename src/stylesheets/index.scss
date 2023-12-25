@@ -381,6 +381,7 @@ body.index {
     .agreement {
       margin-top: 2.593vw;
       display: flex;
+      gap: 10px;
       align-items: flex-start;
 
       > p {
@@ -395,8 +396,8 @@ body.index {
       }
 
       > input {
-        width: 1vw;
-        height: 1vw;
+        width: 0.9vw;
+        height: 0.9vw;
         border: 0.074vw solid #373737;
         border-radius: 37.037vw;
       }
