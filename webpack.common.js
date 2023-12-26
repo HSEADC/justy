@@ -15,6 +15,7 @@ module.exports = {
     slider1: './src/javascript/slider1.js',
     slider2: './src/javascript/slider2.js',
     main: './src/javascript/main.js',
+    moveDown: './src/javascript/move-down.js',
     page: './src/page.jsx'
   },
   output: {
@@ -78,13 +79,13 @@ module.exports = {
           filename: 'images/[hash][ext][query]'
         }
       },
-      {
-        test: /\.(glb|gltf)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'models/[name].[ext]'
-        }
-      },
+      // {
+      //   test: /\.(glb|gltf)$/i,
+      //   loader: 'file-loader',
+      //   options: {
+      //     name: 'models/[name].[ext]'
+      //   }
+      // },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
         loader: 'file-loader',
@@ -104,8 +105,8 @@ module.exports = {
         {
           from: path.resolve(__dirname, 'src/share/'),
           to: path.resolve(__dirname, 'docs/share/')
-        },
-        { from: 'src/models', to: 'models' }
+        }
+        // { from: 'src/models', to: 'models' }
       ]
     }),
 
@@ -181,7 +182,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html',
-      chunks: ['index']
+      chunks: ['index', 'moveDown']
     }),
 
     //Code

@@ -109,31 +109,31 @@ body.about {
           font-size: 1.259vw;
           font-style: normal;
           font-weight: 400;
-          line-height: 130%;
+          line-height: 150%;
         }
       }
 
       .cards {
         margin-top: 5.185vw;
         position: relative;
-        height: 29.926vw;
+        height: 32.148vw;
 
         .card {
           position: absolute;
-          width: 25.073vw;
-          height: 12.741vw;
+          width: 24.667vw;
+          height: 13.111vw;
           border-radius: 1.481vw;
           background: #202020;
-          padding: 1.852vw 0 0 1.667vw;
+          padding: 2.593vw 0 0 2.074vw;
 
           > h2 {
             width: 22.593vw;
             color: #fff;
-            margin-bottom: 1.481vw;
+            margin-bottom: 0.741vw;
             font-family: 'SuisseIntl-Medium';
             font-size: 1.556vw;
             font-style: normal;
-            line-height: normal;
+            line-height: 130%;
           }
           p {
             width: 21.556vw;
@@ -141,24 +141,25 @@ body.about {
             font-family: 'SuisseIntl-Regular';
             font-size: 1.259vw;
             font-style: normal;
-            font-weight: 400;
-            line-height: normal;
+            line-height: 150%;
           }
         }
         #card1 {
+          z-index: 2;
           top: 0;
           left: 0;
         }
         #card2 {
+          z-index: 2;
           top: 0;
           left: 27.481vw;
         }
         #card3 {
-          top: 15.333vw;
+          top: 0;
           left: 0;
         }
         #card4 {
-          top: 15.333vw;
+          top: 0;
           left: 27.481vw;
         }
       }
@@ -181,7 +182,7 @@ body.about {
           font-size: 1.259vw;
           font-style: normal;
           font-weight: 400;
-          line-height: 130%;
+          line-height: 150%;
         }
       }
 
@@ -235,7 +236,7 @@ body.about {
 
     .second-round {
       position: absolute;
-      top: 135.333vw;
+      top: 137.573vw;
       z-index: 3;
       width: 143.556vw;
       height: 143.556vw;
@@ -350,6 +351,22 @@ body.about {
         font-weight: 400;
         line-height: normal;
       }
+    }
+  }
+
+  .movedown {
+    animation: movedown 0.8s ease-in-out forwards;
+  }
+
+  @keyframes movedown {
+    0% {
+      top: 0;
+    }
+    60% {
+      top: 17.444vw;
+    }
+    100% {
+      top: 16.444vw;
     }
   }
 }
