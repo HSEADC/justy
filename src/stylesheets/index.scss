@@ -381,7 +381,7 @@ body.index {
     .agreement {
       margin-top: 2.593vw;
       display: flex;
-      gap: 10px;
+      gap: 0.741vw;
       align-items: flex-start;
 
       > p {
@@ -396,6 +396,7 @@ body.index {
       }
 
       > input {
+        // opacity: 0;
         width: 0.9vw;
         height: 0.9vw;
         border: 0.074vw solid #373737;
@@ -403,8 +404,9 @@ body.index {
       }
 
       > input[type='checkbox']:after {
-        width: 20px;
-        height: 20px;
+        opacity: 1;
+        width: 1.481vw;
+        height: 1.481vw;
         border: 0.074vw solid #373737;
         border-radius: 37.037vw;
         background-color: #1e1e1e;
@@ -417,8 +419,9 @@ body.index {
       }
 
       input[type='checkbox']:checked:after {
-        width: 20px;
-        height: 20px;
+        opacity: 1;
+        width: 1.481vw;
+        height: 1.481vw;
         border-radius: 37.037vw;
         top: -0.296vw;
         left: -0.344vw;

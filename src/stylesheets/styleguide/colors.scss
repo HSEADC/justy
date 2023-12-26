@@ -1,0 +1,1000 @@
+body.colors {
+  display: flex;
+  overflow-x: hidden;
+  .header-left {
+    overflow: hidden;
+    z-index: 2;
+    background-color: #df024d;
+    padding-left: 2.963vw;
+    position: fixed;
+    width: 22.963vw;
+    height: 100vh;
+    border-right: 0.074vw solid #000;
+
+    > a {
+      margin-top: 2.444vw;
+      > img {
+        margin-top: 2.444vw;
+        width: 6.222vw;
+        height: 1.636vw;
+      }
+    }
+
+    .menu {
+      margin-top: 5.55vw;
+      display: flex;
+      flex-direction: column;
+      gap: 1.778vw;
+
+      > a {
+        > h2 {
+          color: #fff;
+          font-family: 'SuisseIntl-Regular';
+          font-size: 1.556vw;
+          font-style: normal;
+          line-height: 115%;
+        }
+
+        #now {
+          color: #ef80a6;
+        }
+      }
+    }
+
+    .round {
+      width: 34.519vw;
+      height: 34.519vw;
+      position: absolute;
+      left: -11.852vw;
+      bottom: -11.037vw;
+      border-radius: 34.519vw;
+      background: radial-gradient(
+        58.48% 58.48% at 50% 50%,
+        #00fe0d 16.97%,
+        #01ee8f 51.59%,
+        #03ceac 83.1%
+      );
+
+      filter: blur(1.486vw);
+    }
+  }
+
+  .right-content {
+    margin-left: 25.926vw;
+    width: 74.074vw;
+    .header {
+      background: #df024d;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+
+      .header-right {
+        margin-left: 8.667vw;
+        margin-top: 7.407vw;
+
+        > h1 {
+          color: #fff;
+          font-family: 'SuisseIntl-Medium';
+          font-size: 7.407vw;
+          font-style: normal;
+          line-height: 115%;
+        }
+
+        > h3 {
+          margin-top: 0.741vw;
+          color: rgba(255, 255, 255, 0.8);
+          font-family: 'SuisseIntl-Regular';
+          font-size: 1.259vw;
+          font-style: normal;
+          line-height: 130%;
+        }
+
+        .paragraphMenu {
+          margin-top: 6vw;
+          margin-left: 23.556vw;
+          display: inline-flex;
+          flex-direction: column;
+
+          > h3 {
+            width: 30.148vw;
+            color: rgba(255, 255, 255, 0.8);
+            font-family: 'SuisseIntl-Regular';
+            font-size: 1.259vw;
+            font-style: normal;
+            line-height: 150%;
+          }
+
+          > a {
+            > h2 {
+              color: rgba(255, 255, 255, 0.5);
+              font-family: 'SuisseIntl-Medium';
+              font-size: 1.556vw;
+              font-style: normal;
+              line-height: 115%;
+              margin-top: 1.111vw;
+            }
+
+            #about {
+              margin-top: 2.963vw;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    .main-content {
+      width: calc(100% - 11.63vw);
+      padding: 10.519vw 2.963vw 4.444vw 8.667vw;
+
+      > h1 {
+        color: #000;
+        font-family: 'SuisseIntl-Medium';
+        font-size: 2.593vw;
+        font-style: normal;
+        line-height: 150%;
+      }
+
+      > p {
+        margin-top: 1.852vw;
+        width: 31.556vw;
+        color: #000;
+        font-family: 'SuisseIntl-Regular';
+        font-size: 1.259vw;
+        font-style: normal;
+        line-height: 150%;
+      }
+
+      #second,
+      #third,
+      #fourth,
+      #fifth,
+      #sixth,
+      #seventh {
+        margin-top: 10.519vw;
+      }
+
+      .p1 {
+        margin-top: 1.481vw;
+        line-height: 130%;
+      }
+
+      .p2 {
+        width: 31.556vw;
+        margin-top: 1.481vw;
+      }
+
+      .p3 {
+        margin-top: 3.704vw;
+      }
+
+      .colors-div {
+        margin-top: 2.222vw;
+        margin-bottom: 0.741vw;
+        width: 62.444vw;
+        height: 25.704vw;
+        display: grid;
+        gap: 0.074vw;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        .color-div {
+          padding-top: 0.815vw;
+          padding-left: 0.815vw;
+          display: flex;
+          flex-direction: column;
+          gap: 4.222vw;
+
+          > h3 {
+            color: #000;
+            font-family: 'SuisseIntl-Regular';
+            font-size: 1.037vw;
+            font-style: normal;
+            line-height: 130%;
+          }
+
+          > h2 {
+            color: #000;
+            font-family: 'SuisseIntl-Regular';
+            font-size: 1.259vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+          }
+        }
+
+        #color1 {
+          grid-area: 1 / 1 / 2 / 2;
+          background: #00fe0d;
+        }
+        #color2 {
+          grid-area: 1 / 2 / 2 / 3;
+          background: #f900fe;
+        }
+        #color3 {
+          grid-area: 1 / 3 / 2 / 4;
+          background: #60e5ff;
+        }
+        #color4 {
+          grid-area: 1 / 4 / 2 / 5;
+          background: #fc0;
+        }
+        #color5 {
+          grid-area: 1 / 5 / 2 / 6;
+          background: #da02fe;
+        }
+        #color6 {
+          grid-area: 2 / 1 / 3 / 2;
+          background: #01ee8f;
+        }
+        #color7 {
+          grid-area: 2 / 2 / 3 / 3;
+          background: #f4017e;
+        }
+        #color8 {
+          grid-area: 2 / 3 / 3 / 4;
+          background: #42beff;
+        }
+        #color9 {
+          grid-area: 2 / 4 / 3 / 5;
+          background: #ffa200;
+        }
+        #color10 {
+          grid-area: 2 / 5 / 3 / 6;
+          background: #a616ea;
+        }
+        #color11 {
+          grid-area: 3 / 1 / 4 / 2;
+          background: #03ceac;
+        }
+        #color12 {
+          grid-area: 3 / 2 / 4 / 3;
+          background: #df024d;
+        }
+        #color13 {
+          grid-area: 3 / 3 / 4 / 4;
+          background: #006eff;
+        }
+        #color14 {
+          grid-area: 3 / 4 / 4 / 5;
+          background: #ff4b00;
+        }
+        #color15 {
+          grid-area: 3 / 5 / 4 / 6;
+          background: #7f28cb;
+        }
+
+        #color1-2 {
+          grid-area: 1 / 1 / 2 / 2;
+          background: #c7ffca;
+        }
+        #color2-2 {
+          grid-area: 1 / 2 / 2 / 3;
+          background: #fec7ff;
+        }
+        #color3-2 {
+          grid-area: 1 / 3 / 2 / 4;
+          background: #dcf9ff;
+        }
+        #color4-2 {
+          grid-area: 1 / 4 / 2 / 5;
+          background: #fff4c7;
+        }
+        #color5-2 {
+          grid-area: 1 / 5 / 2 / 6;
+          background: #f7c7ff;
+        }
+        #color6-2 {
+          grid-area: 2 / 1 / 3 / 2;
+          background: #c7fbe6;
+        }
+        #color7-2 {
+          grid-area: 2 / 2 / 3 / 3;
+          background: #fdc7e3;
+        }
+        #color8-2 {
+          grid-area: 2 / 3 / 3 / 4;
+          background: #d5f1ff;
+        }
+        #color9-2 {
+          grid-area: 2 / 4 / 3 / 5;
+          background: #ffebc7;
+        }
+        #color10-2 {
+          grid-area: 2 / 5 / 3 / 6;
+          background: #ebccfa;
+        }
+        #color11-2 {
+          grid-area: 3 / 1 / 4 / 2;
+          background: #c8f4ed;
+        }
+        #color12-2 {
+          grid-area: 3 / 2 / 4 / 3;
+          background: #f8c7d8;
+        }
+        #color13-2 {
+          grid-area: 3 / 3 / 4 / 4;
+          background: #c7dfff;
+        }
+        #color14-2 {
+          grid-area: 3 / 4 / 4 / 5;
+          background: #ffd7c7;
+        }
+        #color15-2 {
+          grid-area: 3 / 5 / 4 / 6;
+          background: #e3d0f4;
+        }
+      }
+
+      > img {
+        margin-top: 2.963vw;
+        width: 62.444vw;
+        height: 30.296vw;
+        border-radius: 0.667vw;
+      }
+
+      > h3 {
+        margin-top: 1.111vw;
+        margin-left: 7.926vw;
+        width: 46.593vw;
+        color: rgba(0, 0, 0, 0.5);
+        font-family: 'SuisseIntl-Medium';
+        font-size: 1.037vw;
+        font-style: normal;
+        line-height: 130%;
+      }
+
+      .underline {
+        width: 842;
+        height: 0.074vw;
+        border-bottom: 0.074vw #000 solid;
+        margin-top: 3.259vw;
+      }
+
+      .tags {
+        margin-top: 3.704vw;
+        display: flex;
+        flex-direction: column;
+        padding: 1.556vw 1.407vw 1.556vw 1.333vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.667vw;
+        border: 0.074vw solid #000;
+
+        .author {
+          display: flex;
+          width: 56.741vw;
+          padding: 1.185vw 1.481vw;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.741vw;
+          border-radius: 0.37vw;
+          background: #ffe9e0;
+
+          > h2 {
+            color: #000;
+            font-family: 'SuisseIntl-Semibold';
+            font-size: 1.259vw;
+            font-style: normal;
+            line-height: 130%;
+          }
+
+          > p {
+            color: rgba(0, 0, 0, 0.7);
+            font-family: 'SuisseIntl-Regular';
+            font-size: 1.037vw;
+            font-style: normal;
+            line-height: 130%;
+          }
+        }
+
+        #author2 {
+          background: rgba(3, 206, 172, 0.15);
+          margin-top: 1.111vw;
+        }
+
+        .little-tags {
+          margin-top: 1.111vw;
+          display: flex;
+          gap: 0.741vw;
+
+          .little-tag {
+            display: flex;
+            padding: 0.37vw 0.741vw;
+            justify-content: center;
+            align-items: center;
+            gap: 0.741vw;
+            border-radius: 0.222vw;
+
+            > img {
+              width: 1.556vw;
+              height: 1.556vw;
+            }
+
+            > h2 {
+              color: #000;
+              font-family: 'SuisseIntl-Regular';
+              font-size: 1.259vw;
+              font-style: normal;
+              line-height: 130%;
+            }
+          }
+
+          .tag1 {
+            background: rgba(255, 204, 0, 0.2);
+          }
+
+          .tag2 {
+            background: #c7dfff;
+          }
+        }
+      }
+      #subtitle {
+        color: #000;
+      }
+      .colors3 {
+        margin-top: 2.222vw;
+        width: 62.444vw;
+        height: 25.704vw;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          'a a b b c c'
+          'd d f f g g'
+          'h h h i i i';
+        gap: 0.074vw;
+
+        .color-div {
+          padding-top: 0.815vw;
+          padding-left: 0.815vw;
+          display: flex;
+          flex-direction: column;
+          gap: 4.222vw;
+
+          > h3 {
+            color: #fff;
+            font-family: 'SuisseIntl-Regular';
+            font-size: 1.037vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+          }
+
+          > h2 {
+            color: #fff;
+            font-family: 'SuisseIntl-Regular';
+            font-size: 1.259vw;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+          }
+        }
+
+        #color1-3 {
+          grid-area: a;
+          background: #000;
+        }
+        #color2-3 {
+          grid-area: b;
+          background: #202020;
+        }
+        #color3-3 {
+          grid-area: c;
+          background: #1e1e1e;
+        }
+        #color4-3 {
+          grid-area: d;
+          background: #636366;
+        }
+        #color5-3 {
+          grid-area: f;
+          background: #7f7f7f;
+        }
+        #color6-3 {
+          grid-area: g;
+          background: #9a9a9a;
+        }
+        #color7-3 {
+          grid-area: h;
+          background: #f5f5f5;
+          > h2 {
+            color: #000;
+          }
+          > h3 {
+            color: #000;
+          }
+        }
+        #color8-3 {
+          grid-area: i;
+          background: #fff;
+          > h2 {
+            color: #000;
+          }
+          > h3 {
+            color: #000;
+          }
+        }
+      }
+      .balls-marker {
+        margin-top: 3.704vw;
+        margin-bottom: 3.704vw;
+        display: flex;
+        flex-direction: column;
+        gap: 0.37vw;
+
+        .balls-set {
+          display: flex;
+          gap: 3.704vw;
+
+          .ball-column {
+            display: flex;
+            flex-direction: column;
+            gap: 2.37vw;
+
+            > svg {
+              width: 8.489vw;
+              height: 8.489vw;
+            }
+
+            .circle1 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #f900fe 16.97%,
+                #f4017e 51.59%,
+                #df024d 83.1%
+              );
+
+              filter: blur(0.365vw);
+            }
+
+            .circle2 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #60e5ff 16.97%,
+                #42beff 51.59%,
+                #006eff 83.1%
+              );
+              filter: blur(0.365vw);
+            }
+
+            .circle3 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #da02fe 16.97%,
+                #a616ea 53.13%,
+                #7f28cb 83.1%
+              );
+              filter: blur(0.365vw);
+            }
+
+            .circle4 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #fc0 16.97%,
+                #ffa200 51.59%,
+                #ff4b00 83.1%
+              );
+              filter: blur(0.365vw);
+            }
+
+            .circle5 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #00fe0d 16.97%,
+                #01ee8f 44.27%,
+                #03ceac 79.69%
+              );
+              filter: blur(0.365vw);
+            }
+
+            .color-column {
+              display: flex;
+              flex-direction: column;
+              gap: 0.37vw;
+
+              .color-block {
+                width: 8.519vw;
+                height: 2.444vw;
+              }
+
+              #block1 {
+                background: #f900fe;
+              }
+              #block2 {
+                background: #f4017e;
+              }
+              #block3 {
+                background: #df024d;
+              }
+              #block4 {
+                background: #60e5ff;
+              }
+              #block5 {
+                background: #42beff;
+              }
+              #block6 {
+                background: #006eff;
+              }
+              #block7 {
+                background: #da02fe;
+              }
+              #block8 {
+                background: #a616ea;
+              }
+              #block9 {
+                background: #7f28cb;
+              }
+              #block10 {
+                background: #fc0;
+              }
+              #block11 {
+                background: #ffa200;
+              }
+              #block12 {
+                background: #ff4b00;
+              }
+              #block13 {
+                background: #00fe0d;
+              }
+              #block14 {
+                background: #01ee8f;
+              }
+              #block15 {
+                background: #03ceac;
+              }
+            }
+          }
+        }
+
+        .marker-text {
+          display: flex;
+          flex-direction: column;
+          gap: 1.185vw;
+          margin-left: 4.148vw;
+          > img {
+            width: 49.407vw;
+            height: 2.741vw;
+          }
+          > h3 {
+            color: #000;
+            font-family: 'SuisseIntl-Regular';
+            font-size: 1.259vw;
+            font-style: normal;
+            line-height: 130%;
+            margin-left: 15.778vw;
+          }
+        }
+      }
+
+      .example-tags-wrapper {
+        margin-top: 2.222vw;
+        display: flex;
+        height: 19.852vw;
+        padding: 0 3.189vw 0 3.185vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.667vw;
+        border: 0.074vw solid rgba(0, 0, 0, 0.5);
+
+        .example-tags {
+          display: flex;
+          gap: 5.049vw;
+
+          .example-tag {
+            display: flex;
+            align-items: center;
+            gap: 1.616vw;
+
+            > svg {
+              width: 3.636vw;
+              height: 3.636vw;
+            }
+
+            .example-svg1 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #60e5ff 9.38%,
+                #42beff 35.94%,
+                #006eff 74.48%
+              );
+              filter: blur(0.202vw);
+            }
+
+            .example-svg2 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #f900fe 9.38%,
+                #f4017e 35.94%,
+                #df024d 74.48%
+              );
+              filter: blur(0.202vw);
+            }
+
+            > h2 {
+              font-family: 'SuisseIntl-Semibold';
+              font-size: 2.828vw;
+              font-style: normal;
+              line-height: 130%;
+              text-transform: uppercase;
+            }
+
+            #h2-1 {
+              color: #006eff;
+            }
+
+            #h2-2 {
+              color: #df024d;
+            }
+          }
+        }
+      }
+
+      .web {
+        margin-top: 3.704vw;
+        display: flex;
+        padding: 5.556vw 3.778vw 5.63vw 3.778vw;
+        justify-content: center;
+        gap: 3.704vw;
+        border-radius: 0.667vw;
+        background: #efefef;
+
+        .web-tags {
+          display: flex;
+          flex-direction: column;
+          gap: 2.222vw;
+
+          .web-tag {
+            display: flex;
+            align-items: center;
+            gap: 0.593vw;
+
+            > svg {
+              filter: blur(0.074vw);
+            }
+
+            > h2 {
+              font-family: 'SuisseIntl-Semibold';
+              font-size: 1.037vw;
+              font-style: normal;
+              line-height: 130%;
+              text-transform: uppercase;
+            }
+
+            .web-v1 {
+              color: #006eff;
+            }
+
+            .web-v2 {
+              color: #03ceac;
+            }
+
+            .web-v3 {
+              color: #7f28cb;
+            }
+
+            .web-v4 {
+              color: #df024d;
+            }
+
+            .web-v5 {
+              color: #ff4b00;
+            }
+          }
+        }
+      }
+
+      .balls {
+        margin-top: 3.704vw;
+        margin-bottom: 0.741vw;
+        display: flex;
+        width: 58.222vw;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 8.444vw 11.11vw;
+        flex-wrap: wrap;
+
+        .content {
+          display: flex;
+          gap: 1.852vw;
+          width: 23.556vw;
+          height: 18.933vw;
+
+          .ball-column {
+            display: flex;
+            flex-direction: column;
+            gap: 2.37vw;
+
+            > svg {
+              width: 8.489vw;
+              height: 8.489vw;
+            }
+
+            .circle1 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #f900fe 16.97%,
+                #f4017e 51.59%,
+                #df024d 83.1%
+              );
+
+              filter: blur(0.365vw);
+            }
+
+            .circle2 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #60e5ff 16.97%,
+                #42beff 51.59%,
+                #006eff 83.1%
+              );
+              filter: blur(0.365vw);
+            }
+
+            .circle3 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #da02fe 16.97%,
+                #a616ea 53.13%,
+                #7f28cb 83.1%
+              );
+              filter: blur(0.365vw);
+            }
+
+            .circle4 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #fc0 16.97%,
+                #ffa200 51.59%,
+                #ff4b00 83.1%
+              );
+              filter: blur(0.365vw);
+            }
+
+            .circle5 {
+              fill: radial-gradient(
+                58.48% 58.48% at 50% 50%,
+                #00fe0d 16.97%,
+                #01ee8f 44.27%,
+                #03ceac 79.69%
+              );
+              filter: blur(0.365vw);
+            }
+
+            .color-column {
+              display: flex;
+              flex-direction: column;
+              gap: 0.37vw;
+
+              .color-block {
+                width: 8.519vw;
+                height: 2.444vw;
+              }
+
+              #block1 {
+                background: #f900fe;
+              }
+              #block2 {
+                background: #f4017e;
+              }
+              #block3 {
+                background: #df024d;
+              }
+              #block4 {
+                background: #60e5ff;
+              }
+              #block5 {
+                background: #42beff;
+              }
+              #block6 {
+                background: #006eff;
+              }
+              #block7 {
+                background: #da02fe;
+              }
+              #block8 {
+                background: #a616ea;
+              }
+              #block9 {
+                background: #7f28cb;
+              }
+              #block10 {
+                background: #fc0;
+              }
+              #block11 {
+                background: #ffa200;
+              }
+              #block12 {
+                background: #ff4b00;
+              }
+              #block13 {
+                background: #00fe0d;
+              }
+              #block14 {
+                background: #01ee8f;
+              }
+              #block15 {
+                background: #03ceac;
+              }
+            }
+          }
+
+          > p {
+            margin-top: 1.185vw;
+            color: #000;
+            font-family: 'SuisseIntl-Regular';
+            font-size: 4vw;
+            font-style: normal;
+            line-height: 130%;
+          }
+        }
+      }
+
+      .set {
+        margin-top: 2.222vw;
+        display: flex;
+        width: 62.444vw;
+        gap: 0.37vw;
+        .set-item {
+          display: flex;
+          width: 12.148vw;
+          height: 12.148vw;
+          padding: 0.667vw;
+          justify-content: center;
+          align-items: center;
+          background: #000;
+
+          > svg {
+            filter: blur(0.466vw);
+          }
+        }
+      }
+      .images2 {
+        margin-top: 2.222vw;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.741vw;
+        > img {
+          width: 30.741vw;
+          height: 17.926vw;
+          border-radius: 0.667vw;
+        }
+      }
+
+      #img10 {
+        margin-top: 2.222vw;
+      }
+
+      #img11 {
+        margin-top: 3.704vw;
+      }
+
+      .way {
+        margin-top: 5.203vw;
+        display: flex;
+        gap: 37.407vw;
+        .next {
+          > a {
+            display: flex;
+            gap: 0.741vw;
+            align-items: center;
+            > h2 {
+              color: #000;
+              font-family: 'SuisseIntl-Regular';
+              font-size: 2.222vw;
+              font-style: normal;
+              line-height: 115%;
+            }
+
+            > img {
+              width: 1.778vw;
+              height: 1.778vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

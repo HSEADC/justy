@@ -24,3 +24,21 @@
     url('fonts/SuisseIntl-SemiBold.woff') format('woff'),
     url('fonts/SuisseIntl-SemiBold.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: 'SuisseIntl-Book';
+  src: local('SuisseIntl-Book'), local('Suisse Intl Book'),
+    url('fonts/SuisseIntl-Book.ttf'),
+    url('fonts/SuisseIntl-Book.svg') format('svg'),
+    url('fonts/SuisseIntl-Book.woff') format('woff'),
+    url('fonts/SuisseIntl-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SuisseIntl-Light';
+  src: local('SuisseIntl-Light'), local('Suisse Intl Light'),
+    url('fonts/SuisseIntl-Light.ttf'),
+    url('fonts/SuisseIntl-Light.svg') format('svg'),
+    url('fonts/SuisseIntl-Light.woff') format('woff'),
+    url('fonts/SuisseIntl-Light.woff2') format('woff2');
+}

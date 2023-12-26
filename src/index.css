@@ -16,6 +16,9 @@
 @import 'stylesheets/code/code-scss-functions.scss';
 @import 'stylesheets/styleguide/home.scss';
 @import 'stylesheets/styleguide/logo.scss';
+@import 'stylesheets/styleguide/typography.scss';
+@import 'stylesheets/styleguide/colors.scss';
+@import 'stylesheets/styleguide/images.scss';
 
 html {
   scroll-behavior: smooth;

@@ -127,6 +127,24 @@ module.exports = {
       chunks: ['index']
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/styleguide/typography.html',
+      filename: './styleguide/typography.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/styleguide/colors.html',
+      filename: './styleguide/colors.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/styleguide/images.html',
+      filename: './styleguide/images.html',
+      chunks: ['index']
+    }),
+
     // Landing page
     new HtmlWebpackPlugin({
       template: './src/index.html',
