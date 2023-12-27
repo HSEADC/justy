@@ -120,25 +120,25 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/styleguide/home.html',
       filename: './styleguide/home.html',
-      chunks: ['index']
+      chunks: ['index', 'menuStyleguide']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/styleguide/logo.html',
       filename: './styleguide/logo.html',
-      chunks: ['index']
+      chunks: ['index', 'menuStyleguide']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/styleguide/typography.html',
       filename: './styleguide/typography.html',
-      chunks: ['index']
+      chunks: ['index', 'menuStyleguide']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/styleguide/colors.html',
       filename: './styleguide/colors.html',
-      chunks: ['index']
+      chunks: ['index', 'menuStyleguide']
     }),
 
     new HtmlWebpackPlugin({
