@@ -1,5 +1,8 @@
 body.design-method {
   padding: 0 2.963vw 1.926vw 2.963vw;
+  .menu-mobile-above {
+    display: none;
+  }
   .tag-2 {
     margin-left: 1.259vw;
   }
@@ -605,6 +608,66 @@ body.design-method {
 
 @media all and (max-width: 561px) {
   body.design-method {
+    .menu-mobile-above {
+      margin-left: -4.651vw;
+      overflow: hidden;
+      padding: 15.581vw 0 0 4.651vw;
+      background-color: #fff;
+      z-index: 5;
+      position: absolute;
+      display: none;
+      height: calc(100vh - 15.581vw);
+      width: calc(100vw - 4.651vw);
+
+      .top-mobile-menu {
+        display: flex;
+        align-items: center;
+        gap: 60.698vw;
+        > a {
+          > svg {
+            width: 23.488vw;
+            height: 6.174vw;
+          }
+        }
+        > img {
+          width: 6.053vw;
+          height: 6.053vw;
+        }
+      }
+      .content {
+        margin-top: 25.686vw;
+        display: flex;
+        flex-direction: column;
+        gap: 8.14vw;
+        > a {
+          display: block;
+          width: fit-content;
+          > h1 {
+            width: fit-content;
+            color: #000;
+            font-family: 'SuisseIntl-Regular';
+            font-size: 8.14vw;
+            font-style: normal;
+            line-height: 115%;
+          }
+        }
+      }
+      .circle {
+        position: absolute;
+        top: 138.256vw;
+        left: -7.674vw;
+        width: 115.116vw;
+        height: 115.116vw;
+        border-radius: 115.116vw;
+        background: radial-gradient(
+          58.48% 58.48% at 50% 50%,
+          #f900fe 16.97%,
+          #f4017e 51.59%,
+          #df024d 83.1%
+        );
+        filter: blur(4.955vw);
+      }
+    }
     padding: 0 4.651vw 5.814vw 4.651vw;
     .header {
       height: 26.512vw;

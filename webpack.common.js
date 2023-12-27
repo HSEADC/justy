@@ -170,13 +170,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/inspiration/know-cocoa.html',
       filename: './inspiration/know-cocoa.html',
-      chunks: ['index', 'navbar', 'slider2']
+      chunks: ['index', 'navbar', 'slider2', 'menuStyleguide']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/inspiration/book-hard-design.html',
       filename: './inspiration/book-hard-design.html',
-      chunks: ['index', 'navbar', 'slider2']
+      chunks: ['index', 'navbar', 'slider2', 'menuStyleguide']
     }),
 
     //About
@@ -195,7 +195,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/code/code-scss-functions.html',
       filename: './code/code-scss-functions.html',
-      chunks: ['index', 'navbar4']
+      chunks: ['index', 'navbar4', 'menuStyleguide']
     }),
 
     //Design
@@ -207,17 +207,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/design/design-thinker/part-1.html',
       filename: './design/design-thinker/part-1.html',
-      chunks: ['index', 'navbar4']
+      chunks: ['index', 'navbar4', 'menuStyleguide']
     }),
     new HtmlWebpackPlugin({
       template: './src/design/design-method.html',
       filename: './design/design-method.html',
-      chunks: ['navbar', 'index', 'slider1']
+      chunks: ['navbar', 'index', 'slider1', 'menuStyleguide']
     }),
     new HtmlWebpackPlugin({
       template: './src/design/design-thinking-world.html',
       filename: './design/design-thinking-world.html',
-      chunks: ['index', 'navbar8']
+      chunks: ['index', 'navbar8', 'menuStyleguide']
     }),
     //Contacts
     new HtmlWebpackPlugin({
