@@ -46,7 +46,7 @@ body.typography {
       height: 34.519vw;
       position: absolute;
       left: -11.852vw;
-      bottom: -11.037vw;
+      top: 30.593vw;
       border-radius: 34.519vw;
       background: radial-gradient(
         58.48% 58.48% at 50% 50%,
@@ -66,6 +66,7 @@ body.typography {
       background: var(--dark-blue);
       width: 100%;
       height: 100vh;
+      padding-bottom: 15.407vw;
       display: flex;
       position: relative;
       overflow: hidden;
@@ -73,6 +74,10 @@ body.typography {
       .header-right {
         margin-left: 8.667vw;
         margin-top: 7.407vw;
+
+        .top-mobile-menu {
+          display: none;
+        }
 
         > h1 {
           color: #fff;
@@ -107,18 +112,24 @@ body.typography {
           }
 
           > a {
+            width: fit-content;
             > h2 {
-              color: rgba(255, 255, 255, 0.5);
+              color: #fff;
+              width: fit-content;
               font-family: 'SuisseIntl-Medium';
               font-size: 1.556vw;
               font-style: normal;
               line-height: 115%;
               margin-top: 1.111vw;
+              transition: color 0.3s ease;
+
+              &:hover {
+                color: rgba(255, 255, 255, 0.5);
+              }
             }
 
             #about {
               margin-top: 2.963vw;
-              color: #fff;
             }
           }
         }
@@ -220,12 +231,16 @@ body.typography {
         font-style: normal;
         line-height: 150%;
       }
-      > img {
-        width: 62.37vw;
-        height: 30.296vw;
-        border-radius: 0.667vw;
-        margin-top: 2.222vw;
+      > picture {
+        display: block;
+        > img {
+          width: 62.37vw;
+          height: 30.296vw;
+          border-radius: 0.667vw;
+          margin-top: 2.222vw;
+        }
       }
+
       #img2 {
         margin-top: 2.963vw;
       }
@@ -243,10 +258,13 @@ body.typography {
         display: flex;
         gap: 0.741vw;
         margin-top: 2.963vw;
-        > img {
-          width: 30.741vw;
-          height: 33.481vw;
-          border-radius: 0.667vw;
+        > picture {
+          display: block;
+          > img {
+            width: 30.741vw;
+            height: 33.481vw;
+            border-radius: 0.667vw;
+          }
         }
       }
 
@@ -303,6 +321,10 @@ body.typography {
 
         #h3-2 {
           margin-top: 3.111vw;
+        }
+
+        #h1-mobile {
+          display: none;
         }
 
         #h1-2 {
@@ -374,6 +396,11 @@ body.typography {
             display: flex;
             gap: 0.741vw;
             align-items: center;
+            transition: opacity 0.3s ease;
+
+            &:hover {
+              opacity: 0.5;
+            }
             > h2 {
               color: #000;
               font-family: 'SuisseIntl-Regular';
@@ -385,6 +412,268 @@ body.typography {
             > img {
               width: 1.778vw;
               height: 1.778vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 912px) {
+  body.typography {
+    .header-left {
+      display: none;
+    }
+    .right-content {
+      margin-left: 0;
+      width: 100%;
+      .header {
+        .header-right {
+          margin-top: 15.581vw;
+          margin-left: 4.651vw;
+          .top-mobile-menu {
+            display: flex;
+            align-items: center;
+            gap: 58.837vw;
+            > a {
+              > svg {
+                width: 23.488vw;
+                height: 6.174vw;
+              }
+            }
+            .menu-mobile {
+              width: 8.372vw;
+              height: 6.047vw;
+              display: flex;
+              flex-wrap: wrap;
+              align-content: space-around;
+
+              > div {
+                background-color: #fff;
+                height: 0.465vw;
+                width: 100%;
+              }
+            }
+          }
+
+          > h1 {
+            margin-top: 25.453vw;
+            font-size: 13.953vw;
+          }
+
+          > h3 {
+            margin-top: 2.326vw;
+            font-size: 3.953vw;
+          }
+
+          .paragraphMenu {
+            margin-top: 16.279vw;
+            margin-left: 0;
+
+            > h3 {
+              font-size: 3.953vw;
+              width: 90.698vw;
+            }
+
+            > a {
+              > h2 {
+                font-size: 4.884vw;
+                margin-top: 3.488vw;
+              }
+
+              #about {
+                margin-top: 9.302vw;
+              }
+            }
+          }
+        }
+      }
+
+      .main-content {
+        width: calc(100% - 9.302vw);
+        padding: 9.767vw 4.651vw 6.977vw 4.651vw;
+
+        > h1 {
+          font-size: 10.465vw;
+          line-height: normal;
+        }
+
+        > p {
+          margin-top: 11.628vw;
+          width: 90.698vw;
+          font-size: 3.953vw;
+        }
+
+        .wrapper {
+          gap: 3.023vw;
+          flex-direction: column;
+          .letters {
+            margin-top: 9.302vw;
+            gap: 2.326vw;
+            .line {
+              gap: 3.488vw;
+              > p {
+                font-size: 3.953vw;
+              }
+            }
+
+            #second-variant {
+              > p {
+                font-family: 'SuisseIntl-Book';
+              }
+
+              #regular {
+                font-family: 'SuisseIntl-Regular';
+                font-weight: 400;
+              }
+            }
+          }
+        }
+        .value {
+          margin-top: 11.628vw;
+          gap: 2.558vw;
+
+          > p {
+            font-size: 4.884vw;
+          }
+        }
+
+        > picture {
+          display: block;
+          > img {
+            width: 90.465vw;
+            height: 95.116vw;
+            border-radius: 2.093vw;
+            margin-top: 6.977vw;
+          }
+        }
+        #img2 {
+          margin-top: 9.302vw;
+        }
+        > h3 {
+          margin-top: 2.326vw;
+          margin-left: 0;
+          width: 90.698vw;
+          font-size: 3.953vw;
+          line-height: 150%;
+        }
+        .images1 {
+          flex-direction: column;
+          gap: 2.326vw;
+          margin-top: 9.302vw;
+          > picture {
+            > img {
+              width: 90.698vw;
+              height: 105.116vw;
+              border-radius: 2.093vw;
+            }
+          }
+        }
+
+        #second {
+          margin-top: 23.256vw;
+        }
+
+        .type-system {
+          margin-top: 23.256vw;
+
+          > h2 {
+            font-size: 8.14vw;
+          }
+
+          > h3 {
+            margin-top: 16.744vw;
+            font-size: 4.884vw;
+          }
+
+          > h1 {
+            margin-top: 5.814vw;
+            width: 90.698vw;
+            font-size: 12.558vw;
+          }
+
+          #h1-desc {
+            display: none;
+          }
+
+          #h1-mobile {
+            display: block;
+          }
+
+          > p {
+            margin-top: 6.977vw;
+            font-size: 3.953vw;
+          }
+
+          .underline {
+            width: 90.698vw;
+            height: 1px;
+            border-bottom: 1px #000 solid;
+            margin-top: 10.465vw;
+          }
+
+          #h3-2 {
+            margin-top: 9.767vw;
+          }
+
+          #h1-2 {
+            font-size: 8.14vw;
+          }
+
+          #h1-3 {
+            font-size: 6.977vw;
+          }
+
+          #h1-4 {
+            font-size: 6.279vw;
+          }
+
+          #h1-5 {
+            font-size: 4.884vw;
+          }
+
+          #h1-6 {
+            width: 90.698vw;
+            font-size: 3.953vw;
+          }
+
+          #h1-7 {
+            width: 90.698vw;
+            font-size: 3.953vw;
+          }
+
+          #h1-8 {
+            font-size: 3.953vw;
+          }
+
+          #h1-9 {
+            font-size: 3.953vw;
+          }
+
+          #h1-10 {
+            font-size: 3.256vw;
+          }
+
+          #h1-11 {
+            font-size: 2.791vw;
+          }
+        }
+
+        .way {
+          margin-top: 16.279vw;
+          gap: 34.884vw;
+          .next {
+            > a {
+              gap: 3.488vw;
+              > h2 {
+                font-size: 6.977vw;
+              }
+
+              > img {
+                width: 5.581vw;
+                height: 5.581vw;
+              }
             }
           }
         }

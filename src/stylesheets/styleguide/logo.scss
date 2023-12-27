@@ -46,7 +46,7 @@ body.logo {
       height: 34.519vw;
       position: absolute;
       left: -11.852vw;
-      bottom: -11.037vw;
+      top: 30.593vw;
       border-radius: 34.519vw;
       background: radial-gradient(
         58.48% 58.48% at 50% 50%,
@@ -66,6 +66,7 @@ body.logo {
       background: var(--red);
       width: 100%;
       height: 100vh;
+      padding-bottom: 9.63vw;
       display: flex;
       position: relative;
       overflow: hidden;
@@ -73,6 +74,10 @@ body.logo {
       .header-right {
         margin-left: 8.667vw;
         margin-top: 7.407vw;
+
+        .top-mobile-menu {
+          display: none;
+        }
 
         > h1 {
           color: #fff;
@@ -107,18 +112,24 @@ body.logo {
           }
 
           > a {
+            width: fit-content;
             > h2 {
-              color: rgba(255, 255, 255, 0.5);
+              color: #fff;
+              width: fit-content;
               font-family: 'SuisseIntl-Medium';
               font-size: 1.556vw;
               font-style: normal;
               line-height: 115%;
               margin-top: 1.111vw;
+              transition: color 0.3s ease;
+
+              &:hover {
+                color: rgba(255, 255, 255, 0.5);
+              }
             }
 
             #about {
               margin-top: 2.963vw;
-              color: #fff;
             }
           }
         }
@@ -146,7 +157,8 @@ body.logo {
         font-style: normal;
         line-height: 150%;
 
-        > span {
+        > a {
+          color: #000;
           border-bottom: 0.074vw solid #000;
         }
 
@@ -179,6 +191,17 @@ body.logo {
 
       .h1 {
         margin-top: 10.519vw;
+      }
+
+      > picture {
+        display: block;
+        > img {
+          margin-top: 2.222vw;
+          margin-bottom: 1.111vw;
+          width: 62.444vw;
+          height: 30.296vw;
+          border-radius: 0.667vw;
+        }
       }
 
       > img {
@@ -214,10 +237,12 @@ body.logo {
         display: flex;
         gap: 0.741vw;
 
-        > img {
-          width: 30.741vw;
-          height: 33.481vw;
-          border-radius: 0.667vw;
+        > picture {
+          > img {
+            width: 30.741vw;
+            height: 33.481vw;
+            border-radius: 0.667vw;
+          }
         }
       }
 
@@ -226,10 +251,12 @@ body.logo {
         display: flex;
         gap: 0.741vw;
 
-        > img {
-          width: 22.963vw;
-          height: 17.926vw;
-          border-radius: 0.667vw;
+        > picture {
+          > img {
+            width: 22.963vw;
+            height: 17.926vw;
+            border-radius: 0.667vw;
+          }
         }
       }
 
@@ -318,6 +345,11 @@ body.logo {
             display: flex;
             gap: 0.741vw;
             align-items: center;
+            transition: opacity 0.3s ease;
+
+            &:hover {
+              opacity: 0.5;
+            }
             > h2 {
               color: #000;
               font-family: 'SuisseIntl-Regular';
@@ -329,6 +361,271 @@ body.logo {
             > img {
               width: 1.778vw;
               height: 1.778vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 912px) {
+  body.logo {
+    .header-left {
+      display: none;
+    }
+    .right-content {
+      margin-left: 0;
+      width: 100%;
+      .header {
+        height: auto;
+        padding-bottom: 66.512vw;
+        .header-right {
+          margin-top: 15.581vw;
+          margin-left: 4.651vw;
+          .top-mobile-menu {
+            display: flex;
+            align-items: center;
+            gap: 58.837vw;
+            > a {
+              > svg {
+                width: 23.488vw;
+                height: 6.174vw;
+              }
+            }
+            .menu-mobile {
+              width: 8.372vw;
+              height: 6.047vw;
+              display: flex;
+              flex-wrap: wrap;
+              align-content: space-around;
+
+              > div {
+                background-color: #fff;
+                height: 0.465vw;
+                width: 100%;
+              }
+            }
+          }
+
+          > h1 {
+            margin-top: 25.453vw;
+            font-size: 13.953vw;
+          }
+
+          > h3 {
+            margin-top: 2.326vw;
+            font-size: 3.953vw;
+          }
+
+          .paragraphMenu {
+            margin-top: 16.279vw;
+            margin-left: 0;
+
+            > h3 {
+              font-size: 3.953vw;
+              width: 90.698vw;
+            }
+
+            > a {
+              > h2 {
+                font-size: 4.884vw;
+                margin-top: 3.488vw;
+              }
+
+              #about {
+                margin-top: 9.302vw;
+              }
+            }
+          }
+        }
+      }
+
+      .main-content {
+        width: calc(100% - 9.302vw);
+        padding: 9.767vw 4.651vw 6.977vw 4.651vw;
+
+        > h1 {
+          font-size: 8.14vw;
+        }
+
+        > p {
+          margin-top: 5.814vw;
+          width: 90.698vw;
+          font-size: 3.953vw;
+        }
+
+        > a {
+          > h3 {
+            margin-top: 6.977vw;
+            width: 31.86vw;
+            font-size: 3.256vw;
+            border-bottom: 1px solid #000;
+          }
+        }
+        .underline {
+          margin-top: 9.767vw;
+          border-bottom: 1px #000 solid;
+          width: 90.698vw;
+          height: 0.233vw;
+        }
+
+        .h1 {
+          margin-top: 33.023vw;
+        }
+
+        > picture {
+          display: block;
+          > img {
+            margin-top: 9.302vw;
+            margin-bottom: 2.326vw;
+            width: 90.698vw;
+            height: 95.116vw;
+            border-radius: 2.093vw;
+          }
+        }
+
+        .p1 {
+          margin-top: 11.628vw;
+        }
+
+        .p2 {
+          margin-top: 6.977vw;
+        }
+
+        .p3 {
+          margin-top: 4.651vw;
+        }
+
+        #logo3 {
+          margin-top: 6.977vw;
+          width: 90.698vw;
+          height: 56.279vw;
+          border-radius: 2.093vw;
+          margin-bottom: 2.326vw;
+        }
+
+        .images1 {
+          margin-top: 4.651vw;
+          margin-bottom: 3.488vw;
+          display: flex;
+          flex-direction: column;
+          gap: 2.326vw;
+
+          > picture {
+            display: block;
+            > img {
+              width: 90.698vw;
+              height: 105.116vw;
+              border-radius: 2.093vw;
+            }
+          }
+        }
+
+        .images2 {
+          margin-top: 6.977vw;
+          flex-direction: column;
+          gap: 2.326vw;
+
+          > picture {
+            > img {
+              width: 90.698vw;
+              height: 56.279vw;
+              border-radius: 2.093vw;
+            }
+          }
+        }
+
+        #img1 {
+          margin-top: 6.977vw;
+          width: 90.698vw;
+          height: 95.116vw;
+          border-radius: 2.093vw;
+          margin-bottom: 2.326vw;
+        }
+
+        .logo4 {
+          margin-top: 6.977vw;
+          width: 90.698vw;
+          height: 56.279vw;
+          border-radius: 2.093vw;
+        }
+
+        > h2 {
+          margin-left: 0;
+          width: 90.698vw;
+          font-size: 3.953vw;
+          line-height: 150%;
+        }
+
+        #under2 {
+          margin-top: 9.767vw;
+        }
+
+        .way {
+          margin-top: 16.279vw;
+          gap: 16.744vw;
+          .next {
+            margin-top: 0;
+            margin-left: 0;
+            > a {
+              gap: 3.488vw;
+              > h2 {
+                font-size: 6.977vw;
+              }
+
+              > img {
+                width: 5.581vw;
+                height: 5.581vw;
+              }
+            }
+          }
+        }
+
+        .last-img {
+          margin-top: 23.256vw;
+          width: 90.698vw;
+          height: 95.116vw;
+          border-radius: 2.093vw;
+
+          .circle2 {
+            top: 6.519vw;
+            left: 4.419vw;
+            width: 82.093vw;
+            height: 82.093vw;
+            border-radius: 82.093vw;
+            background: radial-gradient(
+              58.48% 58.48% at 50% 50%,
+              #00fe0d 16.97%,
+              #01ee8f 44.27%,
+              #03ceac 79.69%
+            );
+
+            filter: blur(3.534vw);
+          }
+
+          > h2 {
+            text-align: center;
+            margin-top: 32.798vw;
+            margin-left: -5.814vw;
+            width: 102.326vw;
+            font-size: 11.182vw;
+          }
+        }
+
+        .next {
+          margin-left: 66.279vw;
+          margin-top: 16.286vw;
+
+          > a {
+            gap: 2.326vw;
+            > h2 {
+              font-size: 6.977vw;
+            }
+
+            > img {
+              width: 5.581vw;
+              height: 5.581vw;
             }
           }
         }
