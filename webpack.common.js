@@ -16,6 +16,7 @@ module.exports = {
     slider2: './src/javascript/slider2.js',
     main: './src/javascript/main.js',
     moveDown: './src/javascript/move-down.js',
+    menuStyleguide: './src/javascript/menu-styleguide.js',
     page: './src/page.jsx'
   },
   output: {
@@ -143,7 +144,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/styleguide/images.html',
       filename: './styleguide/images.html',
-      chunks: ['index']
+      chunks: ['index', 'menuStyleguide']
     }),
 
     // Landing page
