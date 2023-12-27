@@ -197,16 +197,17 @@ body.index {
       margin-top: 11.852vw;
     }
 
+    .slider {
+      width: 100vw;
+      overflow-x: hidden;
+    }
+
     #title2 {
       margin-top: 8.889vw;
     }
 
     #title3 {
       margin-top: 8.222vw;
-    }
-
-    .skidder {
-      width: 281.395vw;
     }
 
     .cards {
@@ -789,12 +790,13 @@ body.index {
       }
 
       .cards {
-        margin-left: 186.047vw;
+        margin-left: 4.651vw;
+        margin-right: 4.651vw;
         display: flex;
         gap: 2.326vw;
         margin-top: 6.977vw;
         height: 50.93vw;
-        width: 276.744vw;
+        width: 376.744vw;
 
         .card {
           position: relative;

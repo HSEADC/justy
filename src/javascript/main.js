@@ -41,6 +41,7 @@ if (viewport_width > 912) {
     }
   })
 } else {
+  let width_custom = (2.326 * window.screen.width) / 100
   let slider = document.querySelector('.slider'),
     sliderTrack = slider.querySelector('.cards'),
     slides = slider.querySelectorAll('.card'),
@@ -69,7 +70,7 @@ if (viewport_width > 912) {
         sliderTrack.style.transition = 'transform .5s'
       }
       sliderTrack.style.transform = `translate3d(-${
-        slideIndex * slideWidth
+        slideIndex * slideWidth + width_custom
       }px, 0px, 0px)`
     },
     swipeStart = function () {
