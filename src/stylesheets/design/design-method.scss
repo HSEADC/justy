@@ -45,6 +45,8 @@ body.design-method {
     }
 
     #subscribe {
+      cursor: default;
+      opacity: 0;
       color: #000;
       text-align: right;
       font-family: 'SuisseIntl-Medium';
@@ -182,7 +184,7 @@ body.design-method {
             font-size: 1.037vw;
             font-style: normal;
             font-weight: 400;
-            line-height: 130%;
+            line-height: 150%;
           }
         }
 
@@ -242,7 +244,7 @@ body.design-method {
             font-size: 1.259vw;
             font-style: normal;
             font-weight: 400;
-            line-height: 153%;
+            line-height: 150%;
 
             > span {
               font-family: 'SuisseIntl-Semibold';
@@ -281,7 +283,7 @@ body.design-method {
               font-size: 1.037vw;
               font-style: normal;
               font-weight: 400;
-              line-height: 130%;
+              line-height: 150%;
             }
           }
         }
@@ -470,7 +472,7 @@ body.design-method {
         font-size: 0.889vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 130%;
+        line-height: 150%;
       }
     }
 

@@ -1,6 +1,10 @@
 body.about {
   padding: 0 2.963vw 1.926vw 2.963vw;
 
+  .menu-mobile-above {
+    display: none;
+  }
+
   //header
   .header {
     width: 100%;
@@ -383,6 +387,91 @@ body.about {
   body.about {
     padding: 0;
     padding-bottom: 5.814vw;
+
+    .menu-mobile-above {
+      overflow: hidden;
+      padding: 15.581vw 0 0 4.651vw;
+      background-color: #f4017e;
+      z-index: 5;
+      position: absolute;
+      display: none;
+      height: calc(100vh - 15.581vw);
+      width: calc(100vw - 4.651vw);
+
+      .circle-menu {
+        position: absolute;
+        top: -24.884vw;
+        left: -41.628vw;
+        width: 179.535vw;
+        height: 179.535vw;
+        border-radius: 179.535vw;
+        background: radial-gradient(
+          58.48% 58.48% at 50% 50%,
+          #00fe0d 16.97%,
+          #01ee8f 44.27%,
+          #03ceac 79.69%
+        );
+
+        filter: blur(7.728vw);
+      }
+
+      .top-mobile-menu {
+        z-index: 5;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 60.698vw;
+        > a {
+          > svg {
+            width: 23.488vw;
+            height: 6.174vw;
+          }
+        }
+        > img {
+          width: 6.053vw;
+          height: 6.053vw;
+        }
+      }
+      .content {
+        z-index: 5;
+        position: relative;
+        margin-top: 25.686vw;
+        display: flex;
+        flex-direction: column;
+        gap: 8.14vw;
+        > a {
+          display: block;
+          width: fit-content;
+          > h1 {
+            width: fit-content;
+            color: #fff;
+            font-family: 'SuisseIntl-Medium';
+            font-size: 8.14vw;
+            font-style: normal;
+            line-height: 115%;
+            text-transform: uppercase;
+          }
+        }
+      }
+      > a {
+        display: block;
+        width: fit-content;
+        > h1 {
+          width: fit-content;
+          color: #fff;
+          font-family: 'SuisseIntl-Medium';
+          font-size: 8.14vw;
+          font-style: normal;
+          line-height: 115%;
+          text-transform: uppercase;
+        }
+      }
+      #media {
+        position: absolute;
+        bottom: 21.628vw;
+        border-bottom: #fff 0.581vw solid;
+      }
+    }
 
     //header
     .header {

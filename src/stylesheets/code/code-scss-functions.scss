@@ -47,6 +47,8 @@ body.code-scss-functions {
     }
 
     #subscribe {
+      opacity: 0;
+      cursor: default;
       color: #000;
       text-align: right;
       font-family: 'SuisseIntl-Semibold';

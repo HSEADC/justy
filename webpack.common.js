@@ -183,7 +183,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html',
-      chunks: ['index', 'moveDown']
+      chunks: ['index', 'moveDown', 'menuStyleguide']
     }),
 
     //Code

@@ -45,6 +45,8 @@ body.book-hard-design {
     }
 
     #subscribe {
+      opacity: 0;
+      cursor: default;
       color: #000;
       text-align: right;
       font-family: 'SuisseIntl-Semibold';
@@ -181,7 +183,7 @@ body.book-hard-design {
             font-size: 1.037vw;
             font-style: normal;
             font-weight: 400;
-            line-height: 130%;
+            line-height: 150%;
           }
         }
 
@@ -291,7 +293,7 @@ body.book-hard-design {
             font-size: 1.259vw;
             font-style: normal;
             font-weight: 400;
-            line-height: 153%;
+            line-height: 150%;
 
             > span {
               font-family: 'SuisseIntl-Semibold';
@@ -333,7 +335,7 @@ body.book-hard-design {
               font-size: 1.037vw;
               font-style: normal;
               font-weight: 400;
-              line-height: 130%;
+              line-height: 150%;
             }
           }
         }
@@ -460,7 +462,7 @@ body.book-hard-design {
         font-size: 0.889vw;
         font-style: normal;
         font-weight: 400;
-        line-height: 130%;
+        line-height: 150%;
       }
     }
 
