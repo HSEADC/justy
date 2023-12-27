@@ -47,6 +47,10 @@ body.about {
       height: 1.333vw;
       margin-top: 0.148vw;
     }
+
+    .menu-mobile {
+      display: none;
+    }
   }
 
   //main content
@@ -84,6 +88,10 @@ body.about {
       border-radius: 1.778vw;
       background: #fff;
       z-index: 2;
+
+      .third-round {
+        display: none;
+      }
 
       .first-titles {
         width: 54.222vw;
@@ -367,6 +375,283 @@ body.about {
     }
     100% {
       top: 16.444vw;
+    }
+  }
+}
+
+@media all and (max-width: 912px) {
+  body.about {
+    padding: 0;
+    padding-bottom: 5.814vw;
+
+    //header
+    .header {
+      padding: 15.581vw 4.651vw 0 4.651vw;
+      width: calc(100% - 9.302vw);
+      align-items: flex-start;
+      height: auto;
+
+      > a {
+        margin-bottom: 4.756vw;
+        > img {
+          width: 23.488vw;
+          height: 6.174vw;
+        }
+      }
+
+      .links {
+        display: none;
+      }
+
+      > img {
+        width: 6.222vw;
+        height: 1.636vw;
+      }
+
+      #subscribe {
+        display: none;
+      }
+
+      .menu-mobile {
+        width: 8.372vw;
+        height: 6.047vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+
+        > div {
+          background-color: #000;
+          height: 0.465vw;
+          width: 100%;
+        }
+      }
+    }
+
+    //main content
+    .main-content {
+      height: 578.372vw;
+      border-radius: 0;
+
+      .first-round {
+        top: -130.698vw;
+        left: -123.721vw;
+        width: 347.442vw;
+        height: 347.442vw;
+        border-radius: 347.442vw;
+        background: radial-gradient(
+          58.48% 58.48% at 50% 50%,
+          #00fe0d 16.97%,
+          #01ee8f 44.27%,
+          #03ceac 79.69%
+        );
+        filter: blur(15.832vw);
+      }
+
+      .content {
+        position: relative;
+        overflow: hidden;
+        margin-top: 12.326vw;
+        width: 85.581vw;
+        padding: 13.953vw 2.558vw 0 2.558vw;
+        height: 546.977vw;
+        border-radius: 5.581vw;
+
+        .first-titles {
+          width: 85.581vw;
+          gap: 5.814vw;
+
+          > h1 {
+            font-size: 7.442vw;
+          }
+          > h3 {
+            width: 85.814vw;
+            font-size: 3.953vw;
+          }
+        }
+
+        .cards {
+          display: flex;
+          flex-direction: column;
+          width: 83.953vw;
+          margin-left: 0.8vw;
+          gap: 2.326vw;
+          margin-top: 11.628vw;
+          height: 204.186vw;
+
+          .card {
+            position: relative;
+            width: 77.442vw;
+            height: 40.233vw;
+            border-radius: 4.651vw;
+            padding: 8.14vw 0 0 6.512vw;
+
+            > h2 {
+              width: 70.93vw;
+              margin-bottom: 2.326vw;
+              font-size: 4.884vw;
+            }
+            p {
+              width: 70.93vw;
+              font-size: 3.953vw;
+            }
+          }
+          #card1 {
+            z-index: 2;
+            top: 0;
+            left: 0;
+          }
+          #card2 {
+            z-index: 2;
+            top: 0;
+            left: 0;
+          }
+          #card3 {
+            top: 0;
+            left: 0;
+          }
+          #card4 {
+            top: 0;
+            left: 0;
+          }
+        }
+
+        .creators {
+          margin-top: 11.628vw;
+
+          h2 {
+            font-size: 5.814vw;
+            margin-bottom: 3.488vw;
+          }
+          h3 {
+            width: 85.814vw;
+            font-size: 3.953vw;
+            line-height: 150%;
+          }
+        }
+
+        > h1 {
+          font-family: 'SuisseIntl-Medium';
+          margin-top: 11.628vw;
+          text-align: inherit;
+          font-size: 5.814vw;
+        }
+
+        .cards-title {
+          margin-top: 6.977vw;
+          margin-left: 0.8vw;
+          gap: 4.651vw;
+
+          .card-title {
+            padding: 8.14vw 5.349vw 8.14vw 6.512vw;
+            width: 72.093vw;
+            height: 34.651vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            border-radius: 4.651vw;
+
+            > h1 {
+              font-size: 8.14vw;
+            }
+
+            > p {
+              width: 70.93vw;
+              font-size: 3.953vw;
+            }
+          }
+        }
+        .third-round {
+          display: block;
+          z-index: 6;
+          position: absolute;
+          top: 538.14vw;
+          left: -54.884vw;
+          width: 198.837vw;
+          height: 198.837vw;
+          border-radius: 198.837vw;
+          background: radial-gradient(
+            58.48% 58.48% at 50% 50%,
+            #60e5ff 16.97%,
+            #42beff 51.59%,
+            #006eff 83.1%
+          );
+
+          filter: blur(9.04vw);
+        }
+      }
+
+      .second-round {
+        display: none;
+      }
+    }
+
+    //footer
+    .footer {
+      margin-top: 10.698vw;
+      width: 100%;
+      height: 181.395vw;
+      padding: 8.605vw 0 0 0;
+
+      .wrapper {
+        flex-direction: column;
+
+        .company {
+          margin-left: 4.651vw;
+          > img {
+            width: 31.86vw;
+            height: 8.372vw;
+            margin-bottom: 4.884vw;
+          }
+          > h2 {
+            width: 61.163vw;
+            font-size: 3.953vw;
+          }
+        }
+
+        .navigation,
+        .social-network,
+        .articles {
+          > h2 {
+            font-size: 4.884vw;
+            margin-bottom: 4.651vw;
+          }
+          > a {
+            font-size: 4.884vw;
+            margin-bottom: 3.488vw;
+          }
+        }
+
+        .navigation {
+          margin-top: 12.093vw;
+          margin-left: 4.651vw;
+        }
+
+        .social-network {
+          margin-top: 5.814vw;
+          margin-left: 4.651vw;
+        }
+
+        .articles {
+          margin-top: 5.814vw;
+          margin-left: 4.651vw;
+        }
+      }
+
+      .brand {
+        margin-top: 8.14vw;
+        margin-left: 4.651vw;
+        gap: 1.628vw;
+        > a {
+          > h2 {
+            font-size: 3.953vw;
+          }
+        }
+
+        > h2 {
+          font-size: 3.953vw;
+        }
+      }
     }
   }
 }
