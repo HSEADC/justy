@@ -19,6 +19,7 @@ module.exports = {
     main: './src/javascript/main.js',
     moveDown: './src/javascript/move-down.js',
     menuStyleguide: './src/javascript/menu-styleguide.js',
+    preloader: './src/javascript/preloader.js',
     page: './src/page.jsx'
   },
   output: {
@@ -153,7 +154,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'main']
+      chunks: ['index', 'main', 'preloader']
     }),
 
     new HtmlWebpackPlugin({

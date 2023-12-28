@@ -7,6 +7,119 @@ body.index {
   align-items: center;
   overflow-x: hidden;
 
+  .preloader {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+
+    .svg-pre {
+      opacity: 0;
+      position: absolute;
+      width: 1.926vw;
+      height: 1.657vw;
+    }
+
+    .line {
+      position: absolute;
+      width: 0.519vw;
+      height: 0.222vw;
+      background-color: white;
+      transform-origin: center;
+      transform: scaleX(0);
+    }
+
+    .hidden {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 7;
+      width: 25.926vw;
+      height: 1.63vw;
+      overflow: hidden;
+      position: relative;
+      > h1 {
+        top: 1.63vw;
+        position: absolute;
+        color: #fff;
+        font-family: 'SuisseIntl-Regular';
+        font-size: 1.407vw;
+        font-style: normal;
+        line-height: normal;
+      }
+    }
+
+    .hidden2 {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 7;
+      width: 14.519vw;
+      height: 4vw;
+      overflow: hidden;
+      position: relative;
+
+      > h2 {
+        top: 4vw;
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        font-family: 'SuisseIntl-Regular';
+        font-size: 1.407vw;
+        font-style: normal;
+        line-height: 140%;
+      }
+    }
+
+    #first-svg {
+      top: 3.333vw;
+      left: 2.963vw;
+      transform: rotate(90deg);
+    }
+
+    #second-svg {
+      top: 3.333vw;
+      right: 2.963vw;
+      transform: rotate(90deg);
+    }
+
+    #third-svg {
+      bottom: 3.333vw;
+      left: 2.963vw;
+      transform: rotate(90deg);
+    }
+
+    #fourth-svg {
+      bottom: 3.333vw;
+      right: 2.963vw;
+      transform: rotate(90deg);
+    }
+
+    #first-line {
+      top: 4vw;
+      left: 3.556vw;
+    }
+
+    #second-line {
+      top: 4vw;
+      right: 3.556vw;
+    }
+
+    #third-line {
+      bottom: 4vw;
+      left: 3.556vw;
+    }
+
+    #fourth-line {
+      bottom: 4vw;
+      right: 3.556vw;
+    }
+  }
+
   .container-circle {
     width: 100%;
     height: 122.222vw;
@@ -609,6 +722,97 @@ body.index {
   animation: moveright 0.8s ease-in-out forwards;
 }
 
+.animation-h1 {
+  animation: text-up 1s ease forwards;
+}
+
+.animation-rotate-div {
+  animation: rotate-div 0.8s ease forwards;
+}
+
+.first-animation {
+  animation: centre-width 1s ease forwards;
+}
+
+@keyframes rotate-div {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes centre-width {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(3.285);
+  }
+}
+
+.animation-text2-up {
+  animation: text2-up 0.63s ease forwards;
+}
+
+@keyframes text2-up {
+  0% {
+    top: 4vw;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes text-up {
+  0% {
+    top: 1.63vw;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.animation-text-reverse {
+  animation: text-reverse 0.8s ease forwards;
+}
+
+@keyframes text-reverse {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -1.63vw;
+  }
+}
+
+.animation-svg-rotation {
+  animation: svg-rotation 0.3s ease forwards;
+}
+
+@keyframes svg-rotation {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.animation-block-up {
+  animation: block-up 0.8s ease forwards;
+}
+
+@keyframes block-up {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: 47.5%;
+  }
+}
+
 @keyframes movetop {
   0% {
     margin-top: 64.704vw;
@@ -648,6 +852,19 @@ body.index {
   }
   100% {
     left: 63.259vw;
+  }
+}
+
+.preloader-animation {
+  animation: preloader2 0.8s ease forwards;
+}
+
+@keyframes preloader2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
