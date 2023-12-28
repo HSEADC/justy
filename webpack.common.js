@@ -11,9 +11,11 @@ module.exports = {
     index: './src/index.js',
     navbar: './src/javascript/navbar.js',
     navbar4: './src/javascript/navbar4.js',
+    navbar5: './src/javascript/navbar5.js',
     navbar8: './src/javascript/navbar8.js',
     slider1: './src/javascript/slider1.js',
     slider2: './src/javascript/slider2.js',
+    show: './src/javascript/show.js',
     main: './src/javascript/main.js',
     moveDown: './src/javascript/move-down.js',
     menuStyleguide: './src/javascript/menu-styleguide.js',
@@ -207,7 +209,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/design/design-thinker/part-1.html',
       filename: './design/design-thinker/part-1.html',
-      chunks: ['index', 'navbar4', 'menuStyleguide']
+      chunks: ['index', 'navbar4', 'menuStyleguide', 'show']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/design/design-thinker/part-2.html',
+      filename: './design/design-thinker/part-2.html',
+      chunks: ['index', 'navbar5', 'menuStyleguide', 'show']
     }),
     new HtmlWebpackPlugin({
       template: './src/design/design-method.html',

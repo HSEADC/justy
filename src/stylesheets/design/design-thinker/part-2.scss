@@ -1,4 +1,4 @@
-body.design-thinking-world {
+body.design-thinker-part-2 {
   padding: 0 2.963vw 1.926vw 2.963vw;
   .menu-mobile-above {
     display: none;
@@ -53,11 +53,11 @@ body.design-thinking-world {
     }
 
     #subscribe {
-      opacity: 0;
       cursor: default;
+      opacity: 0;
       color: #000;
       text-align: right;
-      font-family: 'SuisseIntl-Semibold';
+      font-family: 'SuisseIntl-Medium';
       font-size: 1.037vw;
       font-style: normal;
       line-height: normal;
@@ -87,10 +87,11 @@ body.design-thinking-world {
       );
     }
 
-    #mobile-img2 {
+    #mobile-img1 {
       display: none;
     }
-    #mobile-img1 {
+
+    #mobile-img2 {
       display: none;
     }
 
@@ -141,6 +142,7 @@ body.design-thinking-world {
 
         .theme-parts {
           margin-top: 0.889vw;
+          position: relative;
           display: flex;
           align-items: flex-start;
           gap: 0.296vw;
@@ -152,8 +154,36 @@ body.design-thinking-world {
             background: #e0e0e0;
           }
 
-          #done {
+          #watch {
             background: linear-gradient(91deg, #ffc902 9.31%, #ff4b00 94.51%);
+          }
+
+          #done2 {
+            background: linear-gradient(90deg, #ff8802 -14.85%, #ff4c01 79.3%);
+          }
+
+          .show {
+            opacity: 0;
+            display: none;
+            top: 0.815vw;
+            left: 0;
+            position: absolute;
+            // display: inline-flex;
+            padding: 0.667vw;
+            justify-content: center;
+            align-items: center;
+            gap: 0.741vw;
+            border-radius: 0.37vw;
+            background: #1e1e1e;
+
+            > p {
+              width: 15.01vw;
+              color: #fff;
+              font-family: 'SuisseIntl-Regular';
+              font-size: 0.889vw;
+              font-style: normal;
+              line-height: 130%;
+            }
           }
         }
 
@@ -231,15 +261,19 @@ body.design-thinking-world {
             line-height: 150%;
           }
 
-          .h2 {
+          > h3 {
+            margin-top: 3.704vw;
+            width: 46.667vw;
+            color: #000;
             font-family: 'SuisseIntl-Medium';
             font-size: 1.852vw;
-            margin-top: 3.704vw;
-            line-height: 128%;
+            font-style: normal;
+            line-height: 130%;
           }
 
-          > h3 {
+          > h4 {
             margin-top: 2.519vw;
+            width: 46.667vw;
             color: #000;
             font-family: 'SuisseIntl-Semibold';
             font-size: 1.259vw;
@@ -256,18 +290,18 @@ body.design-thinking-world {
             font-weight: 400;
             line-height: 150%;
 
-            > a {
-              color: #ff4b00;
-              border-bottom: 0.074vw solid #ff4b00;
-            }
-
             > span {
               font-family: 'SuisseIntl-Semibold';
             }
+
+            a {
+              color: #ff4b00;
+              border-bottom: 1px #ff4b00 solid;
+            }
           }
 
-          .p-first {
-            margin-top: 1.111vw;
+          .p1 {
+            margin-top: 2.519vw;
           }
 
           > blockquote {
@@ -341,7 +375,8 @@ body.design-thinking-world {
 
     > h2 {
       margin-top: 4.889vw;
-      margin-left: 23.704vw;
+      width: calc(100% - 15.111vw);
+      margin-left: 15.111vw;
       color: #000;
       font-family: 'SuisseIntl-Medium';
       font-size: 1.556vw;
@@ -375,7 +410,6 @@ body.design-thinking-world {
               color: #ff4b00;
               font-family: 'SuisseIntl-Semibold';
               font-size: 1.037vw;
-              font-style: normal;
               line-height: 130%;
               text-transform: uppercase;
             }
@@ -410,7 +444,7 @@ body.design-thinking-world {
     margin-top: 6.889vw;
     margin-bottom: 12.741vw;
     position: sticky;
-    height: 27.333vw;
+    height: 11.333vw;
     top: 5.926vw;
 
     > h2 {
@@ -549,8 +583,22 @@ body.design-thinking-world {
   }
 }
 
+.show-animation {
+  animation: show 0.8s ease forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media all and (max-width: 912px) {
-  body.design-thinking-world {
+  body.design-thinker-part-2 {
+    padding: 0 4.651vw 5.814vw 4.651vw;
     .menu-mobile-above {
       margin-left: -4.651vw;
       overflow: hidden;
@@ -611,7 +659,6 @@ body.design-thinking-world {
         filter: blur(4.955vw);
       }
     }
-    padding: 0 4.651vw 5.814vw 4.651vw;
     .header {
       height: 26.512vw;
       align-items: normal;
@@ -653,16 +700,16 @@ body.design-thinking-world {
         display: none;
       }
 
-      #mobile-img2 {
-        display: block;
-        width: 90.698vw;
-        height: 246зч;
-        border-radius: 2.093vw;
-      }
       #mobile-img1 {
         display: block;
         width: 90.698vw;
         height: 84.419vw;
+        border-radius: 2.093vw;
+      }
+      #mobile-img2 {
+        display: block;
+        width: 90.698vw;
+        height: 57.209vw;
         border-radius: 2.093vw;
       }
       #desc-img1 {
@@ -673,7 +720,7 @@ body.design-thinking-world {
         gap: 0;
         margin-left: 0;
         .content {
-          margin-top: 6.977vw;
+          margin-top: 9.302vw;
           width: 90.698vw;
 
           > h1 {
@@ -707,6 +754,22 @@ body.design-thinking-world {
             font-style: normal;
             font-weight: 400;
             line-height: 130%;
+          }
+
+          > h3 {
+            margin-top: 4.419vw;
+            font-size: 3.953vw;
+          }
+
+          .theme-parts {
+            margin-top: 2.791vw;
+            gap: 0.93vw;
+
+            .theme-part {
+              width: 8.372vw;
+              height: 0.93vw;
+              border-radius: 4.651vw;
+            }
           }
 
           .creator {
@@ -751,16 +814,11 @@ body.design-thinking-world {
 
           .text-block {
             margin-top: 11.628vw;
-            margin-bottom: 6.977vw;
+            margin-bottom: 11.628vw;
 
             > h2 {
               width: 90.698vw;
               font-size: 4.884vw;
-            }
-
-            .h2 {
-              font-size: 5.814vw;
-              margin-top: 11.628vw;
             }
 
             > p {
@@ -769,17 +827,38 @@ body.design-thinking-world {
               font-size: 3.953vw;
             }
 
-            > h3 {
-              margin-top: 7.907vw;
-              font-size: 3.953vw;
-            }
-
             .p1 {
               margin-top: 7.907vw;
             }
 
-            .p-first {
-              margin-top: 3.488vw;
+            > h3 {
+              margin-top: 11.628vw;
+              width: 90.698vw;
+              font-size: 5.814vw;
+            }
+
+            > h4 {
+              margin-top: 7.907vw;
+              width: 90.698vw;
+              font-size: 3.953vw;
+            }
+
+            > blockquote {
+              margin-top: 6.977vw;
+              margin-bottom: 6.977vw;
+              width: 79.07vw;
+              padding: 4.651vw 0 4.651vw 11.628vw;
+              gap: 2.326vw;
+              border-radius: 1.163vw;
+
+              > h2 {
+                width: 74.186vw;
+                font-size: 3.953vw;
+              }
+
+              > p {
+                font-size: 3.256vw;
+              }
             }
           }
 
@@ -814,8 +893,8 @@ body.design-thinking-world {
           }
 
           > a {
-            font-size: 1.259vw;
-            border-bottom: 0.074vw black solid;
+            font-size: 3.953vw;
+            border-bottom: 0.233vw black solid;
           }
 
           .share {

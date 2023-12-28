@@ -141,6 +141,7 @@ body.design-thinker-part-1 {
         }
 
         .theme-parts {
+          position: relative;
           margin-top: 0.889vw;
           display: flex;
           align-items: flex-start;
@@ -155,6 +156,34 @@ body.design-thinker-part-1 {
 
           #done {
             background: linear-gradient(91deg, #ffc902 9.31%, #ff4b00 94.51%);
+          }
+
+          #watch {
+            cursor: pointer;
+          }
+
+          .show {
+            opacity: 0;
+            display: none;
+            top: 0.815vw;
+            left: 2.963vw;
+            position: absolute;
+            // display: inline-flex;
+            padding: 0.667vw;
+            justify-content: center;
+            align-items: center;
+            gap: 0.741vw;
+            border-radius: 0.37vw;
+            background: #1e1e1e;
+
+            > p {
+              width: 15.71vw;
+              color: #fff;
+              font-family: 'SuisseIntl-Regular';
+              font-size: 0.889vw;
+              font-style: normal;
+              line-height: 130%;
+            }
           }
         }
 
@@ -522,6 +551,19 @@ body.design-thinker-part-1 {
         line-height: normal;
       }
     }
+  }
+}
+
+.show-animation {
+  animation: show 0.8s ease forwards;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
