@@ -69,7 +69,7 @@ body.colors {
       background: #df024d;
       width: 100%;
       height: 100vh;
-      padding-bottom: 3.852vw;
+      padding-bottom: 11.259vw;
       display: flex;
       position: relative;
       overflow: hidden;
@@ -117,7 +117,7 @@ body.colors {
           > a {
             width: fit-content;
             > h2 {
-              color: #fff;
+              color: rgba(255, 255, 255, 0.5);
               font-family: 'SuisseIntl-Medium';
               font-size: 1.556vw;
               font-style: normal;
@@ -127,7 +127,7 @@ body.colors {
               width: fit-content;
 
               &:hover {
-                color: rgba(255, 255, 255, 0.5);
+                color: #fff;
               }
             }
 

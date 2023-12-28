@@ -41,6 +41,11 @@ body.code-scss-functions {
         font-style: normal;
         line-height: normal;
         text-transform: uppercase;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
 

@@ -7,7 +7,7 @@ body.book-hard-design {
     margin-left: 1.259vw;
   }
   #tag2-text {
-    color: #df024d;
+    color: #006eff;
   }
   //header
   .header {
@@ -39,6 +39,11 @@ body.book-hard-design {
         font-style: normal;
         line-height: normal;
         text-transform: uppercase;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
 
@@ -378,7 +383,7 @@ body.book-hard-design {
     > h2 {
       margin-top: 4.889vw;
       width: calc(100% - 15.111vw);
-      margin-left: 15.111vw;
+      margin-left: 15.704vw;
       color: #000;
       font-family: 'SuisseIntl-Medium';
       font-size: 1.556vw;

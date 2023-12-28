@@ -117,7 +117,7 @@ body.logo {
           > a {
             width: fit-content;
             > h2 {
-              color: #fff;
+              color: rgba(255, 255, 255, 0.5);
               width: fit-content;
               font-family: 'SuisseIntl-Medium';
               font-size: 1.556vw;
@@ -127,7 +127,7 @@ body.logo {
               transition: color 0.3s ease;
 
               &:hover {
-                color: rgba(255, 255, 255, 0.5);
+                color: #fff;
               }
             }
 
