@@ -430,7 +430,7 @@ body.typography {
       padding: 15.581vw 0 0 4.651vw;
       background-color: #006eff;
       z-index: 5;
-      position: absolute;
+      position: fixed;
       display: none;
       height: calc(100vh - 15.581vw);
       width: calc(100vw - 4.651vw);

@@ -10,7 +10,7 @@ body.index {
   .preloader {
     display: none;
     z-index: 5;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -394,6 +394,7 @@ body.index {
             gap: 0.593vw;
 
             > img {
+              filter: blur(1px);
               width: 1.333vw;
               height: 1.333vw;
             }
@@ -631,6 +632,7 @@ body.index {
       .social-network,
       .articles {
         > h2 {
+          text-transform: uppercase;
           color: white;
           font-family: 'SuisseIntl-Medium';
           font-size: 1.259vw;
@@ -661,9 +663,6 @@ body.index {
       }
 
       .social-network {
-        > h2 {
-          text-transform: uppercase;
-        }
         margin-left: 9.111vw;
       }
 

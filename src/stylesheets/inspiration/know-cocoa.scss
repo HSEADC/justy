@@ -34,7 +34,7 @@ body.know-cocoa {
 
       > a {
         color: #000;
-        font-family: 'SuisseIntl-Semibold';
+        font-family: 'SuisseIntl-Medium';
         font-size: 1.037vw;
         font-style: normal;
         line-height: normal;
@@ -121,6 +121,7 @@ body.know-cocoa {
           width: 46.667vw;
 
           > img {
+            filter: blur(1px);
             width: 1.333vw;
             height: 1.333vw;
           }
@@ -283,7 +284,6 @@ body.know-cocoa {
               font-family: 'SuisseIntl-Regular';
               font-size: 1.037vw;
               font-style: normal;
-              font-weight: 400;
               line-height: 150%;
             }
           }
@@ -400,6 +400,7 @@ body.know-cocoa {
             gap: 0.593vw;
 
             > img {
+              filter: blur(1px);
               width: 1.333vw;
               height: 1.333vw;
             }
@@ -505,6 +506,7 @@ body.know-cocoa {
       .social-network,
       .articles {
         > h2 {
+          text-transform: uppercase;
           color: #000;
           font-family: 'SuisseIntl-Medium';
           font-size: 1.259vw;
@@ -535,9 +537,6 @@ body.know-cocoa {
       }
 
       .social-network {
-        > h2 {
-          text-transform: uppercase;
-        }
         margin-left: 9.111vw;
       }
 

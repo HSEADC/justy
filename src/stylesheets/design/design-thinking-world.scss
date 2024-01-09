@@ -116,6 +116,7 @@ body.design-thinking-world {
           gap: 0.593vw;
 
           > img {
+            filter: blur(1px);
             width: 1.333vw;
             height: 1.333vw;
           }
@@ -368,6 +369,7 @@ body.design-thinking-world {
             gap: 0.593vw;
 
             > img {
+              filter: blur(1px);
               width: 1.333vw;
               height: 1.333vw;
             }
@@ -475,6 +477,7 @@ body.design-thinking-world {
       .social-network,
       .articles {
         > h2 {
+          text-transform: uppercase;
           color: #000;
           font-family: 'SuisseIntl-Medium';
           font-size: 1.259vw;
@@ -505,9 +508,6 @@ body.design-thinking-world {
       }
 
       .social-network {
-        > h2 {
-          text-transform: uppercase;
-        }
         margin-left: 9.111vw;
       }
 

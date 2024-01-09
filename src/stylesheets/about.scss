@@ -303,6 +303,7 @@ body.about {
       .social-network,
       .articles {
         > h2 {
+          text-transform: uppercase;
           color: #000;
           font-family: 'SuisseIntl-Medium';
           font-size: 1.259vw;
@@ -333,9 +334,6 @@ body.about {
       }
 
       .social-network {
-        > h2 {
-          text-transform: uppercase;
-        }
         margin-left: 9.111vw;
       }
 

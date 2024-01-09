@@ -123,6 +123,7 @@ body.code-scss-functions {
           width: 46.667vw;
 
           > img {
+            filter: blur(1px);
             width: 1.333vw;
             height: 1.333vw;
           }
@@ -395,6 +396,7 @@ body.code-scss-functions {
             gap: 0.593vw;
 
             > img {
+              filter: blur(1px);
               width: 1.333vw;
               height: 1.333vw;
             }
@@ -501,6 +503,7 @@ body.code-scss-functions {
       .social-network,
       .articles {
         > h2 {
+          text-transform: uppercase;
           color: #000;
           font-family: 'SuisseIntl-Medium';
           font-size: 1.259vw;

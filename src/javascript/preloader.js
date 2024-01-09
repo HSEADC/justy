@@ -17,6 +17,7 @@ const thirdSvg = document.getElementById('third-svg')
 const fourthSvg = document.getElementById('fourth-svg')
 
 if (viewport_width > 912) {
+  document.body.style.overflowY = 'hidden'
   preloader[0].style.display = 'block'
   h1.classList.add('animation-h1')
   firstLine.classList.add('first-animation')
@@ -72,6 +73,7 @@ if (viewport_width > 912) {
 
   setTimeout(function () {
     preloader[0].classList.add('preloader-animation')
+    document.body.style.overflowY = 'auto'
   }, 2500)
 
   setTimeout(function () {

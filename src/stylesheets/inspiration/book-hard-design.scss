@@ -6,6 +6,9 @@ body.book-hard-design {
   .tag-2 {
     margin-left: 1.259vw;
   }
+  #tag3-text {
+    color: #df024d;
+  }
   #tag2-text {
     color: #006eff;
   }
@@ -124,6 +127,7 @@ body.book-hard-design {
           width: 46.667vw;
 
           > img {
+            filter: blur(1px);
             width: 1.333vw;
             height: 1.333vw;
           }
@@ -410,6 +414,7 @@ body.book-hard-design {
             gap: 0.593vw;
 
             > img {
+              filter: blur(1px);
               width: 1.333vw;
               height: 1.333vw;
             }
@@ -516,6 +521,7 @@ body.book-hard-design {
       .social-network,
       .articles {
         > h2 {
+          text-transform: uppercase;
           color: #000;
           font-family: 'SuisseIntl-Medium';
           font-size: 1.259vw;
@@ -546,9 +552,6 @@ body.book-hard-design {
       }
 
       .social-network {
-        > h2 {
-          text-transform: uppercase;
-        }
         margin-left: 9.111vw;
       }
 

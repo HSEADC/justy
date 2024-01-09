@@ -126,6 +126,7 @@ body.design-method {
           }
 
           > img {
+            filter: blur(1px);
             width: 1.333vw;
             height: 1.333vw;
           }
@@ -410,6 +411,7 @@ body.design-method {
             gap: 0.593vw;
 
             > img {
+              filter: blur(1px);
               width: 1.333vw;
               height: 1.333vw;
             }
