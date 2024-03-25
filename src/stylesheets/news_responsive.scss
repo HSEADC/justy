@@ -219,7 +219,7 @@
       }
 
       .main-para {
-        font-family: SF_UI_Display_Bold;
+        font-family: 'SF_UI_Display_Bold', sans-serif;
         font-size: 3.738vw;
         line-height: 130%;
         width: 90.654vw;
@@ -235,7 +235,7 @@
         line-height: 130%;
 
         .bold {
-          font-family: SF_UI_Display_Semibold;
+          font-family: 'SF_UI_Display_Semibold', sans-serif;
         }
 
         .under {
@@ -352,7 +352,7 @@
       }
 
       > h1 {
-        font-family: SF_UI_Display_Regular;
+        font-family: 'SF_UI_Display_Regular', sans-serif;
         width: 84.112vw;
         font-size: 6.308vw !important;
         font-weight: 600;

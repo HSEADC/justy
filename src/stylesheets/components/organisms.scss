@@ -1,0 +1,22 @@
+.O {
+  &_section {
+    padding: 2.889vw 2.148vw 2.963vw 1.926vw;
+    width: 50.074vw;
+    height: 9.556vw;
+    border-radius: 1.481vw;
+    background: #efefef;
+  }
+  &_top-card {
+    > img {
+      width: 30.889vw;
+      height: 16.815vw;
+      border-radius: 0.667vw;
+    }
+  }
+  &_footer {
+    margin-top: 2.963vw;
+    width: 100%;
+    height: 19.407vw;
+    padding: 3.333vw 0 0 0;
+  }
+}

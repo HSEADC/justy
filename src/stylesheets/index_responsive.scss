@@ -1,5 +1,5 @@
 @media all and (max-width: 428px) {
-  body.index {
+  body.S_index {
     // padding: 11.215vw 0 9.346vw 0;
     .mobile-folders {
       display: block;
@@ -730,7 +730,7 @@
         );
       }
 
-      .container {
+      .S_container {
         #third {
           width: 90.654vw;
           height: 124.005vw;
@@ -865,7 +865,7 @@
 
           > p {
             color: #29234c;
-            font-family: SF-Pro-Rounded-Regular;
+            font-family: 'SF-Pro-Rounded-Regular', sans-serif;
             font-size: 8.178vw;
             font-style: normal;
             font-weight: 400;

@@ -41,7 +41,7 @@ body.news {
     }
   }
 
-  .main-content {
+  .S_main-content {
     display: flex;
     gap: 4.297vw;
   }
@@ -64,7 +64,7 @@ body.news {
     > h1 {
       position: absolute;
       color: #fff;
-      font-family: SF_UI_Display_Medium;
+      font-family: 'SF_UI_Display_Medium', sans-serif;
       font-size: 2.734vw;
       font-style: normal;
       font-weight: 500;
@@ -90,7 +90,7 @@ body.news {
         text-decoration: none;
         > p {
           color: #000;
-          font-family: SF-Pro-Rounded-Medium;
+          font-family: 'SF-Pro-Rounded-Medium', sans-serif;
           font-size: 1.406vw;
           font-style: normal;
           font-weight: 400;
@@ -128,7 +128,7 @@ body.news {
 
       > p {
         color: #000;
-        font-family: SF_UI_Display_Semibold;
+        font-family: 'SF_UI_Display_Semibold', sans-serif;
         font-size: 1.25vw;
         font-style: normal;
         font-weight: 500;
@@ -239,7 +239,7 @@ body.news {
           margin: 0 auto;
           color: #000;
           text-align: center;
-          font-family: SF_UI_Display_Medium;
+          font-family: 'SF_UI_Display_Medium', sans-serif;
           font-size: 1.094vw;
           font-style: normal;
           font-weight: 400;
@@ -344,7 +344,7 @@ body.news {
           margin: 0 auto;
           color: #000;
           text-align: center;
-          font-family: SF_UI_Display_Medium;
+          font-family: 'SF_UI_Display_Medium', sans-serif;
           font-size: 1.094vw;
           font-style: normal;
           font-weight: 400;
@@ -355,7 +355,7 @@ body.news {
 
     .main-para {
       color: #000;
-      font-family: SF_UI_Display_Semibold;
+      font-family: 'SF_UI_Display_Semibold', sans-serif;
       font-size: 1.563vw;
       font-style: normal;
       font-weight: 600;
@@ -370,14 +370,14 @@ body.news {
     > p {
       width: 55.781vw;
       color: #000;
-      font-family: SF_UI_Display_Regular;
+      font-family: 'SF_UI_Display_Regular', sans-serif;
       font-size: 1.406vw;
       font-style: normal;
       font-weight: 400;
       line-height: 140%;
 
       .bold {
-        font-family: SF_UI_Display_Semibold;
+        font-family: 'SF_UI_Display_Semibold', sans-serif;
       }
 
       .under {
@@ -415,7 +415,7 @@ body.news {
         > p {
           width: 41.484vw;
           color: #29234c;
-          font-family: SF-Pro-Rounded-Regular;
+          font-family: 'SF-Pro-Rounded-Regular', sans-serif;
           font-size: 1.406vw;
           font-style: normal;
           font-weight: 400;
@@ -434,7 +434,7 @@ body.news {
         font-size: 1.25vw;
         line-height: 130%;
         width: 41.484vw;
-        font-family: SF-Pro-Rounded-Regular;
+        font-family: 'SF-Pro-Rounded-Regular', sans-serif;
         font-style: normal;
         font-weight: 400;
       }
@@ -442,7 +442,7 @@ body.news {
     .youtube {
       > h2 {
         color: #000;
-        font-family: SF_UI_Display_Semibold;
+        font-family: 'SF_UI_Display_Semibold', sans-serif;
         font-size: 1.953vw;
         font-style: normal;
         font-weight: 600;
@@ -486,7 +486,7 @@ body.news {
 
           > p {
             color: #000;
-            font-family: SF_UI_Display_Medium;
+            font-family: 'SF_UI_Display_Medium', sans-serif;
             font-size: 1.406vw;
             font-style: normal;
             font-weight: 400;
@@ -503,7 +503,7 @@ body.news {
       gap: 1.172vw;
       h3 {
         color: #000;
-        font-family: SF_UI_Display_Regular;
+        font-family: 'SF_UI_Display_Regular', sans-serif;
         font-size: 1.953vw;
         font-style: normal;
         font-weight: 600;
@@ -529,7 +529,7 @@ body.news {
             width: 7.266vw;
             color: #000;
             text-align: center;
-            font-family: SF_UI_Display_Medium;
+            font-family: 'SF_UI_Display_Medium', sans-serif;
             font-size: 1.094vw;
             font-style: normal;
             font-weight: 400;
@@ -550,7 +550,7 @@ body.news {
 
     > h2 {
       color: #29234c;
-      font-family: SF_UI_Display_Semibold;
+      font-family: 'SF_UI_Display_Semibold', sans-serif;
       font-size: 1.094vw;
       font-style: normal;
       font-weight: 500;
@@ -567,14 +567,14 @@ body.news {
       .important {
         width: 23.047vw;
         color: #29234c;
-        font-family: SF_UI_Display_Semibold;
+        font-family: 'SF_UI_Display_Semibold', sans-serif;
         font-weight: 500;
       }
 
       > p {
         width: 20vw;
         color: #636366;
-        font-family: SF_UI_Display_Medium;
+        font-family: 'SF_UI_Display_Medium', sans-serif;
         font-size: 0.938vw;
         font-style: normal;
         font-weight: 400;

@@ -6,7 +6,7 @@
 // import ComponentExample from './javascript/ComponentExample.jsx'
 
 // document.addEventListener('DOMContentLoaded', () => {
-//   const container = document.getElementById('reactComponentRoot')
-//   const root = createRoot(container)
+//   const S_container = document.getElementById('reactComponentRoot')
+//   const root = createRoot(S_container)
 //   root.render(<ComponentExample />)
 // })

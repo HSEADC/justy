@@ -110,7 +110,7 @@
           19.675186915887853vw 2.8696028037383177vw
         );
 
-        .content {
+        .A_content {
           padding-top: 7.921vw;
           padding-left: 3.738vw;
           gap: 17.757vw;
@@ -164,7 +164,7 @@
 
           > p {
             color: #29234c;
-            font-family: SF-Pro-Rounded-Regular;
+            font-family: 'SF-Pro-Rounded-Regular', sans-serif;
             font-size: 8.178vw;
             font-style: normal;
             font-weight: 400;
@@ -294,7 +294,7 @@
     }
   }
 
-  .cards {
+  .W_AboutAdvantages {
     margin-top: 4.673vw !important;
     display: flex;
     flex-direction: column;
@@ -325,7 +325,7 @@
         gap: 1.402vw !important;
 
         .name {
-          font-family: SF_UI_Display_Semibold !important;
+          font-family: 'SF_UI_Display_Semibold',sans-serif !important;
           font-size: 4.206vw !important;
           font-weight: 500 !important;
           line-height: 130% !important;
@@ -338,11 +338,11 @@
     }
   }
 
-  .cards-first-column {
+  .W_AboutAdvantages-first-column {
     gap: 1.563vw;
   }
 
-  .cards-second-column {
+  .W_AboutAdvantages-second-column {
     gap: 1.563vw;
   }
 
@@ -357,7 +357,7 @@
     display: none;
   }
 
-  .card-cards {
+  .card-W_AboutAdvantages {
     margin-top: 7.009vw !important;
     width: 90.654vw !important;
     height: 181.192vw !important;
@@ -858,7 +858,7 @@
     #mobile-base {
       margin-left: 33.879vw;
       color: #fff;
-      font-family: SF-Pro-Rounded-Regular;
+      font-family: 'SF-Pro-Rounded-Regular', sans-serif;
       font-size: 8.178vw;
       font-style: normal;
       font-weight: 500;
@@ -871,7 +871,7 @@
       width: 75.234vw;
       color: #fff;
       text-align: center;
-      font-family: SF-Pro-Rounded-Regular;
+      font-family: 'SF-Pro-Rounded-Regular', sans-serif;
       font-size: 10.514vw;
       font-style: normal;
       font-weight: 500;
