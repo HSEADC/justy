@@ -10,6 +10,12 @@
 @import 'stylesheets/main.scss';
 @import 'stylesheets/design/design-thinker/part-1.scss';
 @import 'stylesheets/design/design-method.scss';
+@import 'stylesheets/components/atoms.scss';
+@import 'stylesheets/components/molecules.scss';
+@import 'stylesheets/components/organisms.scss';
+@import 'stylesheets/components/quarks.scss';
+@import 'stylesheets/components/super-organisms.scss';
+@import 'stylesheets/components/wrappers.scss';
 
 a {
   text-decoration: none;
