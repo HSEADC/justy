@@ -159,7 +159,7 @@ let options = {
 
 let observer = new IntersectionObserver(handleIntersect, options)
 
-let target = document.querySelector('.A_anim-tag')
-let target2 = document.querySelector('.A_second-round')
+let target = document.querySelector('.anim-tag')
+let target2 = document.querySelector('.second-round')
 
 observer.observe(target)

@@ -2,7 +2,7 @@ body.S_about {
   padding: 0 2.963vw 1.926vw 2.963vw;
 
   //header
-  .W_header {
+  .header {
     width: 100%;
     height: 7.111vw;
     display: flex;
@@ -16,7 +16,7 @@ body.S_about {
       }
     }
 
-    .A_NavBar {
+    .NavBar {
       display: flex;
       gap: 2.222vw;
 
@@ -52,7 +52,7 @@ body.S_about {
   }
 
   //main content
-  .S_main-content {
+  .main-content {
     width: 100%;
     height: 158.296vw;
     border-radius: 0.889vw;
@@ -62,7 +62,7 @@ body.S_about {
     display: flex;
     justify-content: center;
 
-    .S_first-round {
+    .first-round {
       position: absolute;
       top: -36.296vw;
       left: -8.296vw;
@@ -78,7 +78,7 @@ body.S_about {
       filter: blur(5.043vw);
     }
 
-    .A_content {
+    .content {
       margin-top: 11.185vw;
       width: 54.222vw;
       padding: 4.444vw 2.667vw 0 2.667vw;
@@ -87,7 +87,7 @@ body.S_about {
       background: #fff;
       z-index: 2;
 
-      .M_TitleSub {
+      .TitleSub {
         width: 54.222vw;
         display: flex;
         flex-wrap: wrap;
@@ -115,11 +115,11 @@ body.S_about {
         }
       }
 
-      .W_AboutAdvantages {
+      .AboutAdvantages {
         margin-top: 5.185vw;
         position: relative;
         height: 29.926vw;
-        .M_card {
+        .card {
           position: absolute;
           width: 25.073vw;
           height: 12.741vw;
@@ -165,7 +165,7 @@ body.S_about {
         }
       }
 
-      .A_creators {
+      .creators {
         margin-top: 5.556vw;
 
         h2 {
@@ -199,13 +199,13 @@ body.S_about {
         line-height: normal;
       }
 
-      .W_AboutAdvantages-title {
+      .AboutAdvantages-title {
         margin-top: 2.296vw;
         display: flex;
         flex-wrap: wrap;
         gap: 1.111vw;
 
-        .A_card-title {
+        .card-title {
           padding: 2.593vw 2.222vw 2.593vw 1.926vw;
           width: 50.074vw;
           height: 4.889vw;
@@ -237,7 +237,7 @@ body.S_about {
       }
     }
 
-    .A_second-round {
+    .second-round {
       position: absolute;
       top: 135.333vw;
       z-index: 3;
@@ -254,17 +254,17 @@ body.S_about {
     }
   }
 
-  //O_footer
-  .O_footer {
+  //footer
+  .footer {
     margin-top: 2.963vw;
     width: 100%;
     height: 19.407vw;
     padding: 3.333vw 0 0 0;
 
-    .W_wrapper {
+    .wrapper {
       display: flex;
 
-      .Q_company {
+      .company {
         > img {
           width: 10.148vw;
           height: 2.667vw;
@@ -281,9 +281,9 @@ body.S_about {
         }
       }
 
-      .M_navigation,
-      .A_social-network,
-      .M_articles {
+      .navigation,
+      .social-network,
+      .articles {
         > h2 {
           color: #000;
           font-family: 'Suisse_Medium', sans-serif;
@@ -311,23 +311,23 @@ body.S_about {
         flex-direction: column;
       }
 
-      .M_navigation {
+      .navigation {
         margin-left: 28.296vw;
       }
 
-      .A_social-network {
+      .social-network {
         > h2 {
           text-transform: uppercase;
         }
         margin-left: 9.111vw;
       }
 
-      .M_articles {
+      .articles {
         margin-left: 9.63vw;
       }
     }
 
-    .A_brand {
+    .brand {
       margin-top: 3.704vw;
       display: flex;
       flex-direction: column;

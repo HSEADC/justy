@@ -173,7 +173,14 @@ module.exports = {
       template: './src/design/design-method.html',
       filename: './design/design-method.html'
     }),
-
+    new HtmlWebpackPlugin({
+      template: './src/design/darkPattern.html',
+      filename: './design/darkPattern.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/design/heuristics.html',
+      filename: './design/heuristics.html'
+    }),
     //Contacts
     new HtmlWebpackPlugin({
       template: './src/contacts.html',

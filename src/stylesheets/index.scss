@@ -1,4 +1,4 @@
-body.S_index {
+body.index {
   width: 100%;
   padding-bottom: 1.926vw;
   background-color: #1e1e1e;
@@ -7,7 +7,7 @@ body.S_index {
   align-items: center;
   overflow-x: hidden;
 
-  .S_first-round {
+  .first-round {
     position: absolute;
     top: -35.111vw;
     width: 140.815vw;
@@ -24,14 +24,14 @@ body.S_index {
     z-index: 1;
   }
 
-  .S_main-content {
+  .main-content {
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .M_top-content {
+    .top-content {
       position: fixed;
       z-index: 4;
       margin-top: 2.963vw;
@@ -63,7 +63,7 @@ body.S_index {
       }
     }
 
-    .S_container {
+    .container {
       margin-top: 7.407vw;
       width: 54.148vw;
       padding: 5.185vw 2.741vw 5.185vw 2.667vw;
@@ -73,7 +73,7 @@ body.S_index {
       border-radius: 1.778vw;
       background: #fff;
 
-      .M_TitleSub {
+      .TitleSub {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -115,13 +115,13 @@ body.S_index {
         line-height: normal;
       }
 
-      .W_sections {
+      .sections {
         margin-top: 4vw;
         display: flex;
         flex-direction: column;
         gap: 1.259vw;
 
-        .O_section {
+        .section {
           padding: 2.889vw 2.148vw 2.963vw 1.926vw;
           width: 50.074vw;
           height: 9.556vw;
@@ -138,7 +138,7 @@ body.S_index {
             margin-bottom: 0.889vw;
           }
 
-          .Q_underline {
+          .underline {
             height: 0.074vw;
             width: 50.222vw;
             background: linear-gradient(
@@ -148,7 +148,7 @@ body.S_index {
             );
           }
 
-          .A_content {
+          .content {
             margin-top: 2.222vw;
             display: flex;
             justify-content: space-between;
@@ -199,13 +199,13 @@ body.S_index {
       margin-top: 8.222vw;
     }
 
-    .W_AboutAdvantages {
+    .AboutAdvantages {
       margin-top: 5.185vw;
       height: 14.963vw;
       width: 94.148vw;
       position: relative;
 
-      .M_card {
+      .card {
         position: absolute;
         padding: 2.889vw 1.926vw 2.815vw 1.926vw;
         width: 27.111vw;
@@ -248,20 +248,20 @@ body.S_index {
       }
     }
 
-    .W_topAboutAdvantages {
+    .topAboutAdvantages {
       margin-top: 5.185vw;
       display: flex;
       gap: 0.741vw;
 
       > a {
-        .O_top-card {
+        .top-card {
           > img {
             width: 30.889vw;
             height: 16.815vw;
             border-radius: 0.667vw;
           }
 
-          .M_tag {
+          .tag {
             margin-top: 1.481vw;
             display: flex;
             gap: 0.593vw;
@@ -375,7 +375,7 @@ body.S_index {
       }
     }
 
-    .A_agreement {
+    .agreement {
       margin-top: 2.593vw;
       display: flex;
       align-items: flex-start;
@@ -427,14 +427,14 @@ body.S_index {
       }
     }
 
-    .W_come {
+    .come {
       height: 61.259vw;
       width: 100vw;
       position: relative;
       display: flex;
       justify-content: center;
 
-      .A_second-round {
+      .second-round {
         margin-top: 64.704vw;
         width: 32.667vw;
         height: 32.667vw;
@@ -468,17 +468,17 @@ body.S_index {
     }
   }
 
-  //O_footer
-  .O_footer {
+  //footer
+  .footer {
     margin-top: 2.963vw;
     width: 100%;
     height: 19.407vw;
     padding: 3.333vw 0 0 0;
 
-    .W_wrapper {
+    .wrapper {
       display: flex;
 
-      .Q_company {
+      .company {
         margin-left: 2.963vw;
         > img {
           width: 10.148vw;
@@ -497,9 +497,9 @@ body.S_index {
         }
       }
 
-      .M_navigation,
-      .A_social-network,
-      .M_articles {
+      .navigation,
+      .social-network,
+      .articles {
         > h2 {
           color: white;
           font-family: 'Suisse_Medium', sans-serif;
@@ -527,11 +527,11 @@ body.S_index {
         flex-direction: column;
       }
 
-      .M_navigation {
+      .navigation {
         margin-left: 28.296vw;
       }
 
-      .A_social-network {
+      .social-network {
         > h2 {
           text-transform: uppercase;
         }
@@ -543,7 +543,7 @@ body.S_index {
       }
     }
 
-    .A_brand {
+    .brand {
       margin-left: 2.963vw;
       margin-top: 3.704vw;
       display: flex;

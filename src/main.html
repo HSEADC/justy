@@ -4,54 +4,238 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>База</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <analytics></analytics>
   </head>
   <body class="main">
-    <h1>Заглушка</h1>
-    <ul>
-      <li><a href="/">Заглушка</a></li>
-    </ul>
+<div class="header">
+  <a href="/">
+    <img src="pictures/logo.svg" alt="Картинка логотипа" />
+  </a>
+  <div class="NavBar">
+    <a href="about.html">о нас</a>
+    <a href="design.html">дизайн</a>
+    <a href="code.html">код</a>
+    <a href="inspiration.html">вдохновение</a>
+    <a href="contacts.html">контакты</a>
+  </div>
+  <a href="/" id="subscribe">подписаться</a>
+</div>
 
-    <h1>Вдохновение</h1>
-    <ul>
-      <li><a href="inspiration.html">Вдохновение</a></li>
-      <li><a href="inspiration/studios.html">Студии</a></li>
-      <li><a href="inspiration/media.html">Медиа</a></li>
-    </ul>
+<div class="container">
 
-    <h1>Онас</h1>
-    <ul>
-      <li><a href="about.html">О нас</a></li>
-    </ul>
+  <div class="banner">
+    <img src="pictures/banner.svg" alt="Banner">
+  </div>
 
-    <h1>Технологии</h1>
-    <ul>
-      <li><a href="technologies.html">Технологии</a></li>
-      <li><a href="technologies/mockups.html">Мокапы</a></li>
-      <li><a href="technologies/neural-networks.html">Нейросети </a></li>
-      <li>
-        <a href="technologies/programs.html">Софт / плагины / программы </a>
-      </li>
-    </ul>
+  <section class="section">
+    <div class="section__top">
+      <div class="section__title">UX Дизайн</div>
+      <div class="section__sub-title">Перейти в раздел</div>
+    </div>
+    <div class="ux-design">
+      <a href="design/darkPattern.html" class="ux-design__item">
+        <div class="ux-design__image"><img src="pictures/imageContainer.svg" alt="Photo"></div>
+        <div class="ux-design__status">
+          <div class="label label--blue"><img src="pictures/ux.svg" alt="ux img">UX</div>
+          <div class="label label--purple"><img src="pictures/design.svg" alt="design img">Дизайн</div>
+          <div class="ux-design__time">~ 15 мин</div>
+        </div>
+        <div class="ux-design__title ux-design__title--active">
+          Темные паттерны в UX. Стоит ли использовать или избегать
+        </div>
+      </a>
+      <a href="design/heuristics.html" class="ux-design__item">
+        <div class="ux-design__image"><img src="pictures/imageContainer2.svg" alt="Photo"></div>
+        <div class="ux-design__status">
+          <div class="label label--blue"><img src="pictures/ux.svg" alt="ux img">UX</div>
+          <div class="label label--purple"><img src="pictures/design.svg" alt="design img">Дизайн</div>
+          <div class="ux-design__time">~ 15 мин</div>
+        </div>
+        <div class="ux-design__title">
+          Эвристики Нильсена: 10 принципов юзабилити
+        </div>
+      </a>
+    </div>
+  </section>
 
-    <h1>Новости</h1>
-    <ul>
-      <li><a href="news.html">Новости</a></li>
-      <li><a href="news/channels.html">Каналы с новостями о дизайне</a></li>
-      <li><a href="news/books.html">Книги</a></li>
-      <li><a href="news/films.html">Фильмы</a></li>
-      <li><a href="news/code.html">Программирование</a></li>
-      <li><a href="news/recommendations.html">Советы</a></li>
-      <li><a href="news/typography.html">Типографика</a></li>
-      <li><a href="news/our-articles.html">Наши статьи</a></li>
-      <li><a href="news/hse-help.html">ШД Хелп</a></li>
-    </ul>
+  <section class="section">
+    <div class="section__top">
+      <div class="section__title">Развлечения</div>
+      <div class="section__sub-title">Перейти в раздел</div>
+    </div>
+    <div class="fun">
+      <div class="fun__item">
+        <div class="fun__image"><img src="pictures/fun1.svg" alt="Photo"></div>
+        <div class="fun__status">
+          <div class="label label--blue"><img src="pictures/ux.svg" alt="ux img">Развлечения</div>
+          <div class="label label--blue"><img src="pictures/ux.svg" alt="ux img">вдохновение</div>
+        </div>
+        <div class="fun__title">Куда сходить в Москве, чтобы вдохновиться</div>
+      </div>
+      <div class="fun__item">
+        <div class="fun__image"><img src="pictures/fun2.svg" alt="Photo"></div>
+        <div class="fun__status">
+          <div class="label label--blue"><img src="pictures/ux.svg" alt="ux img">Развлечения</div>
+          <div class="label label--blue"><img src="pictures/ux.svg" alt="ux img">вдохновение</div>
+        </div>
+        <div class="fun__title">Подборка музеев современного искусства
+          в Москве</div>
+      </div>
+      <div class="fun__item">
+        <div class="fun__image"><img src="pictures/fun3.svg" alt="Photo"></div>
+        <div class="fun__status">
+          <div class="label label--blue"><img src="pictures/ux.svg" alt="ux img">Развлечения</div>
+          <div class="label label--blue"><img src="pictures/ux.svg" alt="ux img">вдохновение</div>
+        </div>
+        <div class="fun__title">Дизайнерские тусовки, о которых точно нужно знать</div>
+      </div>
+    </div>
+  </section>
 
-    <h1>Связи</h1>
-    <ul>
-      <li><a href="contacts.html">Связи</a></li>
-      <li><a href="contacts/students.html">Контакты студентов</a></li>
-      <li><a href="contacts/job.html">Поиск работы</a></li>
-    </ul>
+  <section class="section">
+    <div class="section__top">
+      <div class="section__title">Типографика</div>
+      <div class="section__sub-title">Перейти в раздел</div>
+    </div>
+    <div class="typography">
+        <div class="typography__item">
+          <div class="typography__image"><img src="pictures/typography1.svg" alt="Photo"></div>
+          <div class="typography__status">
+            <div class="label label--orange"><img src="pictures/orange.svg" alt="ux img">типографика</div>
+          </div>
+          <div class="typography__title">
+            Топ бесплатных кириллических шрифтов
+          </div>
+        </div>
+      <div class="typography__item">
+        <div class="typography__image"><img src="pictures/typography2.svg" alt="Photo"></div>
+        <div class="typography__status">
+          <div class="label label--orange"><img src="pictures/orange.svg" alt="ux img">типографика</div>
+        </div>
+        <div class="typography__title">
+          Топ бесплатных кириллических шрифтов
+        </div>
+      </div>
+      <div class="typography__item">
+        <div class="typography__image"><img src="pictures/typography3.svg" alt="Photo"></div>
+        <div class="typography__status">
+          <div class="label label--orange"><img src="pictures/orange.svg" alt="ux img">типографика</div>
+        </div>
+        <div class="typography__title">
+          Топ бесплатных кириллических шрифтов
+        </div>
+      </div>
+      <div class="typography__item">
+        <div class="typography__image"><img src="pictures/typography4.svg" alt="Photo"></div>
+        <div class="typography__status">
+          <div class="label label--orange"><img src="pictures/orange.svg" alt="orange img">типографика</div>
+        </div>
+        <div class="typography__title">
+          Топ бесплатных кириллических шрифтов
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__top">
+      <div class="section__title">Книги</div>
+      <div class="section__sub-title">Перейти в раздел</div>
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="pictures/дизайн%20привычных%20вещей.svg" alt="slider item"></div>
+        <div class="swiper-slide"><img src="pictures/Книга%20про%20буквы%20от%20Аа%20до%20Яя.%20Гордон.svg" alt="slider item"></div>
+        <div class="swiper-slide"><img src="pictures/Образцы%20шрифтов.%20Ян%20Чихольд.svg" alt="slider item"></div>
+        <div class="swiper-slide"><img src="pictures/ково.svg" alt="slider item"></div>
+        <div class="swiper-slide"><img src="pictures/и%20другие.svg" alt="slider item"></div>
+        <div class="swiper-slide"><img src="pictures/chanel.svg" alt="slider item"></div>
+        <div class="swiper-slide"><img src="pictures/дизайнер.svg" alt="slider item"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__top">
+      <div class="section__title">Типографика</div>
+      <div class="section__sub-title">Перейти в раздел</div>
+    </div>
+    <div class="dev">
+      <div class="dev__item">
+        <div class="dev__image"><img src="pictures/development1.svg" alt="Photo"></div>
+        <div class="dev__status">
+          <div class="label label--green"><img src="pictures/green.svg" alt="green img">типографика</div>
+        </div>
+        <div class="dev__title">
+          Где искать ответы на вопросы по верстке. Подборка источников
+        </div>
+        <div class="dev__desc">
+          Прежде, чем начать погружаться в код, нужно выбрать редакторы и понять, с кем вам предстоит работать. Мы расскажем о том, что есть, а выбор оставим за вами
+        </div>
+      </div>
+      <div class="dev__item">
+        <div class="dev__image"><img src="pictures/development2.svg" alt="Photo"></div>
+        <div class="dev__status">
+          <div class="label label--green"><img src="pictures/green.svg" alt="green img">типографика</div>
+        </div>
+        <div class="dev__title">
+          Где искать ответы на вопросы по верстке. Подборка источников
+        </div>
+        <div class="dev__desc">
+          Прежде, чем начать погружаться в код, нужно выбрать редакторы и понять, с кем вам предстоит работать. Мы расскажем о том, что есть, а выбор оставим за вами
+        </div>
+      </div>
+      <div class="dev__item">
+        <div class="dev__image"><img src="pictures/development3.svg" alt="Photo"></div>
+        <div class="dev__status">
+          <div class="label label--green"><img src="pictures/green.svg" alt="green img">типографика</div>
+        </div>
+        <div class="dev__title">
+          Где искать ответы на вопросы по верстке. Подборка источников
+        </div>
+        <div class="dev__desc">
+          Прежде, чем начать погружаться в код, нужно выбрать редакторы и понять, с кем вам предстоит работать. Мы расскажем о том, что есть, а выбор оставим за вами
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const swiper = new Swiper('.swiper', {
+      loop: false,
+      speed: 1000,
+      autoplay: {
+        delay: 3000,
+      },
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      initialSlide: Math.floor(document.querySelectorAll('.swiper-slide').length / 2),
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+      },
+    });
+  });
+</script>
+
+
   </body>
 </html>
