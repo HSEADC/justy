@@ -18,6 +18,7 @@ body.darkPattern {
   .pattern {
     margin-top: 1.778vw !important;
     width: 100%;
+    display: block;
   }
   //header
   .W_header {
@@ -526,3 +527,30 @@ body.darkPattern {
     margin-top: 1.778vw !important;
   }
 }
+.text-h2 {
+  color: #000;
+  font-family: "Suisse_Medium", sans-serif;
+  font-size: 1.556vw;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 128%;
+  margin-top: 1.778vw !important;
+}
+.text-h1 {
+  color: #000;
+  font-family: "Suisse_Medium", sans-serif;
+  font-size: 1.556vw !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%;
+  margin-top: 1.778vw !important;
+}
+.text {
+  span {
+    font-weight: 600;
+  }
+  .italic {
+    font-style: italic !important;
+  }
+}
+

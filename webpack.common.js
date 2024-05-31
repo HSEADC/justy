@@ -181,6 +181,40 @@ module.exports = {
       template: './src/design/heuristics.html',
       filename: './design/heuristics.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/design/datadriven.html',
+      filename: './design/datadriven.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/design/familiarthings.html',
+      filename: './design/familiarthings.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/design/surveyandvalidate.html',
+      filename: './design/surveyandvalidate.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/design/uxSurvey.html',
+      filename: './design/uxSurvey.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/design/topTenQuestions.html',
+      filename: './design/topTenQuestions.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/design/notifications.html',
+      filename: './design/notifications.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/design/saas.html',
+      filename: './design/saas.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/design/chatGpt.html',
+      filename: './design/chatGpt.html'
+    }),
+
+
     //Contacts
     new HtmlWebpackPlugin({
       template: './src/contacts.html',

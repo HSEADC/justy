@@ -526,7 +526,19 @@ body.darkPattern {
     margin-top: 1.778vw !important;
   }
 }
+
 .text-h2 {
+    color: #000;
+    font-family: "Suisse_Medium", sans-serif;
+    font-size: 1.556vw;
+    font-style: normal;
+    font-weight: 500 !important;
+    line-height: 128%;
+    margin-top: 1.778vw !important;
+}
+
+
+.text-h1 {
   color: #000;
   font-family: "Suisse_Medium", sans-serif;
   font-size: 1.556vw;
@@ -535,3 +547,12 @@ body.darkPattern {
   line-height: 128%;
   margin-top: 1.778vw !important;
 }
+.text {
+  span {
+    font-weight: bold;
+    .italic {
+      font-style: italic !important;
+      font-weight: 500 !important;
+    }
+  }
+  }
