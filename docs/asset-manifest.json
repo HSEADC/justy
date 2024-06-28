@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/justy/static/css/main.af129de0.css",
-    "main.js": "/justy/static/js/main.8ce0b85d.js",
+    "main.js": "/justy/static/js/main.dd3a7ef0.js",
     "static/js/453.d698e0bd.chunk.js": "/justy/static/js/453.d698e0bd.chunk.js",
     "static/media/SuisseIntl-Medium.ttf": "/justy/static/media/SuisseIntl-Medium.08e55661830e102ea17a.ttf",
     "static/media/SuisseIntl-SemiBold.ttf": "/justy/static/media/SuisseIntl-SemiBold.91dd693dda82e866aded.ttf",
@@ -12,11 +12,11 @@
     "static/media/lens.svg": "/justy/static/media/lens.3dcdb90d5fb69e1c88e5f5e2d8ab31ba.svg",
     "index.html": "/justy/index.html",
     "main.af129de0.css.map": "/justy/static/css/main.af129de0.css.map",
-    "main.8ce0b85d.js.map": "/justy/static/js/main.8ce0b85d.js.map",
+    "main.dd3a7ef0.js.map": "/justy/static/js/main.dd3a7ef0.js.map",
     "453.d698e0bd.chunk.js.map": "/justy/static/js/453.d698e0bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af129de0.css",
-    "static/js/main.8ce0b85d.js"
+    "static/js/main.dd3a7ef0.js"
   ]
 }
