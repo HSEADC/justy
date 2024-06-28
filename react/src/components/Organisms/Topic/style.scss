@@ -1,0 +1,174 @@
+$sm: 37.5em;
+$md: 48em;
+$lg: 64em;
+$xl: 75em;
+
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+$border-sm: 10px;
+$border-md: 20px;
+$border-lg: 40px;
+
+@mixin breakpoint($point) {
+    @if $point == xl {        
+        @media (min-width: $xl) {
+            @content;
+        }
+    }
+    @if $point == lg {        
+        @media (min-width: $lg) {
+            @content;
+        }
+    }
+    @if $point == md {
+        @media (min-width: $md) {
+            @content;
+        }
+    }
+    @if $point == sm {        
+        @media (min-width: $sm) {
+            @content;
+        }
+    }
+}
+
+.Topic {
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 30px; 
+    display: flex;
+    width: 100%;
+
+    & .TopicTitle {
+        justify-content: space-between; 
+        align-items: center;
+        display: inline-flex;
+        color: black;
+        font-size: 30px; 
+        font-family: Suisse;
+        font-weight: 500;
+        word-wrap: break-word;
+        width: 100%;
+
+        & .Link {
+            font-size: 21px;
+            font-weight: 400;
+            color: black;
+            text-decoration: none;
+            display: flex;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            };
+        }
+    }
+
+    & .CasesSet-2,
+    & .CasesSet-3,
+    & .CasesSet-4 {
+        justify-content: flex-start; 
+        align-items: flex-start; 
+        gap: 10px;
+        display: inline-flex;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    & .CasesSet-2 {
+        & > .Case {
+            &:nth-child(1) {
+                display: inline-flex;
+            }            
+        
+            @include breakpoint(lg) {
+                &:nth-child(2) {
+                    display: inline-flex;
+                }          
+            }
+
+            & .Title {
+                font-size: 27px;
+            }
+        }
+
+        &[data-open='true'] {
+            flex-wrap: wrap;
+            & > .Case {
+                display: inline-flex;
+                flex: 1 1 500px;
+            }
+        }
+    }
+
+    & .CasesSet-3 {
+        & > .Case {
+            &:nth-child(1) {
+                display: inline-flex;
+            }          
+        
+            @include breakpoint(md) {
+                &:nth-child(2) {
+                    display: inline-flex;
+                }          
+            }           
+        
+            @include breakpoint(lg) {
+                &:nth-child(3) {
+                    display: inline-flex;
+                }          
+            }
+        }
+
+        & .Title {
+            font-size: 27px;
+        }
+
+        &[data-open='true'] {
+            flex-wrap: wrap;
+            & > .Case {
+                display: inline-flex;
+                flex: 1 1 400px;
+            }
+        }
+    }
+
+    & .CasesSet-4 {
+        & > .Case {
+            & .Title {
+                font-size: 21px;
+            }
+
+            &:nth-child(1) {
+                display: inline-flex;
+            }           
+        
+            @include breakpoint(md) {
+                &:nth-child(2) {
+                    display: inline-flex;
+                }         
+            }          
+        
+            @include breakpoint(lg) {
+                &:nth-child(3),
+                &:nth-child(4) {
+                    display: inline-flex;
+                }        
+            }
+        }
+
+        &[data-open='true'] {
+            flex-wrap: wrap;
+            & > .Case {
+                display: inline-flex;
+                flex: 1 1 250px;
+            }
+        }
+    }
+}

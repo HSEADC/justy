@@ -1,0 +1,65 @@
+$sm: 37.5em;
+$md: 48em;
+$lg: 64em;
+$xl: 75em;
+
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+$border-sm: 10px;
+$border-md: 20px;
+$border-lg: 40px;
+
+@mixin breakpoint($point) {
+    @if $point == xl {        
+        @media (min-width: $xl) {
+            @content;
+        }
+    }
+    @if $point == lg {        
+        @media (min-width: $lg) {
+            @content;
+        }
+    }
+    @if $point == md {
+        @media (min-width: $md) {
+            @content;
+        }
+    }
+    @if $point == sm {        
+        @media (min-width: $sm) {
+            @content;
+        }
+    }
+}
+
+.SearchItem {
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    display: flex;
+    gap: 10px;
+    margin-right: -300px;
+
+    & .Preview {
+        width: 151px; 
+        aspect-ratio: 16 / 9;
+        border-radius: 9px;
+    }
+
+    & .Title {
+        max-width: 500px;
+        font-weight: 500;
+        font-family: Suisse;
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration: none;
+        color: black;
+        text-wrap: wrap;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
